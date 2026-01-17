@@ -1,0 +1,154 @@
+
+[
+  {
+    "id": 1,
+    "title": "Manufacturing & Production",
+    "headline": "Smart Factory Automation & Advanced Production",
+    "desc": "An online portal for booking travel and tourism packages with personalized itineraries.",
+     "overview_one": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "overview_two": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "why_choose_us": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+     "choce_one": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "image": "/images/menufactaring and production.jpg",
+    "process": [
+      "Integrating legacy machinery with modern IoT sensors",
+      "Ensuring zero-latency communication between systems",
+      "Real-time monitoring via central dashboards",
+      "Predictive maintenance scheduling"
+    ],
+    "benefits": [
+      "Increased production speed by 45%",
+      "Reduced human error by 90%",
+      "Lower operational costs",
+      "24/7 automated monitoring"
+    ],
+    "related_services": ["Automation", "AI", "Robotics", "IoT"],
+    "techStack": ["Python", "AWS IoT", "TensorFlow", "Node.js"]
+  },
+  {
+    "id": 2,
+    "title": "Export & Import",
+    "headline": "Global Trade & Supply Chain Solutions",
+    "desc": "An online portal for booking travel and tourism packages with personalized itineraries.",
+     "overview_one": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "overview_two": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "why_choose_us": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+     "choce_one": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "image": "/images/export import.jpg",
+    "process": [
+      "Shipment tracking and documentation",
+      "Customs clearance integration",
+      "Legal compliance automation",
+      "Real-time currency and tax calculation"
+    ],
+    "benefits": [
+      "60% reduction in processing time",
+      "Zero compliance-related delays",
+      "Transparent tracking system",
+      "Simplified international payments"
+    ],
+    "related_services": ["Logistics", "Trade", "Cloud-SaaS", "Compliance"],
+    "techStack": ["Next.js", "PostgreSQL", "Stripe API", "NestJS"]
+  },
+  {
+    "id": 3,
+    "title": "Information Technology",
+    "headline": "Digital Transformation & IT Infrastructure",
+    "desc": "An online portal for booking travel and tourism packages with personalized itineraries.",
+     "overview_one": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "overview_two": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "why_choose_us": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+     "choce_one": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "image": "/images/information technology service.jpg",
+    "process": [
+      "System architecture design",
+      "Hybrid cloud model implementation",
+      "Cybersecurity protocol setup",
+      "AI-powered helpdesk integration"
+    ],
+    "benefits": [
+      "99.99% system uptime",
+      "Enhanced data security",
+      "50% faster ticket resolution",
+      "Scalable digital environment"
+    ],
+    "related_services": ["Cybersecurity", "Networking", "Cloud", "AI-Chatbots"],
+    "techStack": ["Azure Cloud", "Docker", "Kubernetes", "React"]
+  },
+  {
+    "id": 4,
+    "title": "Transport & Logistics",
+    "headline": "Fast & Secure Logistics Network",
+     "desc": "An online portal for booking travel and tourism packages with personalized itineraries.",
+     "overview_one": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "overview_two": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "why_choose_us": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+     "choce_one": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "image": "/images/transport and logestic.jpg",
+    "process": [
+      "Smart route optimization",
+      "Fleet management and tracking",
+      "Load distribution balancing",
+      "Cargo synchronization with flight data"
+    ],
+    "benefits": [
+      "20% reduction in fuel costs",
+      "Faster last-mile delivery",
+      "Optimized loading speed",
+      "Real-time GPS visibility"
+    ],
+    "related_services": ["Fleet Management", "Green-Tech", "GPS Tracking"],
+    "techStack": ["Go", "Google Maps API", "RabbitMQ", "Socket.io"]
+  },
+  {
+    "id": 5,
+    "title": "Travel & Tourism",
+    "headline": "Comprehensive Travel Management",
+    "desc": "An online portal for booking travel and tourism packages with personalized itineraries.",
+    "overview_one": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "overview_two": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "why_choose_us": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+     "choce_one": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "image": "/images/travel and tourisam.jpg",
+   
+    "process": [
+      "Itinerary personalization",
+      "Hotel and tour inventory sync",
+      "Secure payment gateway integration",
+      "Mobile-responsive portal design"
+    ],
+    "benefits": [
+      "40% increase in online bookings",
+      "Seamless payment processing",
+      "User-friendly traveler dashboard",
+      "24/7 booking access"
+    ],
+    "related_services": ["Booking Engine", "E-commerce", "Travel-Tech"],
+    "techStack": ["Next.js", "Tailwind CSS", "Sanity CMS", "PayPal API"]
+  },
+  {
+    "id": 6,
+    "title": "Construction & Infrastructure",
+    "headline": "Sustainable Urban Infrastructure",
+    "desc": "An online portal for booking travel and tourism packages with personalized itineraries.",
+     "overview_one": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "overview_two": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "why_choose_us": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+     "choce_one": "We offer a feature-rich booking engine with real-time inventory and secure multi-currency payment options. My Softake PLC. is driven by a passion for innovation and a commitment to excellence. We harness the power of technology to create smart, reliable, and scalable solutions that help businesses grow, adapt, and succeed in a rapidly changing digital world. Guided by integrity, teamwork, and continuous learning, we transform challenges into opportunities and ideas into impact—building a smarter future together.",
+    "image": "/images/construction and & Infrastructure.jpg",
+    "process": [
+      "Eco-friendly material sourcing",
+      "Structural integrity sensor installation",
+      "Smart-city project planning",
+      "Predictive monitoring setup"
+    ],
+    "benefits": [
+      "20-year increase in structure lifespan",
+      "Sustainable building practices",
+      "Real-time safety monitoring",
+      "Noise and energy efficiency"
+    ],
+    "related_services": ["Smart-City", "Engineering", "IoT Sensors"],
+    "techStack": ["AutoCAD", "BIM Software", "IoT Sensors", "Python"]
+  }
+]

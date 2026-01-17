@@ -1,0 +1,124 @@
+"use client";
+import React, { useEffect, useState } from "react";
+import ProductCard from "./sheard/ProductCard";
+
+const OurLetestProject = () => {
+  const [categories, setCategories] = useState([]);
+  const [projects, setProjects] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerView, setItemsPerView] = useState(3);
+
+ 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) setItemsPerView(1);
+      else if (window.innerWidth < 1024) setItemsPerView(2);
+      else setItemsPerView(3);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    fetch("/data/category.json").then(res => res.json()).then(data => setCategories(data));
+    fetch("/data/projectdata.json").then(res => res.json()).then(data => setProjects(data));
+  }, []);
+
+  const filteredProjects = selectedCategory === "All" 
+    ? projects 
+    : projects.filter((p) => p.category === selectedCategory);
+
+  const totalSlides = Math.ceil(filteredProjects.length / itemsPerView);
+
+  const nextSlide = () => {
+    if (currentIndex < totalSlides - 1) setCurrentIndex(prev => prev + 1);
+  };
+
+  const prevSlide = () => {
+    if (currentIndex > 0) setCurrentIndex(prev => prev - 1);
+  };
+
+  return (
+    <div className="pt-10 container mx-auto px-4 relative">
+      <h3 className="font-bold text-center text-4xl text-slate-900">Our Latest Project</h3>
+      <p className="text-base text-center md:w-[500px] mx-auto pt-5 text-gray-600">
+        Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+      </p>
+
+      {/* Category Buttons */}
+      <div className="flex flex-wrap justify-center gap-3 mt-8 mb-10">
+        <button
+          className={`px-6 py-2 rounded-full font-medium transition ${selectedCategory === "All" ? "bg-[#00B3EC] text-white" : "bg-gray-200 text-gray-700 hover:bg-[#00B3EC] hover:text-white"}`}
+          onClick={() => { setSelectedCategory("All"); setCurrentIndex(0); }}
+        > All </button>
+        {categories.map((cat) => (
+          <button
+            key={cat.id}
+            className={`px-6 py-2 rounded-full font-medium transition ${selectedCategory === cat.title ? "bg-[#00B3EC] text-white" : "bg-gray-200 text-gray-700 hover:bg-[#00B3EC] hover:text-white"}`}
+            onClick={() => { setSelectedCategory(cat.title); setCurrentIndex(0); }}
+          > {cat.title} </button>
+        ))}
+      </div>
+
+      {/* Slider Main Wrapper */}
+      <div className="relative  px-2 md:px-10">
+        
+        {/* Navigation Buttons  */}
+        {totalSlides > 1 && (
+          <>
+            <button 
+              onClick={prevSlide} 
+              disabled={currentIndex === 0} 
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm shadow-md p-3 rounded-full disabled:opacity-30 transition-all hover:bg-white hover:scale-110 active:scale-95"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="#535353" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+
+            <button 
+              onClick={nextSlide} 
+              disabled={currentIndex === totalSlides - 1} 
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm shadow-md p-3 rounded-full disabled:opacity-30 transition-all hover:bg-white hover:scale-110 active:scale-95"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="#535353" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+          </>
+        )}
+
+    
+        <div className="overflow-hidden">
+          <div 
+            className="duration-700 ease-in-out flex"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            {Array.from({ length: totalSlides }).map((_, i) => (
+              <div key={i} className="min-w-full px-2 mb-5">
+                <ProductCard projects={filteredProjects.slice(i * itemsPerView, (i + 1) * itemsPerView)} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Pagination Dots*/}
+        {totalSlides > 1 && (
+          <div className="flex justify-center gap-2 mt-8  mb-10">
+            {Array.from({ length: totalSlides }).map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
+                className={`h-2 rounded-full transition-all duration-300 ${currentIndex === idx ? "w-8 bg-[#00B3EC]" : "w-2 bg-gray-300"}`}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default OurLetestProject;

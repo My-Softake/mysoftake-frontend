@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "jobTitle": "Asset Management Consultant",
+    "jobType": "Full Time",
+    "description": "Support asset lifecycle planning, performance analysis, and optimization strategies for asset-intensive organizations."
+   
+  
+  },
+  {
+    "id": 2,
+    "jobTitle": "Senior Web Developer",
+    "jobType": "Remote",
+    "description": "Lead the development of high-performance web applications using Next.js and integrate modern UI/UX principles for global clients."
+ 
+  },
+  {
+    "id": 3,
+    "jobTitle": "Supply Chain Strategist",
+    "jobType": "Full Time",
+    "description": "Optimize international export and import operations while ensuring compliance with global trade regulations and logistics efficiency."
+ 
+  },
+  {
+    "id": 4,
+    "jobTitle": "UI/UX Designer",
+    "jobType": "Contract",
+    "description": "Create intuitive digital experiences and brand identities that drive user engagement and increase business conversion rates."
+ 
+  },
+  {
+    "id": 5,
+    "jobTitle": "Smart Factory Specialist",
+    "jobType": "Full Time",
+    "description": "Implement IoT sensors and automated robotic systems to revolutionize traditional manufacturing and reduce production downtime."
+  
+  },
+  {
+    "id": 6,
+    "jobTitle": "IT Infrastructure Engineer",
+    "jobType": "Full Time",
+    "description": "Design and manage secure hybrid cloud models and cybersecurity protocols for corporate networking and server management."
+    
+  }
+]
