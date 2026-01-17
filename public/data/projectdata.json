@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "title": "Smart Factory Automation",
+    "category": "Manufacturing & Production",
+    "description": "Automated production line to increase efficiency and reduce downtime.",
+    "longDescription": "Our Smart Factory Automation project revolutionizes traditional manufacturing by integrating industry 4.0 standards. We implemented IoT sensors and automated arms that communicate in real-time to prevent errors before they happen. This system allows managers to monitor every aspect of production from a central dashboard.",
+    "image": "/images/menufactaring and production.jpg",
+    "client": "IndustriX Corp",
+    "date": "March 2024",
+    "status": "Completed",
+    "tags": ["Automation", "AI", "Robotics"],
+    "challenges": [
+      "Integrating legacy machinery with modern IoT sensors.",
+      "Ensuring zero-latency communication between robotic arms.",
+      "Training staff to operate the new automated dashboard."
+    ],
+    "techStack": ["Python", "AWS IoT", "TensorFlow", "Node.js"],
+    "results": "Increased production speed by 45% and reduced human error by 90%."
+  },
+  {
+    "id": 2,
+    "title": "Industrial IoT Project",
+    "category": "Manufacturing & Production",
+    "description": "IoT-enabled machines for real-time monitoring and predictive maintenance.",
+    "longDescription": "This project involves deploying thousands of sensors across the factory floor to collect data on machine health, temperature, and performance. The system predicts potential failures before they occur, saving millions in repair costs.",
+    "image": "/images/manufactiring.jpg",
+    "client": "TechGear Ltd",
+    "date": "January 2024",
+    "status": "Ongoing",
+    "tags": ["IoT", "Data", "Cloud"],
+    "challenges": [
+      "Handling high-frequency data streams without latency.",
+      "Ensuring sensor durability in high-temperature environments.",
+      "End-to-end data encryption for security."
+    ],
+    "techStack": ["Node.js", "MQTT", "Azure IoT Hub", "React"],
+    "results": "Reduced unplanned downtime by 35% within the first quarter."
+  },
+  {
+    "id": 3,
+    "title": "Global Export Hub",
+    "category": "Export & Import",
+    "description": "A platform to manage international export and import operations seamlessly.",
+    "longDescription": "A centralized hub designed to track shipments, manage documentation, and handle customs clearance in a single digital environment. It connects exporters, importers, and logistics providers in real-time.",
+    "image": "/images/export import.jpg",
+    "client": "Global Trade Co.",
+    "date": "February 2024",
+    "status": "Completed",
+    "tags": ["Logistics", "Trade", "Cloud-SaaS"],
+    "challenges": [
+      "Integrating multiple international customs APIs.",
+      "Real-time currency conversion and tax calculation.",
+      "Multi-language support for global users."
+    ],
+    "techStack": ["Next.js", "PostgreSQL", "Stripe API", "Docker"],
+    "results": "Reduced documentation processing time by 60%."
+  },
+  {
+    "id": 4,
+    "title": "Export Compliance System",
+    "category": "Export & Import",
+    "description": "Digital solution to ensure compliance with international trade regulations.",
+    "longDescription": "This system automates the legal checks required for international trade, ensuring all cargo meets the destination country's specific laws and avoids heavy penalties.",
+    "image": "/images/export import.jpg",
+    "client": "TradeWatch Group",
+    "date": "November 2023",
+    "status": "Completed",
+    "tags": ["Compliance", "Legal-Tech", "Automation"],
+    "challenges": [
+      "Keeping the database updated with global law changes.",
+      "Automated PDF document generation for legal filing.",
+      "Secure digital signatures for all trade documents."
+    ],
+    "techStack": ["TypeScript", "NestJS", "MongoDB", "Firebase"],
+    "results": "Eliminated 100% of compliance-related shipping delays."
+  },
+  {
+    "id": 5,
+    "title": "Company IT Infrastructure",
+    "category": "Information Technology",
+    "description": "Setting up secure IT infrastructure for company-wide operations.",
+    "longDescription": "A complete overhaul of corporate networking, server management, and cybersecurity protocols. We moved the entire operation to a hybrid cloud model for maximum security and scalability.",
+    "image": "/images/information.jpg",
+    "client": "Nexus Enterprises",
+    "date": "December 2023",
+    "status": "Completed",
+    "tags": ["Infrastructure", "Cybersecurity", "Networking"],
+    "challenges": [
+      "Migrating 10TB of data without downtime.",
+      "Setting up hardware firewalls across 3 branch offices.",
+      "Implementing Zero-Trust security architecture."
+    ],
+    "techStack": ["Cisco Networking", "Azure Cloud", "Docker", "Kubernetes"],
+    "results": "Achieved 99.99% uptime and zero security breaches."
+  },
+  {
+    "id": 6,
+    "title": "Corporate IT Helpdesk",
+    "category": "Information Technology",
+    "description": "24/7 IT support system for employees and business operations.",
+    "longDescription": "An AI-powered ticketing system and support portal that provides instant technical assistance to over 5,000 employees worldwide, reducing manual support workload.",
+    "image": "/images/information.jpg",
+    "client": "Standard Solutions",
+    "date": "January 2024",
+    "status": "Ongoing",
+    "tags": ["Support", "ITSM", "AI-Chatbot"],
+    "challenges": [
+      "Training AI to understand complex technical queries.",
+      "Integration with Microsoft Teams and Slack.",
+      "Managing high ticket volumes during system updates."
+    ],
+    "techStack": ["React", "Python (NLP)", "GraphQL", "Redis"],
+    "results": "Improved ticket resolution time by 50%."
+  },
+  {
+    "id": 7,
+    "title": "City Logistics Network",
+    "category": "Transport & Logistics",
+    "description": "Optimized logistics network connecting warehouses and stores efficiently.",
+    "longDescription": "Smart route planning and fleet management software designed to reduce delivery times and fuel consumption within urban areas using real-time traffic data.",
+    "image": "/images/transport.jpg",
+    "client": "Urban Delivery Inc.",
+    "date": "March 2024",
+    "status": "Completed",
+    "tags": ["Logistics", "Green-Tech", "Route-Optimization"],
+    "challenges": [
+      "Real-time GPS tracking and traffic prediction.",
+      "Balancing load distribution across the delivery fleet.",
+      "Reducing carbon footprint of last-mile delivery."
+    ],
+    "techStack": ["Go", "Google Maps API", "RabbitMQ", "React Native"],
+    "results": "Reduced fuel costs by 20% and delivery time by 15 mins per order."
+  },
+  {
+    "id": 8,
+    "title": "Airport Transport Management",
+    "category": "Transport & Logistics",
+    "description": "End-to-end management of airport transport services for passengers and cargo.",
+    "longDescription": "Integrated software to manage airport shuttles, cargo loaders, and flight synchronization for ground handling teams at major international airports.",
+    "image": "/images/transport.jpg",
+    "client": "Skyport Authority",
+    "date": "February 2024",
+    "status": "Ongoing",
+    "tags": ["Aviation", "Transport", "Fleet-Management"],
+    "challenges": [
+      "Syncing schedules with real-time flight delay data.",
+      "High-security protocol for airside vehicle access.",
+      "Managing driver shifts and vehicle maintenance logs."
+    ],
+    "techStack": ["Java", "Spring Boot", "MySQL", "Socket.io"],
+    "results": "Optimized cargo loading speed by 25%."
+  },
+  {
+    "id": 9,
+    "title": "Tourist Booking Portal",
+    "category": "Travel & Tourism",
+    "description": "An online portal for booking travel and tourism packages easily.",
+    "longDescription": "A feature-rich booking engine offering personalized travel itineraries, hotel bookings, and guided tour reservations with an integrated payment gateway.",
+    "image": "/images/tourisam.jpg",
+    "client": "Wonderlust Travels",
+    "date": "April 2024",
+    "status": "Completed",
+    "tags": ["Booking", "Travel-Tech", "E-commerce"],
+    "challenges": [
+      "Handling real-time inventory for tour operators.",
+      "Secure payment processing in multiple currencies.",
+      "Mobile-first responsive design for travelers."
+    ],
+    "techStack": ["Next.js", "Tailwind CSS", "Sanity CMS", "PayPal API"],
+    "results": "Increased online bookings by 40% in the first two months."
+  },
+  {
+    "id": 10,
+    "title": "Urban Infrastructure Development",
+    "category": "Construction & Infrastructure",
+    "description": "Development of roads, bridges, and buildings with modern techniques.",
+    "longDescription": "Implementing sustainable building materials and smart sensors in construction to monitor structural integrity and energy efficiency over time.",
+    "image": "/images/constraction.jpg",
+    "client": "City Planning Board",
+    "date": "May 2024",
+    "status": "Ongoing",
+    "tags": ["Construction", "Smart-City", "Engineering"],
+    "challenges": [
+      "Sourcing eco-friendly construction materials.",
+      "Installing fiber-optic sensors inside concrete structures.",
+      "Adhering to strict urban safety and noise regulations."
+    ],
+    "techStack": ["AutoCAD", "IoT Sensors", "BIM Software", "Python"],
+    "results": "Structure lifespan estimated to increase by 20 years through predictive monitoring."
+  }
+]
