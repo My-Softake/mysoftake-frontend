@@ -38,23 +38,23 @@ const ContactPage = () => {
     }
   };
 
-  const contactInfo = [
+ const contactInfo = [
     {
       id: 1,
       title: "Address",
-      details: "123 Education Street, Suite 400, Uttara, Dhaka.",
+      details: "Sector 9, Road 3/E, House 04, Uttara, Dhaka-1230.",
       icon: <HiOutlineMapPin className="text-3xl" />,
     },
     {
       id: 2,
       title: "Phone",
-      details: "+1 (234) 567-890",
+      details: "+88 01910-219667",
       icon: <HiOutlinePhone className="text-3xl" />,
     },
     {
       id: 3,
       title: "E-Mail",
-      details: "support@globex.com",
+      details: "info.mysoftake@gmail.com",
       icon: <HiOutlineMail className="text-3xl" />,
     },
   ];
@@ -96,15 +96,15 @@ const ContactPage = () => {
           <p className="text-slate-500 max-w-2xl mx-auto mb-16 text-lg leading-relaxed">
             For general enquires you can touch with our front desk supporting
             team at
-            <a
-              href="mailto:info@mysoftake.com"
+            <Link
+              href="mailto:info.mysoftake@gmail.com"
               className="text-blue-600 font-semibold hover:underline px-2"
             >
-              info@mysoftake.com
-            </a>
+             info.mysoftake@gmail.com
+            </Link>
             or call on{" "}
             <span className="text-blue-600 font-semibold">
-              +1 (234) 567-890
+             +88 01910-219667
             </span>
           </p>
 
@@ -129,12 +129,12 @@ const ContactPage = () => {
           {/* Branches Link & Map - No Changes */}
           <p className="text-slate-600 font-medium text-lg my-10">
             We are at 36 places over the country,{" "}
-            <a
+            <Link
               href="#"
               className="text-blue-600 hover:underline font-bold decoration-2"
             >
               see our branches.
-            </a>
+            </Link>
           </p>
           <div className="w-full h-[550px] rounded-2xl overflow-hidden shadow-inner bg-gray-100 border border-gray-100">
             <iframe

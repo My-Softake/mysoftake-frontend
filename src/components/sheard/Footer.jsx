@@ -95,11 +95,12 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <FaPhoneAlt className="flex-shrink-0" />
-                <p>+88 01302-788947</p>
+                 <p>+88 01910-219667</p>
+               
               </div>
               <div className="flex items-center gap-3">
                 <BsBriefcase className="flex-shrink-0" />
-                <p>+88 01910-219667</p>
+               <p>+88 01302-788947</p>
               </div>
               <div className="flex items-center gap-3">
                 <FaEnvelope className="flex-shrink-0" />
@@ -107,7 +108,7 @@ const Footer = () => {
                   href="mailto:info@mysoftake.com"
                   className="hover:text-cyan-400 transition"
                 >
-                  info.arafat17@gmail.com
+                 info.mysoftake@gmail.com
                 </Link>
               </div>
             </div>
