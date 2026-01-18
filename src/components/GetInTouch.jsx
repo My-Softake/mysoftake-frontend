@@ -2,8 +2,8 @@ import React from "react";
 
 const GetInTouch = () => {
   return (
-    <div className="md:py-20 py-12">
-      <div className="container mx-auto md:px-6">
+    <div className="md:py-16 py-12">
+      <div className="container mx-auto md:px-20">
         <div
           className="w-full min-h-[450px] md:h-[500px] rounded-3xl mx-auto 
           flex flex-col items-center justify-center text-center px-6 py-10
@@ -29,9 +29,9 @@ const GetInTouch = () => {
           {/* Button */}
           <button
             className="
-              px-10 py-4 md:px-16 md:py-5 mt-10
+              px-8 py-3 md:px-12 md:py-4 mt-10
               bg-white text-[#17386f] font-bold text-lg
-              rounded-full
+              rounded-xl
               hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-300
               shadow-[0_10px_20px_rgba(0,0,0,0.2)] z-10"
           >

@@ -67,7 +67,6 @@ const AboutCompany = () => {
                 {/* Pulse Animation Effect */}
                 <span className="absolute flex h-10 w-10  ">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-               
                 </span>
 
                 <IoVideocamOutline className="text-xl ml-2 group-hover:scale-125 transition-transform duration-300" />
@@ -77,9 +76,6 @@ const AboutCompany = () => {
                 <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-20 group-hover:animate-shine" />
               </button>
             </div>
-
-
-            
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 "use client";
+import GetInTouch from "@/components/GetInTouch";
 import ProductCard from "@/components/sheard/ProductCard";
 import React, { useEffect, useState } from "react";
  
@@ -66,9 +67,12 @@ const ProjectPage = () => {
         </div>
 
         {/* Product Cards */}
-        <div className="pb-16 ">
+        <div className="">
           <ProductCard projects={filteredProjects} />
         </div>
+      </div>
+      <div className="">
+        <GetInTouch/>
       </div>
     </div>
   );
