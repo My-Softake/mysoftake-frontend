@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";  
 import Button from "./sheard/Button";
+import { FaLinkedinIn } from "react-icons/fa6";
+
 import Link from "next/link";
 
 const sliderData = [
@@ -71,7 +73,7 @@ const Hero = () => {
             <p className="text-gray-300 text-sm sm:text-base max-w-md">
               {sliderData[currentIndex].description}
             </p>
-            <Link href="#">
+            <Link href="/contact">
               <Button className="cursor-pointer">Get Started</Button>
             </Link>
           </motion.div>
@@ -81,9 +83,11 @@ const Hero = () => {
         <div className="flex flex-col gap-6 pb-30 lg:pb-20">
           <div className="flex items-center gap-10">
             <div className="flex gap-6 text-xl text-gray-300">
-              <FaFacebookF className="hover:text-yellow-400 cursor-pointer transition-colors" />
-              <FaTwitter className="hover:text-yellow-400 cursor-pointer transition-colors" />
-              <FaInstagram className="hover:text-yellow-400 cursor-pointer transition-colors" />
+              <FaFacebookF className="hover:text-[#27A0DB] duration-300 cursor-pointer transition-colors" />
+              <FaTwitter className="hover:text-[#27A0DB] duration-300 cursor-pointer transition-colors" />
+              <FaInstagram className="hover:text-[#27A0DB] duration-300 cursor-pointer transition-colors" />
+              <FaLinkedinIn className="hover:text-[#27A0DB] duration-300 cursor-pointer transition-colors" />
+
             </div>
           </div>
 

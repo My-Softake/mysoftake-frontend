@@ -2,46 +2,64 @@
 
 import Image from "next/image";
 import React from "react";
+import { FaMapMarkerAlt } from "react-icons/fa";
+
 
 const AreaWeServe = () => {
   const regions = [
-    { name: "Bangladesh", src: "/images/bd.png" },
-    { name: "China", src: "/images/China.png" },
-    { name: "Japan", src: "/images/japan.png" },
-    { name: "UAE", src: "/images/uae.png" },
+    { name: "Bangladesh", src: "/images/bd.png", color: "#006a4e" },
+    { name: "China", src: "/images/China.png", color: "#ee1c25" },
+    { name: "Japan", src: "/images/japan.png", color: "#bc002d" },
+    { name: "UAE", src: "/images/uae.png", color: "#00732f" },
   ];
 
   return (
-    <div className="bg-[#F5F5FA] pt-10">
+    <div className="bg-[#F8F9FD] py-20">
       <div className="container mx-auto px-6 max-w-6xl">
         
         {/* Title Section */}
-        <div className="flex flex-col items-center md:mb-16 mb-10">
-          <h3 className="font-extrabold text-3xl md:text-4xl text-[#001b3d] text-center   tracking-widest relative">
-            Area we Serve
-            <span className="block w-16 h-1 bg-[#27A0DB] mt-3 mx-auto"></span>
+        <div className="flex flex-col items-center mb-16">
+          <h3 className="font-black text-3xl md:text-4xl text-[#1e2b47] text-center tracking-widest relative">
+            AREA WE SERVE
+            <span className="block w-16 h-1.5 bg-[#27A0DB] mt-4 mx-auto rounded-full"></span>
           </h3>
         </div>
 
-        {/* Dynamic Grid for Countries */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        {/* Dynamic Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {regions.map((region, index) => (
             <div 
               key={index} 
-              className="flex flex-col items-center bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-gray-300"
+              className="group flex flex-col items-center bg-white p-10 rounded-[20px] shadow-[20px_20px_60px_#d9d9d9,-20px_-20px_60px_#ffffff] transition-transform duration-300  "
             >
-              <div className="relative h-[60px] w-full md:h-[80px]">
+              {/* Flag Container with 3D shadow */}
+              <div className="relative h-[100px] w-full rounded-2xl mb-12 drop-shadow-2xl">
                 <Image
                   src={region.src}
                   alt={region.name}
                   fill
-                  className="object-contain filter grayscale-[0.2]" 
+                  className="object-cover rounded-2xl border-2 border-white drop-shadow-2xl" 
                 />
               </div>
               
-              <div className="mt-6 w-full h-[1px] bg-gray-100"></div> 
+              {/* Pin Icon & Divider */}
+              <div className="relative w-full flex flex-col items-center">
+                <div className="absolute -top-6">
+                  <FaMapMarkerAlt
+
+                    size={24} 
+                    fill={region.color} 
+                    className="text-white drop-shadow-md"
+                    style={{ color: region.color }} 
+                  />
+                </div>
+                <div className="h-[2px] bg-gray-300 w-full mt-5 mt-1">
+                <div className="h-1 w-1 rounded-full bg-red-600 mx-auto"></div>
+                </div>
+              </div>
               
-              <p className="font-bold text-xs md:text-sm text-[#001b3d] text-center pt-4 tracking-[0.2em] uppercase">
+              {/* Country Name */}
+              <p className="font-extrabold text-sm md:text-base text-[#3d4b66] text-center mt-6 tracking-[0.3em] uppercase">
                 {region.name}
               </p>
             </div>

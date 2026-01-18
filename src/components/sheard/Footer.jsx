@@ -51,7 +51,7 @@ const Footer = () => {
                 <FaTwitter size={16} />
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/my-softake/"
                 className="w-9 h-9 bg-white text-[#1a2533] rounded-full flex items-center justify-center hover:bg-[#27A0DB] duration-300 hover:text-white transition-colors"
               >
                 <FaLinkedinIn size={16} />

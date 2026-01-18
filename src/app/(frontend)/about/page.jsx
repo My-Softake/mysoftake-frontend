@@ -12,7 +12,7 @@ import FAQSection from "@/components/FAQSection";
 const AboutPage = () => {
   return (
     <main className="bg-white">
-      <section className="relative h-[40vh] md:h-[40vh] flex items-center justify-center bg-slate-900 overflow-hidden">
+      <section className="relative h-[50vh] md:h-[40vh] flex items-center justify-center bg-slate-900 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -22,7 +22,7 @@ const AboutPage = () => {
 
         {/* Content */}
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-6xl font-black tracking-tighter pt-10 mb-4 drop-shadow-lg">
+          <h1 className="text-4xl  md:text-5xl lg:text-6xl font-black tracking-tighter pt-16 mb-4 drop-shadow-lg">
             About Us
           </h1>
           
