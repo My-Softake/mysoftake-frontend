@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const CareerPage = () => {
@@ -8,11 +9,11 @@ const CareerPage = () => {
   useEffect(() => {
     fetch("/data/CareerData.json")
       .then((res) => {
-        console.log("Response:", res);
+  
         return res.json();
       })
       .then((data) => {
-        console.log("Fetched Data:", data);
+    
         setCaseStudies(data);
       })
       .catch((err) => console.error("Error fetching data:", err));
@@ -108,6 +109,7 @@ const CareerPage = () => {
                     </p>
 
                     {/* Dynamic Button */}
+                   <Link href={`/career/${item.id}`}>
                     <button className="bg-[#27A0DB]   text-white px-8 py-4 rounded-sm font-bold text-lg flex items-center gap-3 transition-colors group">
                       Apply Now
                       <span className="bg-white text-[#27A0DB] rounded-full p-1 transition-transform group-hover:translate-x-1">
@@ -126,6 +128,8 @@ const CareerPage = () => {
                         </svg>
                       </span>
                     </button>
+                   
+                   </Link>
                   </div>
                 </div>
               ))}

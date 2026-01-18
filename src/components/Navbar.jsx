@@ -31,7 +31,6 @@ const Navbar = () => {
       }`
     : "bg-[#1F2A3A] text-white shadow-md transition-colors duration-500";
 
- 
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
@@ -56,7 +55,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Icon */}
         <div className="md:hidden" onClick={() => setOpen(true)}>
-          <IoMdMenu className="text-2xl cursor-pointer" />
+          <IoMdMenu className="text-3xl cursor-pointer" />
         </div>
 
         {/* Desktop Nav Links */}
@@ -75,31 +74,33 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Overlay */}
+      {/* Overlay (সবার আগে এটি আসবে) */}
       <div
         onClick={() => setOpen(false)}
-        className={`fixed inset-0 bg-black/40 transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-500 md:hidden ${
           open ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       />
 
-      {/* Mobile Slide Menu */}
+      {/* Mobile Slide Menu (ডান দিক থেকে স্লাইড হবে) */}
       <div
-        className={`fixed top-0 left-0 h-screen w-64 bg-white text-black px-6 py-6
-        transform transition-transform duration-300 ease-in-out md:hidden
-        ${open ? "translate-x-0" : "-translate-x-full"}`}
+        className={`fixed top-0 right-0 h-screen w-[280px] bg-white text-black shadow-2xl z-[60]
+        transform transition-transform duration-500 cubic-bezier(0.4, 0, 0.2, 1) md:hidden
+        ${open ? "translate-x-0" : "translate-x-full"}`}
       >
-        <div className="mb-8" onClick={() => setOpen(false)}>
-          <IoMdClose className="text-2xl cursor-pointer" />
+        {/* Close Button Header */}
+        <div className="flex justify-end p-6" onClick={() => setOpen(false)}>
+          <IoMdClose className="text-3xl cursor-pointer hover:text-[#27A0DB] transition-colors" />
         </div>
 
-        <div className="flex flex-col gap-4">
+        {/* Navigation Links */}
+        <div className="flex flex-col gap-6 px-8 mt-4">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               href={link.path}
               onClick={() => setOpen(false)}
-              className={`transition-colors duration-300 font-semibold ${
+              className={`text-lg transition-colors duration-300 font-semibold border-b border-gray-100 pb-2 ${
                 isActive(link.path) ? "text-[#27A0DB]" : "hover:text-[#27A0DB]"
               }`}
             >
