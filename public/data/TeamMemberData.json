@@ -1,0 +1,163 @@
+{
+  "management": [
+    {
+      "id": 1,
+      "name": "Arif Hossain",
+      "designation": "Chairman",
+      "image": "/images/emp 0ne.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sayeed Mahmud",
+      "designation": "Chief Executive Officer",
+      "image": "/images/emp three.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Mahbub Alam",
+      "designation": "Director Finance",
+      "image": "/images/emp 0ne.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Tareq Hasan",
+      "designation": "Director Operations",
+      "image": "/images/emp three.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Md Yeasin Arafat",
+      "designation": "Managing Director",
+      "image": "/images/emp 0ne.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Md Rony",
+      "designation": "Operations Head",
+      "image": "/images/emp three.jpg"
+    }
+  ],
+
+  "it": [
+    {
+      "id": 1,
+      "name": "Rafiul Islam",
+      "designation": "Software Engineer",
+      "image": "/images/emp 0ne.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Nafis Ahmed",
+      "designation": "UI/UX Designer",
+      "image": "/images/emp three.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Shihab Uddin",
+      "designation": "DevOps Engineer",
+      "image": "/images/emp 0ne.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Taleb Khan",
+      "designation": "Frontend Developer",
+      "image": "/images/emp three.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Hasan Mahmud",
+      "designation": "Backend Developer",
+      "image": "/images/emp 0ne.jpg"
+    }
+  ],
+
+  "manufacturing": [
+    {
+      "id": 1,
+      "name": "Sohel Rana",
+      "designation": "Factory Supervisor",
+      "image": "/images/emp 0ne.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Kamal Uddin",
+      "designation": "Line Manager",
+      "image": "/images/emp three.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Rakib Hossain",
+      "designation": "Production Manager",
+      "image": "/images/emp 0ne.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Sajib Islam",
+      "designation": "Quality Inspector",
+      "image": "/images/emp three.jpg"
+    }
+  ],
+
+  "exportImport": [
+    {
+      "id": 1,
+      "name": "Rashed Kabir",
+      "designation": "International Coordinator",
+      "image": "/images/emp 0ne.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Shakil Ahmed",
+      "designation": "Export Manager",
+      "image": "/images/emp three.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Tanvir Hasan",
+      "designation": "Import Officer",
+      "image": "/images/emp 0ne.jpg"
+    }
+  ],
+
+  "transport": [
+    {
+      "id": 1,
+      "name": "Sharif Uddin",
+      "designation": "Transport Officer",
+      "image": "/images/emp 0ne.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Imran Khan",
+      "designation": "Logistics Manager",
+      "image": "/images/emp three.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Nayeem Rahman",
+      "designation": "Fleet Supervisor",
+      "image": "/images/emp 0ne.jpg"
+    }
+  ],
+
+  "marketing": [
+    {
+      "id": 1,
+      "name": "Riyad Hossain",
+      "designation": "Brand Strategist",
+      "image": "/images/emp 0ne.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Fahim Rahman",
+      "designation": "Marketing Head",
+      "image": "/images/emp three.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sabbir Ahmed",
+      "designation": "Digital Marketer",
+      "image": "/images/emp 0ne.jpg"
+    }
+  ]
+}

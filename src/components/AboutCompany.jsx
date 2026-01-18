@@ -52,7 +52,7 @@ const AboutCompany = () => {
                 alt="experiance icon"
                 height={40}
                 width={60}
-                className="object-contain"
+               className="h-10 w-auto object-contain"
               />
               <div className="mt-1">
                 <h3 className="text-2xl font-medium">Quick Support</h3>
