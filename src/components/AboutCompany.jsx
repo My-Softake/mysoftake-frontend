@@ -82,7 +82,7 @@ const AboutCompany = () => {
         {/* Right Image */}
         <div className="pt-0 lg:pt-8 flex justify-center">
           <Image
-            src="/images/group pik.png"
+            src="/images/group_pik.png"
             alt="group pik"
             height={600}
             width={600}

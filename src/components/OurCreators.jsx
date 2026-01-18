@@ -26,7 +26,7 @@ const OurCreators = () => {
  
             <div className="relative min-h-[350px] sm:min-h-[450px] md:h-[625px] w-full overflow-hidden rounded-3xl shadow-sm">
               <Image
-                src="/images/group pik.png"
+                src="/images/group_pik.png"
                 alt="group image"
                 fill
                 priority
