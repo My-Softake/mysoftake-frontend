@@ -7,6 +7,7 @@ import AboutCompany from "@/components/AboutCompany";
 import FeaturedOn from "@/components/FeaturedOn";
 import OurCreators from "@/components/OurCreators";
 import TeamSlider from "@/components/TeamSlider";
+import FAQSection from "@/components/FAQSection";
 
 const AboutPage = () => {
   return (
@@ -42,6 +43,7 @@ const AboutPage = () => {
         <TeamSlider/>
         <OurCreators />
         <FeaturedOn />
+        <FAQSection/>
       </div>
     </main>
   );

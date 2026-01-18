@@ -1,5 +1,6 @@
 "use client";
 
+import FAQSection from "@/components/FAQSection";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
@@ -22,7 +23,7 @@ export default function ServicePage({ service }) {
   }, []);
 
   return (
-    <section className="py-24 bg-[#f8f9fa]">
+    <section className="pt-24  bg-[#f8f9fa]">
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -35,7 +36,7 @@ export default function ServicePage({ service }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
           {services.map((item) => (
             <div
               key={item.id}
@@ -84,7 +85,11 @@ export default function ServicePage({ service }) {
             </div>
           ))}
         </div>
+       
       </div>
+       <div className="">
+          <FAQSection/>
+        </div>
     </section>
   );
 }

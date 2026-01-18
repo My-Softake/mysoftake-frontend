@@ -92,7 +92,7 @@ const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className=" bg-white">
+    <section className="py-10 bg-white">
       <div className="container mx-auto  md:px-10">
         {/* Header */}
         <div className="mb-12">
