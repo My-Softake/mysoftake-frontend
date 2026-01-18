@@ -3,110 +3,152 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-import { useState, useEffect } from "react";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Button from "./sheard/Button";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [companyOpen, setCompanyOpen] = useState(false);  
+  const dropdownRef = useRef(null);
 
   const isHomePage = pathname === "/";
 
-  // Scroll listener
+  // Scroll handler
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Active Link
+  // Click outside to close dropdown
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setCompanyOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   const isActive = (path) => pathname === path;
 
   const navStyle = isHomePage
-    ? `transition-colors duration-500 ${
-        scrolled ? "bg-gray-900 text-white shadow-md" : "bg-transparent text-white"
-      }`
+    ? `transition-colors duration-500 ${scrolled ? "bg-gray-900 text-white shadow-md" : "bg-transparent text-white"}`
     : "bg-[#1F2A3A] text-white shadow-md transition-colors duration-500";
+
+  const companySubLinks = [
+    { name: "About Us", path: "/about" },
+    { name: "Team", path: "/team" },
+  ];
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },
     { name: "Service", path: "/service" },
     { name: "Project", path: "/project" },
     { name: "Case Study", path: "/case-study" },
     { name: "Career", path: "/career" },
+    { name: "Company", path: null, subLinks: companySubLinks }, // Path null করে দেয়া হয়েছে
     { name: "Contact us", path: "/contact" },
   ];
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 ${navStyle}`}>
-      <div className="container mx-auto flex items-center justify-between py-5 px-6 md:px-20">
+      <div className="container mx-auto flex items-center justify-between py-5 px-6 md:px-10">
         <Link href="/">
-          <Image
-            src="/images/logo my softake.png"
-            alt="logo"
-            width={60}
-            height={30}
-          />
+          <Image src="/images/logo my softake.png" alt="logo" width={60} height={30} className="h-10 w-auto" />
         </Link>
 
-        {/* Mobile Menu Icon */}
+        {/* Mobile Toggle Icon */}
         <div className="md:hidden" onClick={() => setOpen(true)}>
           <IoMdMenu className="text-3xl cursor-pointer" />
         </div>
 
-        {/* Desktop Nav Links */}
+        {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8 text-white">
           {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              href={link.path}
-              className={`transition-colors duration-300 font-medium ${
-                isActive(link.path) ? "text-[#27A0DB]" : "hover:text-[#27A0DB]"
-              }`}
-            >
-              {link.name}
-            </Link>
+            <div key={link.name} className="relative" ref={link.subLinks ? dropdownRef : null}>
+              {link.subLinks ? (
+                // Company Menu (Clickable Area)
+                <div 
+                  className="flex items-center gap-1 cursor-pointer select-none"
+                  onClick={() => setCompanyOpen(!companyOpen)}
+                >
+                  <span className={`transition-colors duration-300 font-medium ${companyOpen ? "text-[#27A0DB]" : "hover:text-[#27A0DB]"}`}>
+                    {link.name}
+                  </span>
+                  <MdKeyboardArrowDown className={`text-xl transition-transform duration-300 ${companyOpen ? "rotate-180 text-[#27A0DB]" : ""}`} />
+
+                  {/* Desktop Dropdown */}
+                  <div className={`absolute top-full left-0 mt-4 w-48 bg-white text-black shadow-2xl rounded-lg py-2 border-t-4 border-[#27A0DB] transform transition-all duration-300 origin-top
+                    ${companyOpen ? "opacity-100 scale-y-100 visible" : "opacity-0 scale-y-0 invisible"}`}>
+                    {link.subLinks.map((sub) => (
+                      <Link key={sub.path} href={sub.path} onClick={() => setCompanyOpen(false)}
+                        className={`block px-5 py-3 hover:bg-gray-100 hover:text-[#27A0DB] transition-colors ${isActive(sub.path) ? "text-[#27A0DB] font-bold" : ""}`}>
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <Link href={link.path} className={`transition-colors duration-300 font-medium ${isActive(link.path) ? "text-[#27A0DB]" : "hover:text-[#27A0DB]"}`}>
+                  {link.name}
+                </Link>
+              )}
+            </div>
           ))}
+        </div>
+
+        <div className="hidden md:block">
+          <Button>Book Now</Button>
         </div>
       </div>
 
-      {/* Overlay (সবার আগে এটি আসবে) */}
-      <div
-        onClick={() => setOpen(false)}
-        className={`fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-500 md:hidden ${
-          open ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
+      {/* Mobile Overlay */}
+      <div onClick={() => setOpen(false)}
+        className={`fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-500 md:hidden ${open ? "opacity-100 visible" : "opacity-0 invisible"}`}
       />
 
-      {/* Mobile Slide Menu (ডান দিক থেকে স্লাইড হবে) */}
-      <div
-        className={`fixed top-0 right-0 h-screen w-[280px] bg-white text-black shadow-2xl z-[60]
-        transform transition-transform duration-500 cubic-bezier(0.4, 0, 0.2, 1) md:hidden
-        ${open ? "translate-x-0" : "translate-x-full"}`}
-      >
-        {/* Close Button Header */}
+      {/* Mobile Side Menu */}
+      <div className={`fixed top-0 right-0 h-screen w-[280px] bg-white text-black shadow-2xl z-[60] transform transition-transform duration-500 ease-in-out md:hidden ${open ? "translate-x-0" : "translate-x-full"}`}>
         <div className="flex justify-end p-6" onClick={() => setOpen(false)}>
-          <IoMdClose className="text-3xl cursor-pointer hover:text-[#27A0DB] transition-colors" />
+          <IoMdClose className="text-3xl cursor-pointer hover:text-[#27A0DB]" />
         </div>
 
-        {/* Navigation Links */}
-        <div className="flex flex-col gap-6 px-8 mt-4">
+        <div className="flex flex-col gap-4 px-8 mt-4">
           {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              href={link.path}
-              onClick={() => setOpen(false)}
-              className={`text-lg transition-colors duration-300 font-semibold border-b border-gray-100 pb-2 ${
-                isActive(link.path) ? "text-[#27A0DB]" : "hover:text-[#27A0DB]"
-              }`}
-            >
-              {link.name}
-            </Link>
+            <div key={link.name}>
+              {link.subLinks ? (
+                <>
+                  <div 
+                    className="flex items-center justify-between border-b border-gray-100 pb-2 cursor-pointer"
+                    onClick={() => setCompanyOpen(!companyOpen)}
+                  >
+                    <span className="text-lg font-semibold">{link.name}</span>
+                    <MdKeyboardArrowDown className={`text-2xl transition-transform duration-300 ${companyOpen ? "rotate-180 text-[#27A0DB]" : ""}`} />
+                  </div>
+                  <div className={`overflow-hidden transition-all duration-500 bg-gray-50 rounded-lg ${companyOpen ? "max-h-40 mt-2 py-2" : "max-h-0"}`}>
+                    {link.subLinks.map((sub) => (
+                      <Link key={sub.path} href={sub.path} onClick={() => {setOpen(false); setCompanyOpen(false);}}
+                        className={`block px-4 py-2 text-md ${isActive(sub.path) ? "text-[#27A0DB]" : "text-gray-600"}`}>
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <Link href={link.path} onClick={() => setOpen(false)}
+                  className={`block text-lg font-semibold border-b border-gray-100 pb-2 ${isActive(link.path) ? "text-[#27A0DB]" : ""}`}>
+                  {link.name}
+                </Link>
+              )}
+            </div>
           ))}
+          <div className="mt-4"><Button>Book Now</Button></div>
         </div>
       </div>
     </nav>

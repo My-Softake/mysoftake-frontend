@@ -9,12 +9,12 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import Link from "next/link";
 
 const sliderData = [
-  { id: 1, title: "Take Your Snow Days to the Next Level", description: "Unlock a wealth of detailed stats (and bragging rights) about your days skiing and snowboarding.", image: "/images/banner_one.png" },
-  { id: 2, title: "Experience the Thrill of the Summit", description: "From the highest peaks to the deepest valleys, track every movement.", image: "/images/banner_two.png" },
-  { id: 3, title: "Conquer the Cold with Confidence", description: "Gear up for the season. Our advanced analytics help you.", image: "/images/banner_three.png" },
-  { id: 4, title: "Nature's Beauty at Your Feet", description: "Capture the moments that matter.", image: "/images/banner_four.png" },
-  { id: 5, title: "Peak Performance Every Time", description: "Push your limits and improve your skills.", image: "/images/banner_five.png" },
-  { id: 6, title: "Peak Performance Every Time", description: "Push your limits and improve your skills.", image: "/images/banner_six.png" },
+  { id: 1, title: "Transforming Ideas Into Powerful Digital Solutions", description: "MY SOFTAKE PVT. PLC. delivers modern, intelligent, and scalable software solutions designed to accelerate your business growth. We combine innovation and technology to help your business thrive in the digital era.", image: "/images/banner_one.png" },
+  { id: 2, title: "Complete IT Solutions Under One Roof", description: "We provide all the tools and solutions your business needs to succeed online. From digital marketing to web development, we help you grow, engage, and thrive in the digital world.", image: "/images/banner_two.png" },
+  { id: 3, title: "Experience the Difference with MY SOFTAKE", description: "Experience the difference with MY SOFTAKE, where innovation meets reliability. We deliver smart, scalable software solutions that empower your business, streamline operations, and drive growth in the digital world.", image: "/images/hero_Banner_one.png" },
+  { id: 4, title: "Delivering Results That Speak Volumes", description: "At MY SOFTAKE, we deliver results that truly make an impact. Our innovative software solutions drive measurable growth, enhance efficiency, and create lasting value for your business—letting our work speak louder than words.", image: "/images/banner_four.png" },
+  { id: 5, title: "Step Into the Future of Digital Success", description: "Step into the future of digital success with MY SOFTAKE, where innovation meets strategy. We provide cutting-edge software solutions that accelerate growth, optimize operations, and empower your business to thrive in a rapidly evolving digital landscape.", image: "/images/banner_five.png" },
+  { id: 6, title: "Worldwide Results You Can Count On", description: "At MY SOFTAKE, we deliver reliable solutions that make a real impact around the globe. With our innovative software and proven expertise, businesses everywhere achieve measurable growth, streamlined operations, and lasting success.", image: "/images/banner_six.png" },
 ];
 
 const Hero = () => {
@@ -74,7 +74,7 @@ const Hero = () => {
               {sliderData[currentIndex].description}
             </p>
             <Link href="/contact">
-              <Button className="cursor-pointer">Get Started</Button>
+              <Button className="cursor-pointer hover:bg-[#27A0DB] duration-300">Get Started</Button>
             </Link>
           </motion.div>
         </div>
