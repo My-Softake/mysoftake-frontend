@@ -26,7 +26,6 @@ const AboutPage = () => {
           <h1 className="text-4xl  md:text-5xl lg:text-6xl font-black tracking-tighter pt-16 mb-4 drop-shadow-lg">
             About Us
           </h1>
-          
 
           <div className="flex justify-center items-center gap-3 text-lg font-medium drop-shadow-md">
             <Link href="/" className="hover:text-blue-400 transition-colors">
@@ -40,12 +39,11 @@ const AboutPage = () => {
 
       <div>
         <AboutCompany />
-        <VisionMission/>
+        <VisionMission />
         <CounterSection />
-        <TeamSlider/>
         <OurCreators />
         <FeaturedOn />
-        <FAQSection/>
+        <FAQSection />
       </div>
     </main>
   );

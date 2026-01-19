@@ -46,7 +46,7 @@ export default function ServicePage({ service }) {
 
               {/* 1. Image Section */}
               <div className="w-full h-60 overflow-hidden relative z-10">
-                <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                <div className="relative w-full h-full overflow-hidden">
                   <Image
                     src={item.image || "/images/placeholder.png"}
                     alt={item.title}
@@ -58,12 +58,12 @@ export default function ServicePage({ service }) {
 
               {/* 2. Content Section */}
 
-              <div className="relative z-30 p-8 pt-2 flex flex-col flex-grow">
+              <div className="relative z-30 p-5 pt-2 flex flex-col flex-grow">
                 <h3 className="text-2xl font-extrabold text-slate-800 mb-4 group-hover:text-black transition-colors duration-500">
                   {item.title}
                 </h3>
 
-                <p className="text-slate-500 text-base leading-relaxed mb-8 group-hover:text-black transition-colors duration-500 font-medium">
+                <p className="text-slate-500 text-base leading-relaxed mb-8 group-hover:text-black transition-colors duration-500 font-medium line-clamp-3">
                   {item.desc}
                 </p>
 
@@ -85,11 +85,10 @@ export default function ServicePage({ service }) {
             </div>
           ))}
         </div>
-       
       </div>
-       <div className="">
-          <FAQSection/>
-        </div>
+      <div className="">
+        <FAQSection />
+      </div>
     </section>
   );
 }

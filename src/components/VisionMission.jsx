@@ -7,7 +7,7 @@ const VisionMission = () => {
         {/* Vision Section */}
         <div className="flex flex-col md:flex-row  gap-20 mb-10">
           <div className="w-full md:w-1/2 space-y-4 order-2 md:order-1">
-            <h3 className="font-semibold text-4xl">Our Misson</h3>
+            <h3 className="font-semibold text-4xl">Our Vision</h3>
             <p className="text-gray-600 text-lg leading-relaxed text-justify md:text-left">
               MY SOFTAKE PLC envisions becoming a lead-ing global force in
               innovative technology and business solutions. Our vision is to

@@ -84,7 +84,7 @@ const ContactPage = () => {
       </section>
 
       {/* Info & Form Section */}
-      <section className="bg-white py-12 px-4 font-sans">
+      <section className="bg-white  pt-10 px-4 font-sans">
         <div className="container mx-auto max-w-6xl text-center">
           <span className="text-blue-600 font-bold uppercase tracking-[0.2em] text-sm">
             Get In Touch
@@ -147,7 +147,7 @@ const ContactPage = () => {
             ></iframe>
           </div>  
           {/* Contact Form with Multi-Select Dropdown */}
-          <div className=" bg-white p-8 md:p-12     mb-20 mt-10">
+          <div className=" bg-white p-8 md:p-12  mt-10">
             <form className="space-y-6 text-left">
                       <h3 className="font-bold text-4xl ">Send Your Message</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

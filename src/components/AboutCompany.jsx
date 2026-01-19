@@ -9,18 +9,18 @@ const AboutCompany = () => {
         <div>
           <h4 className="font-bold text-2xl text-[#27A0DB]">ABOUT COMPANY</h4>
 
-          <h3 className="font-bold text-4xl lg:text-5xl max-w-[450px] pt-2 leading-tight lg:leading-[60px]">
-            You Can not Use Up Creativity.
-          </h3>
+       
 
           <p className="font-normal text-base pt-5 max-w-[500px]">
-            We are driven by strong values and a clear vision, our multinational
-            company is built on integrity, innovation, and trust. What began
-            with local roots has grown into a global presence, connecting
-            people, markets, and opportunities across borders. We believe that
-            success comes not only from expansion, but from
-            responsibility—respecting cultures, empowering communities, and
-            delivering consistent excellence worldwide.
+            MY SOFTAKE PLC. is a forward-thinking technology and business
+            solutions company committed to delivering innovative, reliable, and
+            efficient services across multiple industries. With a focus on
+            quality, customer satisfaction, and sustainable growth, the company
+            provides modern digital solutions, profes-sional support, and
+            value-driven services that help businesses operate smarter and
+            faster. MY SOFTAKE PLC. continues to expand its capabilities,
+            ensuring excellence through technology, expertise, and strategic
+            vision.
           </p>
 
           <p className="font-normal text-base pt-5 max-w-[500px]">
@@ -52,7 +52,7 @@ const AboutCompany = () => {
                 alt="experiance icon"
                 height={40}
                 width={60}
-               className="h-10 w-auto object-contain"
+                className="h-10 w-auto object-contain"
               />
               <div className="mt-1">
                 <h3 className="text-2xl font-medium">Quick Support</h3>

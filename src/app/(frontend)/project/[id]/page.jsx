@@ -149,7 +149,7 @@ const ProjectDetails = () => {
                 <InfoItem icon={<HiOutlineCalendar />} label="Date" value={project?.date} />
                 <InfoItem icon={<HiOutlineCheckCircle />} label="Status" value={project?.status} isStatus />
               </div>
-              <Link href="/project" className="">
+              <Link href="/contact" className="">
               
               <Button className="w-full mt-10 !bg-blue-600 !text-white py-4 rounded-xl font-bold cursor-pointer">
                 Start Similar Project

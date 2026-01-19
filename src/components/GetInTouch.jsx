@@ -2,7 +2,7 @@ import React from "react";
 
 const GetInTouch = () => {
   return (
-    <div className="pb-10 px-4">
+    <div className="pb-10 pt-10 px-4">
       <div className="container mx-auto md:px-10">
         <div
           className="

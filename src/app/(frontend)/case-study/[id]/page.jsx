@@ -59,6 +59,31 @@ const CaseStudyDetailsPage = () => {
       </div>
 
       <div className="container mx-auto px-5 md:px-10 py-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#001b3d] mb-12">
+          {caseStudy.title}
+        </h2>
+
+        {/* Top Info Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 border-b pb-12">
+          <div>
+            <h4 className="text-[#e85a2a] font-bold uppercase text-sm mb-2">
+              Total Duration
+            </h4>
+            <p className="text-gray-700">{caseStudy.duration}</p>
+          </div>
+          <div>
+            <h4 className="text-[#e85a2a] font-bold uppercase text-sm mb-2">
+              Estimated Investment
+            </h4>
+            <p className="text-gray-700">{caseStudy.investment}</p>
+          </div>
+          <div>
+            <h4 className="text-[#e85a2a] font-bold uppercase text-sm mb-2">
+              Project Target
+            </h4>
+            <p className="text-gray-700">{caseStudy.target}</p>
+          </div>
+        </div>
         {/* Overview */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center">
           <div>
