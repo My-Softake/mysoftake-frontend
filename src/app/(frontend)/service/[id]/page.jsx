@@ -1,5 +1,6 @@
 "use client";
 
+import FAQSection from "@/components/FAQSection";
 import Image from "next/image";
 import { useEffect, useState, use } from "react";
 import { FaCheckCircle, FaTools, FaRegLightbulb } from "react-icons/fa";
@@ -49,7 +50,7 @@ const ServiceDetails = ({ params }) => {
     );
 
   return (
-    <div className="max-w-7xl mx-auto px-4 pb-10 pt-26">
+    <div className="container mx-auto px-10 pb-10 pt-26">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
         <div className="md:w-1/2">
@@ -59,7 +60,7 @@ const ServiceDetails = ({ params }) => {
           </h2>
           <p className="text-gray-600 text-lg">{service.desc}</p>
         </div>
-        <div className="md:w-1/2 relative h-[400px] w-full">
+        <div className="md:w-1/2 relative h-[330px] md:h-[400px] w-full">
           <Image
             src={service.image || "/images/placeholder.png"}
             alt={service.title}
@@ -76,7 +77,7 @@ const ServiceDetails = ({ params }) => {
           Overview
         </h3>
         <p className="text-gray-700">{service.overview_one}</p>
-        <p className="text-gray-700 pt-2">{service.overview_one}</p>
+     
         <p className="text-gray-700 pt-2">{service.overview_two}</p>
       </div>
 
@@ -94,17 +95,11 @@ const ServiceDetails = ({ params }) => {
         <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
           Our Process
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {service.process?.map((step, idx) => (
-            <div
-              key={idx}
-              className="flex items-start gap-3 bg-gray-50 p-4 rounded-lg shadow-sm "
-            >
-              <FaCheckCircle className="text-green-500 mt-1" />
-              <p className="text-gray-700">{step}</p>
-            </div>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          {service.process?.map((b, idx) => (
+            <li key={idx}>{b}</li>
           ))}
-        </div>
+        </ul>
       </div>
 
       {/* Benefits */}
@@ -119,22 +114,10 @@ const ServiceDetails = ({ params }) => {
         </ul>
       </div>
 
-      {/* Related Services */}
-      <div className="mb-12">
-        <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-          <FaRegLightbulb className="" /> Related Services
-        </h3>
-        <div className="flex flex-wrap gap-3">
-          {service.related_services?.map((r, idx) => (
-            <span
-              key={idx}
-              className="bg-gray-100 text-[#27A0DB] px-3 py-1 rounded-full text-sm"
-            >
-              {r}
-            </span>
-          ))}
-        </div>
-      </div>
+     <div className="">
+      <FAQSection/>
+     </div>
+       
     </div>
   );
 };
