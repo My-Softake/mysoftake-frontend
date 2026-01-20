@@ -1,31 +1,25 @@
+"use client";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { IoVideocamOutline } from "react-icons/io5";
 
 const AboutCompany = () => {
+  const t = useTranslations("AboutCompany");
   return (
     <div className="bg-white md:py-10 py-5">
       <div className="container mx-auto px-5 md:px-10 flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between">
         {/* Left Content */}
         <div>
-          <h4 className="font-bold text-2xl text-[#27A0DB]">ABOUT COMPANY</h4>
+          <h4 className="font-bold text-2xl text-[#27A0DB]">{t("title")}</h4>
 
-       
 
-          <p className="font-normal text-base pt-5 max-w-[500px]">
-            MY SOFTAKE PLC. is a forward-thinking technology and business
-            solutions company committed to delivering innovative, reliable, and
-            efficient services across multiple industries. With a focus on
-            quality, customer satisfaction, and sustainable growth, the company
-            provides modern digital solutions, profes-sional support, and
-            value-driven services that help businesses operate smarter and
-            faster. MY SOFTAKE PLC. continues to expand its capabilities,
-            ensuring excellence through technology, expertise, and strategic
-            vision.
+
+          <p className="font-normal text-black text-base pt-5 max-w-[500px]">
+            {t("description1")}
           </p>
 
-          <p className="font-normal text-base pt-5 max-w-[500px]">
-            We continue to move forward with confidence, shaping a future where
-            global reach is guided by shared values and lasting trust.
+          <p className="font-normal text-black text-base pt-5 max-w-[500px]">
+            {t("description2")}
           </p>
 
           {/* Feature Items */}
@@ -39,9 +33,9 @@ const AboutCompany = () => {
                 className="object-contain"
               />
               <div className="mt-1">
-                <h3 className="text-2xl font-medium">Experience</h3>
+                <h3 className="text-2xl text-black font-medium">{t("experience_title")}</h3>
                 <p className="font-normal text-base text-gray-600">
-                  Our great team of more than 1400 software experts.
+                  {t("experience_desc")}
                 </p>
               </div>
             </div>
@@ -55,9 +49,9 @@ const AboutCompany = () => {
                 className="h-10 w-auto object-contain"
               />
               <div className="mt-1">
-                <h3 className="text-2xl font-medium">Quick Support</h3>
+                <h3 className="text-2xl text-black font-medium">{t("quickSupport_title")}</h3>
                 <p className="font-normal text-base text-gray-600">
-                  We’ll help you test bold new ideas while sharing your.
+                  {t("quickSupport_desc")}
                 </p>
               </div>
             </div>
@@ -70,7 +64,7 @@ const AboutCompany = () => {
                 </span>
 
                 <IoVideocamOutline className="text-xl ml-2 group-hover:scale-125 transition-transform duration-300" />
-                <span className="relative">Intro video</span>
+                <span className="relative">{t("introVideo")}</span>
 
                 {/* Button Shine Effect on Hover */}
                 <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-20 group-hover:animate-shine" />

@@ -25,7 +25,7 @@ const TeamSection = ({ title, members, subtitle }) => {
               />
             </div>
             <div className="p-5">
-              <h3 className="text-lg font-semibold">{member.name}</h3>
+              <h3 className="text-lg dark:text-black font-semibold">{member.name}</h3>
               <p className="text-sm text-gray-500">{member.designation}</p>
             </div>
           </div>

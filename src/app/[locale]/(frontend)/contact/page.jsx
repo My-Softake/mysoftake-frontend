@@ -149,7 +149,7 @@ const ContactPage = () => {
           {/* Contact Form with Multi-Select Dropdown */}
           <div className=" bg-white p-8 md:p-12  mt-10">
             <form className="space-y-6 text-left">
-                      <h3 className="font-bold text-4xl ">Send Your Message</h3>
+                      <h3 className="font-bold text-4xl dark:text-black">Send Your Message</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         
                 <div>
@@ -159,7 +159,7 @@ const ContactPage = () => {
                   <input
                     type="text"
                     placeholder="Full Name"
-                    className="w-full px-5 py-4 border  border-gray-300 rounded focus:outline-none focus:border-blue-500 transition-all"
+                    className="w-full px-5 py-4 border dark:text-gray-600 border-gray-300 rounded focus:outline-none focus:border-blue-500 transition-all"
                   />
                 </div>
                 <div>
@@ -169,7 +169,7 @@ const ContactPage = () => {
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="w-full px-5 py-4 border  border-gray-300 rounded focus:outline-none focus:border-blue-500 transition-all"
+                    className="w-full px-5 py-4 border dark:text-gray-600 border-gray-300 rounded focus:outline-none focus:border-blue-500 transition-all"
                   />
                 </div>
               </div>
@@ -181,7 +181,7 @@ const ContactPage = () => {
                 </label>
                 <div
                   onClick={() => setIsOpen(!isOpen)}
-                  className="w-full px-5 py-4   border border-gray-300 rounded cursor-pointer flex justify-between items-center transition-all focus-within:border-blue-500"
+                  className="w-full px-5 py-4   border dark:text-gray-600 border-gray-300 rounded cursor-pointer flex justify-between items-center transition-all focus-within:border-blue-500"
                 >
                   <div className="flex flex-wrap gap-2">
                     {selectedHelp.length > 0 ? (
@@ -205,7 +205,7 @@ const ContactPage = () => {
                 </div>
 
                 {isOpen && (
-                  <div className="absolute z-50 w-full mt-2 bg-white border border-gray-100 shadow-2xl rounded-xl overflow-hidden animate-in fade-in slide-in-from-top-2">
+                  <div className="absolute z-50 w-full mt-2 dark:text-gray-600 bg-white border border-gray-100 shadow-2xl rounded-xl overflow-hidden animate-in fade-in slide-in-from-top-2">
                     {helpOptions.map((option) => (
                       <div
                         key={option}
@@ -233,7 +233,7 @@ const ContactPage = () => {
                 <input
                   type="text"
                   placeholder="Subject"
-                  className="w-full px-5 py-4 border  border-gray-300 rounded focus:outline-none focus:border-blue-500 transition-all"
+                  className="w-full px-5 py-4 border  dark:text-gray-600 border-gray-300 rounded focus:outline-none focus:border-blue-500 transition-all"
                 />
               </div>
 
@@ -244,7 +244,7 @@ const ContactPage = () => {
                 <textarea
                   rows="5"
                   placeholder="Your Message"
-                  className="w-full px-5 py-4 border  border-gray-300 rounded focus:outline-none focus:border-blue-500 transition-all"
+                  className="w-full px-5 py-4 border dark:text-gray-600  border-gray-300 rounded focus:outline-none focus:border-blue-500 transition-all"
                 ></textarea>
               </div>
 

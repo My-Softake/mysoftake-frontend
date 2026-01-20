@@ -6,65 +6,60 @@ import {
   FaPlaneDeparture,
   FaHardHat,
 } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 const servicesData = [
   {
     id: 1,
-    title: "Information & technology",
-    description:
-      "Information technology services provide secure, scaleable solutions that drive efficiency, reliability, and business growth through smart use of technology.",
+    titleKey: "service1_title",
+    descKey: "service1_desc",
     icon: <FaIndustry />,
   },
   {
     id: 2,
-    title: "Export & Import",
-    description:
-      "Export and import services enable seamless global trade by ensuring efficient, compliant, and reliable cross-border movement of goods.",
+    titleKey: "service2_title",
+    descKey: "service2_desc",
     icon: <FaGlobe />,
   },
   {
     id: 3,
-    title: "Manufacturing & Production",
-    description:
-      "Manufacturing & Production involve transforming raw materials into high-quality finished goods through efficient processes, technology, and skilled operations.",
+    titleKey: "service3_title",
+    descKey: "service3_desc",
     icon: <FaLaptopCode />,
   },
   {
     id: 4,
-    title: "Transport & logistic",
-    description:
-      "Transport & Logistics ensure the efficient movement, storage, and delivery of goods through coordinated transportation and supply chain management systems.",
+    titleKey: "service4_title",
+    descKey: "service4_desc",
     icon: <FaTruckMoving />,
   },
   {
     id: 5,
-    title: "Travel & Tourism",
-    description:
-      "Travel & Tourism involves facilitating journeys and experiences, connecting people to destinations while managing services, hospitality, and cultural exploration efficiently.",
+    titleKey: "service5_title",
+    descKey: "service5_desc",
     icon: <FaPlaneDeparture />,
   },
   {
     id: 6,
-    title: "Construction & Infrastructure",
-    description:
-      "Construction & Infrastructure delivers sustainable, high-quality structures that drive urban growth and development.",
+    titleKey: "service6_title",
+    descKey: "service6_desc",
     icon: <FaHardHat />,
   },
 ];
 
 const OurService = () => {
+  const t = useTranslations("OurService");
   return (
     <section className="py-16 bg-[#F3FBFD]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-black">
-            Our Services
+            {t("title")}
           </h2>
           <p className="mt-3 text-black max-w-2xl mx-auto">
-            We provide diversified services to support your business growth with
-            reliability and excellence.
+            {t("description")}
           </p>
         </div>
 
@@ -76,10 +71,10 @@ const OurService = () => {
               className="service-card group h-full flex flex-col justify-start"
             >
               <h3 className="text-2xl font-semibold text-white mb-3 pt-5">
-                {service.title}
+                {t(service.titleKey)}
               </h3>
               <p className="text-white text-sm leading-relaxed">
-                {service.description}
+                {t(service.descKey)}
               </p>
             </div>
           ))}

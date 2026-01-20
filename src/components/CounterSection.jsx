@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 import { useInView, motion, useSpring, useTransform } from "framer-motion";
 import {
   HiOutlineBriefcase,
@@ -34,31 +35,33 @@ const AnimatedNumber = ({ value }) => {
 };
 
 const CounterSection = () => {
+  const t = useTranslations("CounterSection");
+
   const stats = [
     {
       id: 1,
-      label: "Projects Delivered",
+      labelKey: "projectsDelivered",
       value: 200,
       suffix: "+",
       icon: <HiOutlineBriefcase />,
     },
     {
       id: 2,
-      label: "Team Members (3 nationalities)",
+      labelKey: "teamMembers",
       value: 60,
       suffix: "+",
       icon: <HiOutlineGlobeAlt />,
     },
     {
       id: 3,
-      label: "saved by cloud customers",
+      labelKey: "cloudSavings",
       prefix: "$",
       value: 20,
       suffix: "m +",
     },
     {
       id: 4,
-      label: "5 star AWS customer reviews",
+      labelKey: "awsReviews",
       value: 95,
       suffix: "%",
       icon: <HiOutlineEmojiHappy />,
@@ -86,7 +89,7 @@ const CounterSection = () => {
               </div>
 
               {/* Label */}
-              <p> {stat.label}</p>
+              <p className="font-normal text-base dark:text-gray-600"> {t(stat.labelKey)}</p>
             </motion.div>
           ))}
         </div>

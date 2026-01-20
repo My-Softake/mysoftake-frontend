@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import {
   FaFacebookF,
   FaInstagram,
@@ -12,6 +13,8 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsBriefcase } from "react-icons/bs";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
+  const tNav = useTranslations("Navbar"); // Re-use Navbar translations for links
   return (
     <footer className="bg-[#1a2533] text-gray-300 py-12 px-6 font-sans border-t border-gray-800">
       <div className="max-w-7xl mx-auto">
@@ -28,7 +31,7 @@ const Footer = () => {
               />
             </div>
             <div className="">
-         
+
             </div>
             {/* Social Icons - Direct Div & Link */}
             <div className="flex space-x-3">
@@ -62,15 +65,15 @@ const Footer = () => {
           {/* 2. Japan Office Column */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <h3 className="text-white font-semibold">Quick Links</h3>
+              <h3 className="text-white font-semibold">{t("quickLinks")}</h3>
             </div>
             <div className="flex flex-col text-[14px] space-y-1">
-              <Link href="/" className="hover:text-[#27A0DB] duration-300">Home</Link>
-              <Link href="/about" className="hover:text-[#27A0DB] duration-300">About</Link>
-              <Link href="/service" className="hover:text-[#27A0DB] duration-300">Service</Link>
-              <Link href="/project" className="hover:text-[#27A0DB] duration-300">Project</Link>
-              <Link href="/contact" className="hover:text-[#27A0DB] duration-300">Contact Us</Link>
-              <Link href="/career" className="hover:text-[#27A0DB] duration-300">Career</Link>
+              <Link href="/" className="hover:text-[#27A0DB] duration-300">{tNav("home")}</Link>
+              <Link href="/about" className="hover:text-[#27A0DB] duration-300">{tNav("aboutUs")}</Link>
+              <Link href="/service" className="hover:text-[#27A0DB] duration-300">{tNav("service")}</Link>
+              <Link href="/project" className="hover:text-[#27A0DB] duration-300">{tNav("project")}</Link>
+              <Link href="/contact" className="hover:text-[#27A0DB] duration-300">{tNav("contactUs")}</Link>
+              <Link href="/career" className="hover:text-[#27A0DB] duration-300">{tNav("career")}</Link>
             </div>
           </div>
 
@@ -85,7 +88,7 @@ const Footer = () => {
                 className=" "
               />
               <h3 className="text-white font-semibold">
-                Corporate Office, Bangladesh
+                {t("corporateOffice")}
               </h3>
             </div>
             <div className="space-y-3 text-[14px]">
@@ -95,12 +98,12 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <FaPhoneAlt className="flex-shrink-0" />
-                 <p>+88 01910-219667</p>
-               
+                <p>+88 01910-219667</p>
+
               </div>
               <div className="flex items-center gap-3">
                 <BsBriefcase className="flex-shrink-0" />
-               <p>+88 01302-788947</p>
+                <p>+88 01302-788947</p>
               </div>
               <div className="flex items-center gap-3">
                 <FaEnvelope className="flex-shrink-0" />
@@ -108,7 +111,7 @@ const Footer = () => {
                   href="mailto:info@mysoftake.com"
                   className=" "
                 >
-                 info.mysoftake@gmail.com
+                  info.mysoftake@gmail.com
                 </Link>
               </div>
             </div>
@@ -125,7 +128,7 @@ const Footer = () => {
                 className=" "
               />
               <h3 className="text-white font-semibold">
-                Manufacturing Office, China
+                {t("manufacturingOffice")}
               </h3>
             </div>
             <div className="space-y-3 text-[14px]">
@@ -140,7 +143,7 @@ const Footer = () => {
                 <FaPhoneAlt className="flex-shrink-0" />
                 <p>+861 330-565-1265</p>
               </div>
-    
+
               <div className="flex items-center gap-3">
                 <FaEnvelope className="flex-shrink-0" />
                 <Link
@@ -156,13 +159,13 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center text-[13px] text-gray-400">
-          <p>© 2025 MY SOFTAKE PLC. All rights reserved.</p>
+          <p>{t("rightsReserved")}</p>
           <div className="flex gap-8 mt-4 md:mt-0">
-            <Link href="/terms-and-service"className="hover:text-[#27A0DB] duration-300">
-              Terms of Service
+            <Link href="/terms-and-service" className="hover:text-[#27A0DB] duration-300">
+              {t("termsOfService")}
             </Link>
             <Link href="/privacy" className="hover:text-[#27A0DB] duration-300">
-              Privacy Policy
+              {t("privacyPolicy")}
             </Link>
           </div>
         </div>

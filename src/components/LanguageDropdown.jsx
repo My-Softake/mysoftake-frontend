@@ -1,28 +1,55 @@
-"use client";
-
-import { useState } from "react";
+import { useRouter, usePathname } from "../i18n/routing";
+import { useState, useTransition, useEffect } from "react";
 import Flag from "react-world-flags";
 import { HiChevronDown } from "react-icons/hi";
-import { motion, AnimatePresence } from "framer-motion"; // Animation er jonno
+import { motion, AnimatePresence } from "framer-motion";
+import { useLocale } from "next-intl";
 
 const countries = [
   { code: "US", label: "United States" },
-  { code: "BD", label: "Bangladesh" },
-  { code: "JP", label: "Japan" },
-  { code: "VN", label: "Vietnam" },
-  { code: "AE", label: "UAE" },
-  { code: "BR", label: "Brazil" },
   { code: "GB", label: "United Kingdom" },
-  { code: "DE", label: "Germany" },
+  { code: "JP", label: "Japan" },
+  { code: "CN", label: "China" },
+  { code: "KR", label: "South Korea" },
 ];
 
+const localeMap = {
+  'US': 'en-US',
+  'GB': 'en-GB',
+  'JP': 'ja',
+  'CN': 'zh',
+  'KR': 'ko' // KR flag for Korean
+};
+
 const LanguageDropdown = () => {
-  const [selected, setSelected] = useState(countries[0]);
+  const router = useRouter();
+  const pathname = usePathname();
+  const currentLocale = useLocale();
+  const [isPending, startTransition] = useTransition();
+
+  // Find the country object that matches the current locale
+  const getCountryFromLocale = (locale) => {
+    const entry = Object.entries(localeMap).find(([key, val]) => val === locale);
+    return entry ? countries.find(c => c.code === entry[0]) : countries[0];
+  };
+
+  const [selected, setSelected] = useState(getCountryFromLocale(currentLocale));
   const [isOpen, setIsOpen] = useState(false);
+
+  // Update selected when locale changes externally
+  useEffect(() => {
+    setSelected(getCountryFromLocale(currentLocale));
+  }, [currentLocale]);
 
   const handleSelect = (country) => {
     setSelected(country);
     setIsOpen(false);
+
+    const nextLocale = localeMap[country.code] || 'en-US';
+
+    startTransition(() => {
+      router.replace(pathname, { locale: nextLocale });
+    });
   };
 
   return (
@@ -44,16 +71,16 @@ const LanguageDropdown = () => {
           <>
             {/* Overlay to close */}
             <div className="fixed inset-0 z-10" onClick={() => setIsOpen(false)}></div>
-            
+
             <motion.ul
-              initial={{ opacity: 0, y: -10 }} // Shuru te kemon thakbe
-              animate={{ opacity: 1, y: 0 }}    // Open hole kemon hobe
-              exit={{ opacity: 0, y: -10 }}     // Bondho hole kemon hobe
-              transition={{ duration: 0.2, ease: "easeOut" }} // Koto smooth hobe
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
               className="absolute z-20 w-full mt-1 bg-white border border-gray-100 rounded-lg shadow-xl overflow-y-auto max-h-60 no-scrollbar"
               style={{
-                msOverflowStyle: 'none',  /* IE and Edge */
-                scrollbarWidth: 'none',   /* Firefox */
+                msOverflowStyle: 'none',
+                scrollbarWidth: 'none',
               }}
             >
               {/* CSS for Chrome/Safari to hide scrollbar */}
@@ -64,9 +91,9 @@ const LanguageDropdown = () => {
               `}</style>
 
               {countries.map((item) => (
-                <motion.li 
+                <motion.li
                   key={item.code}
-                  whileHover={{ backgroundColor: "#f3f4f6" }} // Hover effect
+                  whileHover={{ backgroundColor: "#f3f4f6" }}
                 >
                   <button
                     onClick={() => handleSelect(item)}

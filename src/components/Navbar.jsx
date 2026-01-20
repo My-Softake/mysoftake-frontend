@@ -1,6 +1,8 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "../i18n/routing";
+import { useTranslations } from "next-intl";
+import ThemeToggle from "./ThemeToggle";
 import { usePathname } from "next/navigation";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -11,6 +13,7 @@ import LanguageDropdown from "./LanguageDropdown";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const t = useTranslations("Navbar");
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [companyOpen, setCompanyOpen] = useState(false);
@@ -43,18 +46,18 @@ const Navbar = () => {
     : "bg-[#1F2A3A] text-white shadow-md transition-colors duration-500";
 
   const companySubLinks = [
-    { name: "About Us", path: "/about" },
-    { name: "Team", path: "/team" },
+    { name: t("aboutUs"), path: "/about" },
+    { name: t("team"), path: "/team" },
   ];
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Service", path: "/service" },
-    { name: "Project", path: "/project" },
-    { name: "Case Study", path: "/case-study" },
-    { name: "Career", path: "/career" },
-    { name: "Company", path: null, subLinks: companySubLinks },
-    { name: "Contact us", path: "/contact" },
+    { name: t("home"), path: "/" },
+    { name: t("service"), path: "/service" },
+    { name: t("project"), path: "/project" },
+    { name: t("caseStudy"), path: "/case-study" },
+    { name: t("career"), path: "/career" },
+    { name: t("company"), path: null, subLinks: companySubLinks },
+    { name: t("contactUs"), path: "/contact" },
   ];
 
   return (
@@ -94,7 +97,7 @@ const Navbar = () => {
 
                   {/* Desktop Sub-menu Dropdown */}
                   <div
-                    className={`absolute top-full left-0 mt-4 w-48 bg-white text-black shadow-2xl rounded-lg py-2 border-t-4 border-[#27A0DB] transform transition-all duration-300 origin-top
+                    className={`absolute top-full left-0 mt-4 w-48 bg-white dark:bg-gray-900 text-black dark:text-white shadow-2xl rounded-lg py-2 border-t-4 border-[#27A0DB] transform transition-all duration-300 origin-top
                     ${companyOpen ? "opacity-100 scale-y-100 visible" : "opacity-0 scale-y-0 invisible"}`}
                   >
                     {link.subLinks.map((sub) => (
@@ -102,7 +105,7 @@ const Navbar = () => {
                         key={sub.path}
                         href={sub.path}
                         onClick={() => setCompanyOpen(false)}
-                        className={`block px-5 py-3 hover:bg-gray-100 hover:text-[#27A0DB] transition-colors ${isActive(sub.path) ? "text-[#27A0DB] font-bold" : ""}`}
+                        className={`block px-5 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-[#27A0DB] transition-colors ${isActive(sub.path) ? "text-[#27A0DB] font-bold" : ""}`}
                       >
                         {sub.name}
                       </Link>
@@ -124,13 +127,14 @@ const Navbar = () => {
         {/* Actions (Language & Button) */}
         <div className="flex items-center gap-3 md:gap-5">
           {/* Mobile r Desktop e ekhon switcher ta thik thakbe */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-2">
+           
             <LanguageDropdown />
           </div>
 
-         <Link href="/schedule">
-          <Button className="hidden md:block cursor-pointer hover:bg-[#27A0DB] duration-300">Book Now</Button>
-         </Link>
+          <Link href="/schedule">
+            <Button className="hidden md:block cursor-pointer hover:bg-[#27A0DB] duration-300">{t("bookNow")}</Button>
+          </Link>
 
           {/* Mobile Menu Icon - Switcher-er pashe thakbe */}
           <div className="md:hidden flex items-center" onClick={() => setOpen(true)}>
@@ -147,7 +151,7 @@ const Navbar = () => {
 
       {/* Mobile Side Menu */}
       <div
-        className={`fixed top-0 right-0 h-screen w-[280px] bg-white text-black shadow-2xl z-[60] transform transition-transform duration-500 ease-in-out md:hidden ${open ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed top-0 right-0 h-screen w-[280px] bg-white dark:bg-gray-900 text-black dark:text-white shadow-2xl z-[60] transform transition-transform duration-500 ease-in-out md:hidden ${open ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className="flex justify-end p-6" onClick={() => setOpen(false)}>
           <IoMdClose className="text-3xl cursor-pointer hover:text-[#27A0DB]" />
@@ -168,7 +172,7 @@ const Navbar = () => {
                     />
                   </div>
                   <div
-                    className={`overflow-hidden transition-all duration-500 bg-gray-50 rounded-lg ${companyOpen ? "max-h-40 mt-2 py-2" : "max-h-0"}`}
+                    className={`overflow-hidden transition-all duration-500 bg-gray-50 dark:bg-gray-800 rounded-lg ${companyOpen ? "max-h-40 mt-2 py-2" : "max-h-0"}`}
                   >
                     {link.subLinks.map((sub) => (
                       <Link
@@ -178,7 +182,7 @@ const Navbar = () => {
                           setOpen(false);
                           setCompanyOpen(false);
                         }}
-                        className={`block px-4 py-2 text-md ${isActive(sub.path) ? "text-[#27A0DB]" : "text-gray-600"}`}
+                        className={`block px-4 py-2 text-md ${isActive(sub.path) ? "text-[#27A0DB]" : "text-gray-600 dark:text-gray-300"}`}
                       >
                         {sub.name}
                       </Link>
@@ -198,8 +202,8 @@ const Navbar = () => {
           ))}
           <div className="mt-4">
             <Link href="/schedule">
-          <Button className="hidden md:block cursor-pointer hover:bg-[#27A0DB] duration-300">Book Now</Button>
-         </Link>
+              <Button className="hidden md:block cursor-pointer hover:bg-[#27A0DB] duration-300">{t("bookNow")}</Button>
+            </Link>
           </div>
         </div>
       </div>
