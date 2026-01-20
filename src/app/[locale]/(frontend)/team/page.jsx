@@ -25,7 +25,8 @@ const TeamPage = () => {
   if (!teams) return <p>Loading...</p>;
 
   return (
-    <div className="container mx-auto px-10 pt-30">
+    <div className="bg-gray-50">
+      <div className="container mx-auto px-10 pt-30">
       <TeamSection title="Management Team" subtitle="efficient, customer-cen-tric development, and a commitment to excel-lence, we strive to empower businesses to transform, thrive, and achieve long-term success in an ever-evolving digital world." members={teams.management} />
       <TeamSection title="IT Team" subtitle="" members={teams.it} />
       <TeamSection title="Manufacturing & Product Team" subtitle="" members={teams.manufacturing} />
@@ -35,6 +36,7 @@ const TeamPage = () => {
       <div className="mb-10">
         <FAQSection/>
       </div>
+    </div>
     </div>
   );
 };

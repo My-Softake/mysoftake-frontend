@@ -54,7 +54,7 @@ const ProjectDetails = ({ params }) => {
   );
 
   return (
-    <main className="bg-[#f9fafb] min-h-screen pb-20 pt-26">
+    <main className="bg-[#f9fafb] min-h-screen pb-20 pt-30">
 
 
       <div className="container mx-auto px-4">
@@ -75,7 +75,7 @@ const ProjectDetails = ({ params }) => {
               <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
                 {t(`items.${projectId}.title`)}
               </h1>
-              <p className="font-normal text-base pb-5">{t(`items.${projectId}.description`)}</p>
+              <p className="font-normal text-gray-600 text-base pb-5">{t(`items.${projectId}.description`)}</p>
 
               <div className="flex flex-wrap gap-2 mb-8">
                 {tags.map((tag, idx) => (
@@ -148,7 +148,7 @@ const ProjectDetails = ({ params }) => {
 
           <div className="lg:col-span-4 space-y-6">
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 sticky top-10">
-              <h3 className="text-xl font-bold mb-6 border-b pb-4">{t("labels.details")}</h3>
+              <h3 className="text-xl font-bold text-black mb-6 border-b pb-4">{t("labels.details")}</h3>
               <div className="space-y-6">
                 <InfoItem icon={<HiOutlineUserCircle />} label={t("labels.client")} value={t(`items.${projectId}.client`)} notSpecified={t("labels.notSpecified")} />
                 <InfoItem icon={<HiOutlineTag />} label={t("labels.category")} value={t(`items.${projectId}.category`)} notSpecified={t("labels.notSpecified")} />

@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-// React Icons (Chevron icons for consistency)
+// React Icons
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
 const CalendarWidget = ({ selectedDate, onDateSelect }) => {
   const [currentDate, setCurrentDate] = useState(new Date());
 
-  // Week-er shuru (Monday) ber korar logic
+  // Week-er shuru (Monday)
   const getStartOfWeek = (date) => {
     const d = new Date(date);
     const day = d.getDay();
@@ -64,7 +64,7 @@ const CalendarWidget = ({ selectedDate, onDateSelect }) => {
 
   return (
     <div
-      className="bg-[#F8F9FB] dark:bg-zinc-900/50 p-6 rounded-3xl border border-slate-200 dark:border-white/10 w-full select-none"
+      className="bg-[#F8F9FB] p-6 rounded-3xl border border-slate-200 w-full select-none"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       onMouseDown={handleTouchStart}
@@ -75,22 +75,20 @@ const CalendarWidget = ({ selectedDate, onDateSelect }) => {
         <button
           type="button"
           onClick={() => changeWeek(-1)}
-          className="p-2 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full transition-colors text-slate-700 dark:text-slate-300"
+          className="p-2 hover:bg-slate-200 rounded-full transition-colors text-slate-700"
         >
-          {/* Lucide icons er bodole React Icons HiChevronLeft */}
           <HiChevronLeft size={24} strokeWidth={1} />
         </button>
 
-        <span className="font-bold text-slate-800 dark:text-white text-lg">
+        <span className="font-bold text-black text-lg">
           {monthYearLabel}
         </span>
 
         <button
           type="button"
           onClick={() => changeWeek(1)}
-          className="p-2 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full transition-colors text-slate-700 dark:text-slate-300"
+          className="p-2 hover:bg-slate-200 rounded-full transition-colors text-slate-700"
         >
-          {/* Lucide icons er bodole React Icons HiChevronRight */}
           <HiChevronRight size={24} strokeWidth={1} />
         </button>
       </div>
@@ -100,7 +98,7 @@ const CalendarWidget = ({ selectedDate, onDateSelect }) => {
         {weekDays.map((date, index) => (
           <div
             key={`label-${index}`}
-            className="text-slate-500 dark:text-slate-400 font-medium text-xs uppercase mb-3"
+            className="text-gray-500 font-medium text-xs uppercase mb-3"
           >
             {date.toLocaleString("default", { weekday: "short" }).slice(0, 2)}
           </div>
@@ -117,15 +115,13 @@ const CalendarWidget = ({ selectedDate, onDateSelect }) => {
                 onClick={() => onDateSelect(date)}
                 className={`
                   h-10 w-10 sm:h-12 sm:w-12 flex flex-col items-center justify-center rounded-2xl text-sm transition-all duration-200
-                  ${
-                    isSelected
-                      ? "bg-[#D1EFFF] dark:bg-blue-600/30 text-blue-600 dark:text-blue-400 font-bold border-2 border-blue-500 shadow-sm"
-                      : "text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800 border-2 border-transparent"
+                  ${isSelected
+                    ? "bg-[#D1EFFF] text-blue-600 font-bold border-2 border-blue-500 shadow-sm"
+                    : "text-slate-700 hover:bg-slate-200 border-2 border-transparent"
                   }
                 `}
               >
                 <span>{date.getDate()}</span>
-                {/* Aajker tarikh-er niche blue dot indicator */}
                 {isToday && !isSelected && (
                   <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-0.5"></div>
                 )}

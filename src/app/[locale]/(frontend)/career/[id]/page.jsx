@@ -140,7 +140,7 @@ const CareerDetailsPage = ({ params }) => {
             </ul>
           </div>
           <div className="mt-6">
-            <h3 className="font-bold text-xl md:text-2xl">
+            <h3 className="font-bold text-xl md:text-2xl text-black">
               Link:
               <Link
                 href={careerForm.jobLink}
@@ -172,7 +172,7 @@ const CareerDetailsPage = ({ params }) => {
               type="text"
               {...register("name", { required: "Name is required" })}
               placeholder="Full Name"
-              className="border border-gray-300 p-3 py-5 rounded focus:outline-none focus:border-blue-500"
+              className="border border-gray-300 text-gray-700 p-3 py-5 rounded focus:outline-none focus:border-blue-500"
             />
             {errors.name && (
               <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
@@ -184,7 +184,7 @@ const CareerDetailsPage = ({ params }) => {
             <label className="font-semibold mb-2 text-gray-700">Gender*</label>
             <select
               {...register("gender", { required: "Gender is required" })}
-              className="border border-gray-300 p-3 py-5 rounded focus:outline-none focus:border-blue-500 bg-white"
+              className="border border-gray-300 text-gray-700 p-3 py-5 rounded focus:outline-none focus:border-blue-500 bg-white"
             >
               <option value="">Select Gender</option>
               <option value="male">Male</option>
@@ -204,7 +204,7 @@ const CareerDetailsPage = ({ params }) => {
             <input
               type="date"
               {...register("dob", { required: "Date of birth is required" })}
-              className="border border-gray-300 p-3 rounded py-5 focus:outline-none focus:border-blue-500"
+              className="border border-gray-300 text-gray-700 p-3 rounded py-5 focus:outline-none focus:border-blue-500"
             />
           </div>
 
@@ -221,7 +221,7 @@ const CareerDetailsPage = ({ params }) => {
                 },
               })}
               placeholder="+880"
-              className="border border-gray-300 p-3 py-5 rounded focus:outline-none focus:border-blue-500"
+              className="border text-gray-700 border-gray-300 p-3 py-5 rounded focus:outline-none focus:border-blue-500"
             />
             {errors.phone && (
               <p className="text-red-500 text-sm">{errors.phone.message}</p>
@@ -241,7 +241,7 @@ const CareerDetailsPage = ({ params }) => {
                 },
               })}
               placeholder="example@mail.com"
-              className="border border-gray-300 p-3 py-5 rounded focus:outline-none focus:border-blue-500"
+              className="border text-gray-700 border-gray-300 p-3 py-5 rounded focus:outline-none focus:border-blue-500"
             />
           </div>
 
@@ -256,7 +256,7 @@ const CareerDetailsPage = ({ params }) => {
                 required: "Nationality is required",
               })}
               placeholder="Bangladeshi"
-              className="border border-gray-300 p-3 py-5 rounded focus:outline-none focus:border-blue-500"
+              className="border text-gray-700 border-gray-300 p-3 py-5 rounded focus:outline-none focus:border-blue-500"
             />
             {errors.nationality && (
               <p className="text-red-500 text-sm mt-1">
@@ -272,7 +272,7 @@ const CareerDetailsPage = ({ params }) => {
               type="text"
               {...register("address", { required: "Address is required" })}
               placeholder="Full Address"
-              className="border border-gray-300 p-3 py-6 rounded focus:outline-none focus:border-blue-500"
+              className="border text-gray-700 border-gray-300 p-3 py-6 rounded focus:outline-none focus:border-blue-500"
             />
           </div>
 
@@ -285,7 +285,7 @@ const CareerDetailsPage = ({ params }) => {
               rows="5"
               {...register("coverLetter")}
               placeholder="Tell us why you're a good fit..."
-              className="border border-gray-300 p-3 py-10 rounded focus:outline-none focus:border-blue-500"
+              className="border text-gray-700 border-gray-300 p-3 py-10 rounded focus:outline-none focus:border-blue-500"
             ></textarea>
           </div>
 
@@ -300,7 +300,7 @@ const CareerDetailsPage = ({ params }) => {
                 required: "CV is required",
               })}
               accept=".pdf"
-              className="border border-dashed border-gray-400 p-6 py-16 rounded bg-gray-50 text-center cursor-pointer"
+              className="border text-gray-700 border-dashed border-gray-400 p-6 py-16 rounded bg-gray-50 text-center cursor-pointer"
             />
             {errors.cv && (
               <p className="text-red-500 text-sm">{errors.cv.message}</p>

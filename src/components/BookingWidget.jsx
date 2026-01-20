@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-// axios lagbe na, tai import bad
 import { 
   IoShareOutline, 
   IoTimeOutline, 
@@ -40,13 +39,12 @@ const BookingWidget = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const apiDate = formatDateForAPI(selectedDate);
 
-  // --- 1. Fetch Slots using native fetch ---
+  // --- Fetch Slots ---
   useEffect(() => {
     const fetchSlots = async () => {
       setIsSlotsLoading(true);
       setSelectedSlot(null);
       try {
-        // Native fetch use kora hoyeche
         const res = await fetch("/data/slot.json");
         if (!res.ok) throw new Error("Failed to fetch");
         const data = await res.json();
@@ -58,11 +56,10 @@ const BookingWidget = () => {
         setIsSlotsLoading(false);
       }
     };
-
     fetchSlots();
   }, [apiDate]);
 
-  // --- 2. Fetch Departments using native fetch ---
+  // --- Fetch Departments ---
   useEffect(() => {
     if (isModalOpen) {
       const fetchDepts = async () => {
@@ -83,7 +80,6 @@ const BookingWidget = () => {
     if (!selectedSlot) return toast.error("Please select a time slot.");
     setIsSubmitting(true);
     
-    // Fake Submission
     setTimeout(() => {
       console.log("Payload:", { date: apiDate, slot: selectedSlot.pk, user_info: data });
       setIsSubmitting(false);
@@ -94,7 +90,6 @@ const BookingWidget = () => {
     }, 1500);
   };
 
-  // ... (formatDateLabel function and other UI remain same)
   const formatDateLabel = (date) => {
     const today = new Date();
     const isToday = date.toDateString() === today.toDateString();
@@ -105,17 +100,17 @@ const BookingWidget = () => {
     <div className="py-16 flex items-center justify-center p-4 font-sans text-[#476788] relative">
       <Toaster position="top-center" />
 
-      <div className="w-full max-w-4xl bg-white dark:bg-zinc-950 rounded-3xl shadow-xl border border-slate-100 dark:border-white/10 overflow-hidden">
+      <div className="w-full max-w-4xl bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
         {/* Header */}
-        <div className="px-8 py-6 border-b border-slate-100 dark:border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="px-8 py-6 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <div className="h-12 w-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-lg">SL</div>
             <div>
-              <h2 className="text-xl font-bold text-slate-800 dark:text-white">Booking with Maya</h2>
-              <p className="text-sm text-slate-500">Pure JavaScript Fetch Mode</p>
+              <h2 className="text-xl font-bold text-black">Booking with Maya</h2>
+              <p className="text-sm text-gray-600">Pure JavaScript Fetch Mode</p>
             </div>
           </div>
-          <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 dark:border-white/20 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-sm font-medium">
+          <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 hover:bg-slate-50 transition-colors text-sm font-medium">
             <IoShareOutline size={18} /> Share
           </button>
         </div>
@@ -124,13 +119,13 @@ const BookingWidget = () => {
         <div className="flex flex-col lg:flex-row">
           <div className="p-8 lg:w-1/2 flex flex-col gap-8">
             <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-slate-800 dark:text-white">Select Date & Time</h3>
+              <h3 className="text-lg font-semibold text-black">Select Date & Time</h3>
               <CalendarWidget selectedDate={selectedDate} onDateSelect={setSelectedDate} />
             </div>
           </div>
 
-          <div className="p-8 lg:w-1/2 lg:border-l border-slate-100 dark:border-white/10 bg-slate-50/30 dark:bg-zinc-900/10">
-            <div className="flex items-center justify-between mb-6 text-slate-800 dark:text-white">
+          <div className="p-8 lg:w-1/2 lg:border-l border-slate-100 bg-slate-50/30">
+            <div className="flex items-center justify-between mb-6 text-black">
               <span className="font-medium flex items-center gap-2"><HiOutlineSun className="text-blue-500" /> {formatDateLabel(selectedDate)}</span>
               <span className="text-sm flex items-center gap-1 cursor-pointer"><IoLanguageOutline /> Timezone</span>
             </div>
@@ -148,14 +143,14 @@ const BookingWidget = () => {
                         className={`py-3 rounded-lg border text-sm font-medium transition-all ${
                           selectedSlot?.pk === slot.pk 
                           ? "bg-blue-500 border-blue-500 text-white shadow-md" 
-                          : "bg-white dark:bg-slate-900 border-slate-200 dark:border-white/10 hover:border-blue-500 dark:text-white"
+                          : "bg-white border-slate-200 hover:border-blue-500 text-black"
                         }`}
                       >
                         {slot.start_time.split(":").slice(0, 2).join(":")}
                       </button>
                     ))
                   ) : (
-                    <p className="col-span-2 text-center py-10 text-slate-400">No slots available.</p>
+                    <p className="col-span-2 text-center py-10 text-gray-400">No slots available.</p>
                   )}
                 </div>
               )}
@@ -174,11 +169,11 @@ const BookingWidget = () => {
         </div>
       </div>
 
-      {/* --- MODAL --- */}
+      {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
-          <div className="bg-white dark:bg-slate-900 w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden">
-            <div className="px-6 py-4 border-b dark:border-white/10 flex justify-between items-center dark:text-white">
+          <div className="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden">
+            <div className="px-6 py-4 border-b flex justify-between items-center text-black">
               <h3 className="text-lg font-bold">Booking Details</h3>
               <button onClick={() => setIsModalOpen(false)}><IoCloseOutline size={24} /></button>
             </div>
@@ -187,10 +182,10 @@ const BookingWidget = () => {
               <FormInput label="Email" name="email" register={register} errors={errors} type="email" required />
               
               <div>
-                <label className="block text-sm font-medium mb-1 dark:text-white">Department</label>
+                <label className="block text-sm font-medium mb-1 text-black">Department</label>
                 <select
                   {...register("department", { required: "Select a department" })}
-                  className="w-full px-4 py-2 rounded-lg border dark:bg-slate-800 dark:border-white/10 outline-none dark:text-white"
+                  className="w-full px-4 py-2 rounded-lg border outline-none focus:ring-2 focus:ring-blue-100"
                 >
                   <option value="">Select...</option>
                   {departments.map((dept) => (
@@ -218,11 +213,11 @@ const BookingWidget = () => {
 // Helper Input Component
 const FormInput = ({ label, name, register, errors, type = "text", required }) => (
   <div>
-    <label className="block text-sm font-medium mb-1 dark:text-white">{label}</label>
+    <label className="block text-sm font-medium mb-1 text-black">{label}</label>
     <input
       type={type}
       {...register(name, { required: required ? `${label} is required` : false })}
-      className={`w-full px-4 py-2 rounded-lg border dark:bg-slate-800 dark:border-white/10 outline-none focus:ring-2 dark:text-white ${errors[name] ? 'border-red-500' : 'focus:ring-blue-100'}`}
+      className={`w-full px-4 py-2 rounded-lg border outline-none focus:ring-2 focus:ring-blue-100 ${errors[name] ? 'border-red-500' : ''}`}
     />
     {errors[name] && <p className="text-red-500 text-xs mt-1">{errors[name].message}</p>}
   </div>
