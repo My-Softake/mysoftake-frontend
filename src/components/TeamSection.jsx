@@ -4,8 +4,8 @@ import React from "react";
 const TeamSection = ({ title, members, subtitle }) => {
   return (
     <section>
-      <h2 className="text-4xl text-center font-bold">{title}</h2>
-      <p className="font-normal text-base w-[500px] text-center mx-auto pt-2 pb-10">
+      <h2 className="text-4xl text-black text-center font-bold">{title}</h2>
+      <p className="font-normal text-gray-600 text-base w-full md:w-[500px] text-center mx-auto pt-2 pb-10">
         {subtitle}
       </p>
 
@@ -13,7 +13,7 @@ const TeamSection = ({ title, members, subtitle }) => {
         {members.map((member) => (
           <div
             key={member.id}
-            className="bg-white rounded-2xl shadow-md overflow-hidden mb-10 max-sm:mx-7"
+            className="bg-white rounded-2xl shadow-md overflow-hidden mb-10 max-sm:mx-2"
           >
             <div className="relative h-64 w-full">
               <Image

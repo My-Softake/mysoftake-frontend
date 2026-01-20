@@ -21,10 +21,10 @@ const ProjectPage = () => {
       : projectIds.filter((id) => t(`items.${id}.category`) === selectedCategory);
 
   return (
-    <div className="pt-30">
+    <div className="pt-30 bg-gray-50">
       <div className="container mx-auto px-10">
-        <h3 className="font-bold text-center text-4xl">{t("pageTitle")}</h3>
-        <p className="text-base font-normal text-center w-full max-sm:px-3 md:w-[500px] mx-auto pt-5">
+        <h3 className="font-bold text-black text-center text-4xl">{t("pageTitle")}</h3>
+        <p className="text-base text-gray-600 font-normal text-center w-full max-sm:px-3 md:w-[500px] mx-auto pt-5">
           {t("pageDescription")}
         </p>
 

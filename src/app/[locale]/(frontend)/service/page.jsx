@@ -13,7 +13,7 @@ export default function ServicePage() {
   const serviceIds = ["1", "2", "3", "4", "5", "6"];
 
   return (
-    <section className="pt-24  bg-[#f8f9fa]">
+    <section className="pt-29  bg-[#f8f9fa]">
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-16">

@@ -41,9 +41,10 @@ const OurLetestProject = () => {
   };
 
   return (
-    <div className="pt-10 container mx-auto px-4 relative">
-      <h3 className="font-bold text-center text-4xl dark:text-white text-slate-900">{t("title")}</h3>
-      <p className="text-base text-center md:w-[500px] mx-auto pt-5 text-gray-600 dark:text-white">
+   <div className="bg-white">
+     <div className="pt-10 pb-5 container mx-auto px-4 relative ">
+      <h3 className="font-bold text-center text-4xl text-slate-900">{t("title")}</h3>
+      <p className="text-base text-center md:w-[500px] mx-auto pt-5 text-gray-600 ">
         {t("description")}
       </p>
 
@@ -124,6 +125,7 @@ const OurLetestProject = () => {
         )}
       </div>
     </div>
+   </div>
   );
 };
 

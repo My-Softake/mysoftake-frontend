@@ -24,11 +24,12 @@ const ServiceDetails = ({ params }) => {
   // We'll proceed with rendering.
 
   return (
-    <div className="container mx-auto px-10 pb-10 pt-26">
+   <div className="bg-white">
+     <div className="container mx-auto px-10 pb-10 pt-26">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
         <div className="md:w-1/2">
-          <h1 className="text-4xl font-bold mb-4">{t(`items.${serviceId}.title`)}</h1>
+          <h1 className="text-4xl font-bold mb-4 text-black">{t(`items.${serviceId}.title`)}</h1>
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
             {t(`items.${serviceId}.headline`)}
           </h2>
@@ -61,7 +62,7 @@ const ServiceDetails = ({ params }) => {
       */}
 
       <div className="">
-        <h3 className="text-4xl font-semibold mb-4 flex items-center gap-2">
+        <h3 className="text-4xl text-black font-semibold mb-4 flex items-center gap-2">
           Overview
         </h3>
         <p className="text-gray-700">{t(`items.${serviceId}.overview_one`)}</p>
@@ -70,7 +71,7 @@ const ServiceDetails = ({ params }) => {
       </div>
 
       <div className="pt-5">
-        <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+        <h3 className="text-2xl text-black font-semibold mb-4 flex items-center gap-2">
           Why Choose Us
         </h3>
         <p className="text-gray-700">{t(`items.${serviceId}.why_choose_us`)}</p>
@@ -80,7 +81,7 @@ const ServiceDetails = ({ params }) => {
 
       {/* Process */}
       <div className="mb-12 pt-10">
-        <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
+        <h3 className="text-2xl text-black font-semibold mb-6 flex items-center gap-2">
           Our Process
         </h3>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
@@ -92,7 +93,7 @@ const ServiceDetails = ({ params }) => {
 
       {/* Benefits */}
       <div className="mb-12">
-        <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
+        <h3 className="text-2xl text-black font-semibold mb-6 flex items-center gap-2">
           Benefits
         </h3>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
@@ -107,6 +108,7 @@ const ServiceDetails = ({ params }) => {
       </div>
 
     </div>
+   </div>
   );
 };
 
