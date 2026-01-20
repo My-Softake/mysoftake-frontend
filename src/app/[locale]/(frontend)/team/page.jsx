@@ -32,7 +32,7 @@ const TeamPage = () => {
       <TeamSection title="Export & Import Team" subtitle="" members={teams.exportImport} />
       <TeamSection title="Transport & Logistics Team" subtitle=" " members={teams.transport} />
       <TeamSection title="Marketing Team"   members={teams.marketing} />
-      <div className="">
+      <div className="mb-10">
         <FAQSection/>
       </div>
     </div>

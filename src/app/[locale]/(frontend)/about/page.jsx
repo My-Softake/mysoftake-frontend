@@ -1,16 +1,16 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import CounterSection from "@/components/CounterSection";
 import AboutCompany from "@/components/AboutCompany";
 import FeaturedOn from "@/components/FeaturedOn";
 import OurCreators from "@/components/OurCreators";
-import TeamSlider from "@/components/TeamSlider";
 import FAQSection from "@/components/FAQSection";
 import VisionMission from "@/components/VisionMission";
 
 const AboutPage = () => {
+
+
   return (
     <main className="bg-white">
       <section className="relative h-[50vh] md:h-[40vh] flex items-center justify-center bg-slate-900 overflow-hidden">
@@ -27,13 +27,7 @@ const AboutPage = () => {
             About Us
           </h1>
 
-          <div className="flex justify-center items-center gap-3 text-lg font-medium drop-shadow-md">
-            <Link href="/" className="hover:text-blue-400 transition-colors">
-              Home
-            </Link>
-            <span className="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
-            <span className="text-gray-200">About Us</span>
-          </div>
+           
         </div>
       </section>
 

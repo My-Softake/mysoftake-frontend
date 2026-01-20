@@ -1,6 +1,9 @@
+import { useTranslations } from "next-intl";
 import React from "react";
 
 const GetInTouch = () => {
+
+   const t = useTranslations("GetInTouch");
   return (
     <div className="pb-10 pt-10 px-4">
       <div className="container mx-auto md:px-10">
@@ -23,12 +26,12 @@ const GetInTouch = () => {
 
           {/* Heading */}
           <h3 className="font-bold text-white text-xl sm:text-2xl md:text-3xl lg:text-5xl max-w-[900px] leading-snug md:leading-[60px] z-10">
-            Driving business growth through smart, reliable technology.
+           {t("title")}
           </h3>
 
           {/* Subtext */}
           <p className="font-light text-white/80 pt-6 text-sm sm:text-base md:text-xl max-w-2xl z-10">
-            Schedule a meeting to explore tailored solutions for your unique business needs.
+            {t("peragraph")}
           </p>
 
           {/* Button */}
@@ -41,7 +44,7 @@ const GetInTouch = () => {
               shadow-[0_10px_20px_rgba(0,0,0,0.2)] z-10
             "
           >
-            Get Started
+            {t("btntext")}
           </button>
         </div>
       </div>
