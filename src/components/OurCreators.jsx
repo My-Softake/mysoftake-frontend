@@ -2,28 +2,30 @@
 
 import Image from "next/image";
 import { IoCheckmarkSharp } from "react-icons/io5";
+import { useTranslations } from "next-intl";
 
 const OurCreators = () => {
+  const t = useTranslations("OurCreators");
+
   return (
     <div className="py-12 md:py-12">
       <div className="container mx-auto px-4 md:px-8">
         {/* Header Section */}
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h3 className="font-semibold text-3xl md:text-4xl text-black leading-tight">
-            Join with Our Creators Of Change
+            {t("title")}
           </h3>
           <p className="font-normal text-gray-600 text-sm md:text-base mt-4 px-4">
-            Be part of a passionate community driving innovation, creativity, and
-            meaningful impact for a better tomorrow.
+            {t("description")}
           </p>
         </div>
 
         {/* Image Grid Section */}
         <div className="flex flex-col lg:flex-row gap-6 md:gap-8 items-stretch">
-          
+
           {/* Left Side Big Image (Group Pik) */}
           <div className="w-full lg:w-7/12">
- 
+
             <div className="relative min-h-[350px] sm:min-h-[450px] md:h-[625px] w-full overflow-hidden rounded-3xl shadow-sm">
               <Image
                 src="/images/group_pik.png"
@@ -65,7 +67,7 @@ const OurCreators = () => {
                   <IoCheckmarkSharp className="text-white text-xl md:text-2xl" />
                 </div>
                 <h3 className="font-medium text-white text-sm md:text-base leading-snug">
-                  Teamwork turns vision into reality.
+                  {t("teamworkQuote")}
                 </h3>
               </div>
             </div>

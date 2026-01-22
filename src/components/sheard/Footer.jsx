@@ -30,31 +30,33 @@ const Footer = () => {
                 className="object-contain"
               />
             </div>
-            <div className="">
-
-            </div>
+            <div className=""></div>
             {/* Social Icons - Direct Div & Link */}
             <div className="flex space-x-3">
               <Link
                 href="https://facebook.com"
+                target="_blank"
                 className="w-9 h-9 bg-white text-[#1a2533] rounded-full flex items-center justify-center hover:bg-[#27A0DB] duration-300 hover:text-white transition-colors"
               >
                 <FaFacebookF size={16} />
               </Link>
               <Link
                 href="https://instagram.com"
+                target="_blank"
                 className="w-9 h-9 bg-white text-[#1a2533] rounded-full flex items-center justify-center hover:bg-[#27A0DB] duration-300 hover:text-white transition-colors"
               >
                 <FaInstagram size={16} />
               </Link>
               <Link
                 href="https://twitter.com"
+                target="_blank"
                 className="w-9 h-9 bg-white text-[#1a2533] rounded-full flex items-center justify-center hover:bg-[#27A0DB] duration-300 hover:text-white transition-colors"
               >
                 <FaTwitter size={16} />
               </Link>
               <Link
                 href="https://www.linkedin.com/company/my-softake/"
+                target="_blank"
                 className="w-9 h-9 bg-white text-[#1a2533] rounded-full flex items-center justify-center hover:bg-[#27A0DB] duration-300 hover:text-white transition-colors"
               >
                 <FaLinkedinIn size={16} />
@@ -68,12 +70,36 @@ const Footer = () => {
               <h3 className="text-white font-semibold">{t("quickLinks")}</h3>
             </div>
             <div className="flex flex-col text-[14px] space-y-1">
-              <Link href="/" className="hover:text-[#27A0DB] duration-300">{tNav("home")}</Link>
-              <Link href="/about" className="hover:text-[#27A0DB] duration-300">{tNav("aboutUs")}</Link>
-              <Link href="/service" className="hover:text-[#27A0DB] duration-300">{tNav("service")}</Link>
-              <Link href="/project" className="hover:text-[#27A0DB] duration-300">{tNav("project")}</Link>
-              <Link href="/contact" className="hover:text-[#27A0DB] duration-300">{tNav("contactUs")}</Link>
-              <Link href="/career" className="hover:text-[#27A0DB] duration-300">{tNav("career")}</Link>
+              <Link href="/" className="hover:text-[#27A0DB] duration-300">
+                {tNav("home")}
+              </Link>
+              <Link href="/about" className="hover:text-[#27A0DB] duration-300">
+                {tNav("aboutUs")}
+              </Link>
+              <Link
+                href="/service"
+                className="hover:text-[#27A0DB] duration-300"
+              >
+                {tNav("service")}
+              </Link>
+              <Link
+                href="/project"
+                className="hover:text-[#27A0DB] duration-300"
+              >
+                {tNav("project")}
+              </Link>
+              <Link
+                href="/contact"
+                className="hover:text-[#27A0DB] duration-300"
+              >
+                {tNav("contactUs")}
+              </Link>
+              <Link
+                href="/career"
+                className="hover:text-[#27A0DB] duration-300"
+              >
+                {tNav("career")}
+              </Link>
             </div>
           </div>
 
@@ -99,7 +125,6 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <FaPhoneAlt className="flex-shrink-0" />
                 <p>+88 01910-219667</p>
-
               </div>
               <div className="flex items-center gap-3">
                 <BsBriefcase className="flex-shrink-0" />
@@ -107,11 +132,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <FaEnvelope className="flex-shrink-0" />
-                <Link
-                  href="mailto:info@mysoftake.com"
-                  className=" "
-                >
-                  info.mysoftake@gmail.com
+                <Link href="mailto:info@mysoftake.com" className=" ">
+                  info@mysoftake.com.bd
                 </Link>
               </div>
             </div>
@@ -146,10 +168,7 @@ const Footer = () => {
 
               <div className="flex items-center gap-3">
                 <FaEnvelope className="flex-shrink-0" />
-                <Link
-                  href="mailto:info@mysoftake.com"
-                  className=" "
-                >
+                <Link href="mailto:info@mysoftake.com" className=" ">
                   277768034@qq.com
                 </Link>
               </div>
@@ -161,7 +180,10 @@ const Footer = () => {
         <div className="pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center text-[13px] text-gray-400">
           <p>{t("rightsReserved")}</p>
           <div className="flex gap-8 mt-4 md:mt-0">
-            <Link href="/terms-and-service" className="hover:text-[#27A0DB] duration-300">
+            <Link
+              href="/terms-and-service"
+              className="hover:text-[#27A0DB] duration-300"
+            >
               {t("termsOfService")}
             </Link>
             <Link href="/privacy" className="hover:text-[#27A0DB] duration-300">

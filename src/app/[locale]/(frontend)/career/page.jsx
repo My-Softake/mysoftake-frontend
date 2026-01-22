@@ -1,21 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 
 const CareerPage = () => {
   const locale = useLocale();
   const t = useTranslations("CareerPage");
-  const [caseStudies, setCaseStudies] = useState([]);
 
-  // Fetch Career Cards
-  useEffect(() => {
-    fetch("/data/CareerData.json")
-      .then((res) => res.json())
-      .then((data) => setCaseStudies(data))
-      .catch((err) => console.error("Error fetching data:", err));
-  }, []);
+  // Job IDs (1-6)
+  const jobIds = ["1", "2", "3", "4", "5", "6"];
 
   return (
     <div className="bg-gray-50">
@@ -52,30 +45,30 @@ const CareerPage = () => {
       <div className="bg-white">
         <div className="container mx-auto px-6">
           <h3 className="uppercase dark:text-black font-semibold text-[20px] border-b-3 border-[#27A0DB] w-38 pb-2">
-            {t("openPositionsTitle", { defaultValue: "Join Our Team" })}
+            {t("openPositionsTitle")}
           </h3>
-          <h2 className="text-5xl dark:text-black font-semibold pt-4">{t("openPositionsSubtitle", { defaultValue: "Grow Your Career" })}</h2>
+          <h2 className="text-5xl dark:text-black font-semibold pt-4">{t("openPositionsSubtitle")}</h2>
 
           <div className="container mx-auto px-4 py-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
-              {caseStudies.map((item) => (
-                <div key={item.id} className="bg-[#F5F5F5] border border-gray-300 shadow-sm rounded-sm p-8 md:p-12 w-full max-w-[700px] relative transition-all">
+              {jobIds.map((id) => (
+                <div key={id} className="bg-[#F5F5F5] border border-gray-300 shadow-sm rounded-sm p-8 md:p-12 w-full max-w-[700px] relative transition-all">
                   {/* Top Badge */}
                   <div className="absolute top-0 left-0 bg-[#0A0A23] text-white px-6 py-3 text-sm font-medium">
-                    {item.jobType}
+                    {t(`items.${id}.jobType`)}
                   </div>
 
                   <div className="mt-8">
                     <h2 className="text-3xl md:text-3xl font-bold text-[#0A1A3F] mb-6 leading-tight">
-                      {item.jobTitle}
+                      {t(`items.${id}.jobTitle`)}
                     </h2>
                     <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-10">
-                      {item.description}
+                      {t(`items.${id}.description`)}
                     </p>
 
-                    <Link href={`/${locale}/career/${item.id}`}>
+                    <Link href={`/${locale}/career/${id}`}>
                       <button className="bg-[#27A0DB] text-white px-8 py-4 rounded-sm font-bold text-lg flex items-center gap-3 transition-colors group">
-                        {t("applyButton", { defaultValue: "Apply Now" })}
+                        {t("applyButton")}
                         <span className="bg-white text-[#27A0DB] rounded-full p-1 transition-transform group-hover:translate-x-1">
                           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                             <line x1="5" y1="12" x2="19" y2="12"></line>

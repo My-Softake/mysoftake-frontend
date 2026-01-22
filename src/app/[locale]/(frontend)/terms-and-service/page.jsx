@@ -1,6 +1,11 @@
+"use client";
+
 import Link from 'next/link';
+import { useTranslations } from "next-intl";
 
 export default function TermsAndService() {
+  const t = useTranslations("TermsPage");
+
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
       <div className="container mx-auto md:px-10 px-2 py-8">
@@ -8,15 +13,15 @@ export default function TermsAndService() {
         {/* Header */}
         <div className="mb-12">
         
-          <h1 className="text-4xl font-bold text-gray-900 mt-4 mb-2">Terms of Service</h1>
-          <p className="text-gray-600">Last Updated: December 1, 2024</p>
+          <h1 className="text-4xl font-bold text-gray-900 mt-4 mb-2">{t("title")}</h1>
+          <p className="text-gray-600">{t("lastUpdated")}</p>
           <div className="border-b border-gray-300 pt-4"></div>
         </div>
 
         {/* Important Notice */}
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-8 rounded">
           <p className="text-gray-800">
-            <strong>Important:</strong> Please read these terms carefully before using our services. By accessing or using our services, you agree to be bound by these terms.
+            <strong>{t("importantNotice")}</strong>
           </p>
         </div>
 
@@ -25,14 +30,14 @@ export default function TermsAndService() {
           
           {/* 1. Acceptance of Terms */}
           <div className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">{t("section1Title")}</h2>
             <p className="text-gray-700 mb-3">
-              By accessing and using the services provided by MultiService Agency, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our services.
+              {t("section1Desc")}
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>These terms constitute a legally binding agreement between you and MultiService Agency.</li>
-              <li>We reserve the right to modify these terms at any time without prior notice.</li>
-              <li>Continued use of our services after changes constitutes acceptance of the new terms.</li>
+              {t.raw("section1List").map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </div>
 

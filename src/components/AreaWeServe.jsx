@@ -35,7 +35,7 @@ const AreaWeServe = () => {
               className="group flex flex-col items-center bg-white p-10 rounded-[20px] shadow-[20px_20px_60px_#d9d9d9,-20px_-20px_60px_#ffffff] transition-transform duration-300  "
             >
               {/* Flag Container with 3D shadow */}
-              <div className="relative h-[100px] w-full rounded-2xl mb-12 drop-shadow-2xl">
+              <div className="relative h-40 md:h-[100px] w-full rounded-2xl mb-12 drop-shadow-2xl">
                 <Image
                   src={region.src}
                   alt={t(region.nameKey)}
