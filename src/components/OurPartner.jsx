@@ -13,23 +13,23 @@ const OurPartner = () => {
 
         <div className="pb-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 place-items-center">
           <Image
-            src="/images/partner one.png"
+            src="/images/rjsc logo.png"
             alt="partner one"
             width={220}
             height={200}
-            className="object-contain w-[140px] sm:w-[160px] md:w-[180px] lg:w-[220px]"
+            className="object-contain w-[120px]"
           />
 
           <Image
-            src="/images/partner two.png"
+            src="/images/uttorcity logo.png"
             alt="partner two"
             width={220}
             height={200}
-            className="object-contain w-[140px] sm:w-[160px] md:w-[180px] lg:w-[220px]"
+            className="object-contain w-[80px]"
           />
 
           <Image
-            src="/images/partner three.png"
+            src="/images/mpfcomm.png"
             alt="partner three"
             width={220}
             height={200}
@@ -37,7 +37,7 @@ const OurPartner = () => {
           />
 
           <Image
-            src="/images/partner four.png"
+            src="/images/samr.png"
             alt="partner four"
             width={220}
             height={200}
@@ -45,7 +45,35 @@ const OurPartner = () => {
           />
 
           <Image
-            src="/images/partner five.png"
+            src="/images/dcci.png"
+            alt="partner five"
+            width={220}
+            height={200}
+            className="object-contain w-[100px]"
+          />
+          <Image
+            src="/images/gaccc.png"
+            alt="partner five"
+            width={220}
+            height={200}
+            className="object-contain w-[140px] sm:w-[160px] md:w-[180px] lg:w-[220px]"
+          />
+           <Image
+            src="/images/basis.png"
+            alt="partner five"
+            width={220}
+            height={200}
+            className="object-contain w-[140px] sm:w-[160px] md:w-[180px] lg:w-[220px]"
+          />
+          <Image
+            src="/images/jisa.png"
+            alt="partner five"
+            width={220}
+            height={200}
+            className="object-contain w-[110px]"
+          />
+           <Image
+            src="/images/csia.png"
             alt="partner five"
             width={220}
             height={200}

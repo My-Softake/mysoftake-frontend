@@ -13,7 +13,7 @@
     },
     "Hero": {
         "slide1_title": "Transforming Ideas Into Powerful Digital Solutions",
-        "slide1_desc": "MY SOFTAKE PVT. PLC. delivers modern, intelligent, and scalable software solutions designed to accelerate your business growth. We combine innovation and technology to help your business thrive in the digital era.",
+        "slide1_desc": "MY SOFTAKE PVT. PLC. delivers modern, intelligent, and scalable software solutions designed to accelerate your business growth.",
         "slide2_title": "Complete IT Solutions Under One Roof",
         "slide2_desc": "We provide all the tools and solutions your business needs to succeed online. From digital marketing to web development, we help you grow, engage, and thrive in the digital world.",
         "slide3_title": "Experience the Difference with MY SOFTAKE",
@@ -60,7 +60,27 @@
     "OurRecentCaseStudies": {
         "title": "Our recent Case studies",
         "loading": "Loading...",
-        "viewDetail": "View detail"
+        "viewDetail": "View detail",
+        "items": {
+            "1": {
+                "images": ["/images/Case-1.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "2": {
+                "images": ["/images/Case-2.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "3": {
+                "images": ["/images/Case-3.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "4": {
+                "images": ["/images/Case-4.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "5": {
+                "images": ["/images/Case 5.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "6": {
+                "images": ["/images/Case-6.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            }
+        }
     },
     "CounterSection": {
         "projectsDelivered": "Projects Delivered",
@@ -76,7 +96,7 @@
         "uae": "UAE"
     },
     "OurPartner": {
-        "title": "Our Partners"
+        "title": "We are authorized by"
     },
     "Footer": {
         "quickLinks": "Quick Links",
@@ -89,6 +109,7 @@
     "ServiceData": {
         "title": "Our Core Industries",
         "description": "We deliver quality solutions across manufacturing, IT, logistics, travel, and construction.",
+        "exploreMore": "Explore More",
         "items": {
             "1": {
                 "title": "Information Technology",
@@ -562,76 +583,608 @@
             }
         }
     },
-    
-  "CaseStudy": {
-    "title": "Company Overview",
-    "description": "MY SOFTAKE PLC. is a modern company providing innovative and dependable services across various industries, consistently pursuing excellence through knowledge and strategic vision."
-  },
-   "GetInTouch": {
-    "title": "Driving business growth with smart and dependable technology.",
-    "peragraph": "Book a meeting to discover customized solutions designed for your business needs.",
-    "btntext": "Get Started"
-  },
-   "FAQSection": {
-    "tag": "FAQ",
-    "title": "Frequently Asked Questions",
-    "subtitle": "Can't find what you're looking for? We're here to help.",
-
-    "q1": {
-      "question": "How can I add a new institution to compare?",
-      "answer": "You can add institutions using our comparison tool or contact us with the necessary details."
+    "CaseStudy": {
+        "title": "Company Overview",
+        "description": "MY SOFTAKE PLC. is a modern company providing innovative and dependable services across various industries, consistently pursuing excellence through knowledge and strategic vision.",
+        "viewCaseStudy": "View Case Study",
+        "loading": "Loading...",
+        "notFound": "Not Found",
+        "caseStudyDetails": "Case Study Details",
+        "bannerDescription": "Explore our comprehensive case studies showcasing innovative solutions and measurable results across industries.",
+        "totalDuration": "Total Duration",
+        "estimatedInvestment": "Estimated Investment",
+        "projectTarget": "Project Target",
+        "overview": "Overview",
+        "challenges": "Challenges",
+        "approach": "Approach",
+        "result": "Result",
+        "items": {
+            "1": {
+                "title": "Assetra End-to-End Asset Optimization",
+                "duration": "16-24 months",
+                "investment": "$1.8M – $3.2M",
+                "target": "Reduce TCO by up to 35%",
+                "overview": "Assetra partnered with a large asset-intensive organization facing rising operational costs and fragmented asset management practices. Our team assessed their entire asset portfolio to identify inefficiencies and develop a comprehensive optimization strategy.",
+                "challenges": "Limited visibility across lifecycle, reactive maintenance, and scattered asset data leading to high operational risk and increased costs.",
+                "approach": "Implemented end-to-end strategy covering asset assessment, predictive maintenance, and long-term renewal planning with advanced analytics.",
+                "results": [
+                    "40% reduction in Total Cost of Ownership",
+                    "Significant decrease in unplanned downtime",
+                    "Improved asset reliability and utilization",
+                    "Clear lifecycle roadmap for future investments"
+                ],
+                "images": [
+                    "/images/Case-1.jpg",
+                    "/images/Case-2.jpg",
+                    "/images/Case-3.jpg"
+                ]
+            },
+            "2": {
+                "title": "Smart Factory Automation Upgrade",
+                "duration": "12-18 months",
+                "investment": "$2.5M – $4.0M",
+                "target": "Increase production efficiency by 25%",
+                "overview": "Collaborated with a manufacturing giant to modernize legacy systems using IoT and AI-driven automation for enhanced productivity.",
+                "challenges": "Manual processes, frequent hardware failures, and lack of real-time production monitoring affecting overall efficiency.",
+                "approach": "Deployment of smart sensors and a centralized control system to automate workflow and monitoring across all production units.",
+                "results": [
+                    "30% increase in production throughput",
+                    "20% energy cost reduction",
+                    "Real-time data visibility across all units"
+                ],
+                "images": [
+                    "/images/Case-2.jpg",
+                    "/images/Case-2.jpg",
+                    "/images/Case-3.jpg"
+                ]
+            },
+            "3": {
+                "title": "Supply Chain Digital Transformation",
+                "duration": "10-14 months",
+                "investment": "$1.2M – $2.0M",
+                "target": "Reduce logistics costs by 20%",
+                "overview": "Redesigning the supply chain network for a global retail brand to enhance delivery speed and reduce operational overhead.",
+                "challenges": "Inaccurate inventory forecasting and inefficient route planning causing delivery delays and customer dissatisfaction.",
+                "approach": "Integrated an AI forecasting tool and optimized logistics routes using machine learning algorithms for better accuracy.",
+                "results": [
+                    "15% reduction in warehouse overhead",
+                    "99% on-time delivery rate",
+                    "Better inventory turnover ratio"
+                ],
+                "images": [
+                    "/images/Case-3.jpg",
+                    "/images/Case-2.jpg",
+                    "/images/Case-3.jpg"
+                ]
+            },
+            "4": {
+                "title": "Renewable Energy Grid Integration",
+                "duration": "24-30 months",
+                "investment": "$5.0M – $7.5M",
+                "target": "Transition to 50% renewable power sources",
+                "overview": "Assisting a regional power utility in integrating solar and wind energy into their existing grid infrastructure.",
+                "challenges": "Grid instability and high cost of integrating non-continuous energy sources with traditional power systems.",
+                "approach": "Developed a smart grid management system with advanced battery storage solutions for reliable energy distribution.",
+                "results": [
+                    "Successful 55% renewable energy adoption",
+                    "Lower carbon footprint by 40k tons/year",
+                    "Enhanced grid stability and storage capacity"
+                ],
+                "images": [
+                    "/images/Case-4.jpg",
+                    "/images/Case-2.jpg",
+                    "/images/Case-3.jpg"
+                ]
+            },
+            "5": {
+                "title": "Healthcare Data Interoperability Project",
+                "duration": "8-12 months",
+                "investment": "$900K – $1.5M",
+                "target": "Unified patient records across 15 clinics",
+                "overview": "Creating a seamless data sharing platform for a network of healthcare providers to improve patient care coordination.",
+                "challenges": "Siloed patient data and privacy concerns preventing efficient care coordination across multiple facilities.",
+                "approach": "Built a secure, HIPAA-compliant cloud database with API access for all clinics ensuring data security and accessibility.",
+                "results": [
+                    "Zero data breaches during first year",
+                    "25% faster patient processing time",
+                    "Improved clinical decision support"
+                ],
+                "images": [
+                    "/images/Case 5.jpg",
+                    "/images/Case-2.jpg",
+                    "/images/Case-3.jpg"
+                ]
+            },
+            "6": {
+                "title": "Smart City Infrastructure Development",
+                "duration": "36-48 months",
+                "investment": "$10M – $15M",
+                "target": "Enhance urban mobility and public safety",
+                "overview": "Partnering with municipal authorities to implement smart lighting and traffic management solutions for urban areas.",
+                "challenges": "Congested traffic flow and high crime rates in under-lit urban areas affecting citizen safety and mobility.",
+                "approach": "Installed smart LED streetlights and AI-powered traffic signal controllers for optimized urban management.",
+                "results": [
+                    "20% reduction in traffic congestion",
+                    "15% drop in nighttime crime rates",
+                    "35% savings in municipal energy bills"
+                ],
+                "images": [
+                    "/images/Case-6.jpg",
+                    "/images/Case-2.jpg",
+                    "/images/Case-3.jpg"
+                ]
+            }
+        }
     },
-    "q2": {
-      "question": "How often is the information updated?",
-      "answer": "We update our database quarterly and continuously monitor for any changes."
+    "GetInTouch": {
+        "title": "Driving business growth with smart and dependable technology.",
+        "peragraph": "Book a meeting to discover customized solutions designed for your business needs.",
+        "btntext": "Get Started"
     },
-    "q3": {
-      "question": "Is this service free?",
-      "answer": "Yes, our comparison tool is completely free for students."
+    "FAQSection": {
+        "tag": "FAQ",
+        "title": "Frequently Asked Questions",
+        "subtitle": "Can't find what you're looking for? We're here to help.",
+        "q1": {
+            "question": "How can I add a new institution to compare?",
+            "answer": "You can add institutions using our comparison tool or contact us with the necessary details."
+        },
+        "q2": {
+            "question": "How often is the information updated?",
+            "answer": "We update our database quarterly and continuously monitor for any changes."
+        },
+        "q3": {
+            "question": "Is this service free?",
+            "answer": "Yes, our comparison tool is completely free for students."
+        },
+        "q4": {
+            "question": "Can institutions claim their profile?",
+            "answer": "Yes, institutions can claim and manage their profiles to keep information accurate."
+        }
     },
-    "q4": {
-      "question": "Can institutions claim their profile?",
-      "answer": "Yes, institutions can claim and manage their profiles to keep information accurate."
+    "CareerPage": {
+        "hero": {
+            "title": "Build Your Career with My Softake",
+            "subtitle": "Join our team of innovators and help shape the future through technology."
+        },
+        "whyJoin": {
+            "title": "Why Join My Softake?",
+            "item1Title": "Growth-Oriented Culture",
+            "item1Desc": "We value learning, innovation, and continuous development.",
+            "item2Title": "Flexible Work",
+            "item2Desc": "Work remotely with flexible hours.",
+            "item3Title": "Impactful Projects",
+            "item3Desc": "Engage in real projects that make a difference."
+        },
+        "openPositionsTitle": "Join Our Team",
+        "openPositionsSubtitle": "Advance Your Career",
+        "applyButton": "Apply Now",
+        "hiringProcess": {
+            "title": "Our Hiring Process",
+            "step1": "Submit Application",
+            "step2": "Initial Screening",
+            "step3": "Technical Interview",
+            "step4": "Final Selection"
+        },
+        "cta": {
+            "title": "Ready to Join Our Team?",
+            "subtitle": "Send your CV and start your journey with My Softake.",
+            "button": "careers@mysoftake.com"
+        },
+        "loading": "Loading Job Details...",
+        "notFound": "Job Not Found!",
+        "careerApplicationForm": "Career Application Form",
+        "formDescription": "Please fill in all the necessary information before submitting for the position you are interested in",
+        "location": "Location",
+        "jobType": "Job Type",
+        "educationalRequirements": "Educational Requirements",
+        "experience": "Experience",
+        "jobResponsibilities": "Job Responsibilities",
+        "additionalRequirements": "Additional Requirements",
+        "link": "Link",
+        "applicationForm": "Application Form",
+        "formLabels": {
+            "name": "Name",
+            "gender": "Gender",
+            "selectGender": "Select Gender",
+            "male": "Male",
+            "female": "Female",
+            "other": "Other",
+            "dateOfBirth": "Date of Birth",
+            "phone": "Phone",
+            "email": "Email",
+            "nationality": "Nationality",
+            "address": "Address",
+            "coverLetter": "Cover Letter",
+            "coverLetterPlaceholder": "Tell us why you're a good fit...",
+            "attachCV": "Attach CV (PDF only)",
+            "submitApplication": "Submit Application"
+        },
+        "items": {
+            "1": {
+                "jobTitle": "Cloud DevOps Engineer",
+                "jobType": "Full Time",
+                "location": "Dhaka, Bangladesh",
+                "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
+                "description": "BJIT is hiring a Cloud DevOps Engineer to manage cloud infrastructure, CI/CD pipelines, automation, and deployment using modern DevOps tools and cloud platforms.",
+                "educationalRequirements": "Bachelor of Science (BSc) in CSE",
+                "experience": "1 to 3 year(s) hands on experience with Public Cloud platforms (Azure/AWS/GCP)",
+                "jobResponsibilities": [
+                    "Work as a team member of a DevOps team or work independently.",
+                    "Design and implement DevSecOps solutions based on business requirements using modern cloud-native technologies.",
+                    "Support team lead to design complete solution of Cloud & DevOps services.",
+                    "Deploy and manage containerized applications using Docker and Kubernetes (AKS/EKS/GKE) with Helm charts.",
+                    "Implement monitoring and observability solutions using Prometheus/Grafana or Datadog."
+                ],
+                "additionalRequirements": [
+                    "Strong hands-on experience with Terraform.",
+                    "Experience with security best practices including secrets management and network policies.",
+                    "Working knowledge of RDBMS (PostgreSQL/MySQL) and NoSQL databases.",
+                    "Basic programming skills in Python or Go for automation."
+                ]
+            },
+            "2": {
+                "jobTitle": "Senior Full Stack Developer",
+                "jobType": "Remote",
+                "location": "Global",
+                "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
+                "description": "We are looking for a Senior Full Stack Developer proficient in Next.js and Node.js to build scalable web applications.",
+                "educationalRequirements": "Bachelor's degree in CSE, IT or related field.",
+                "experience": "4+ years of professional software development experience.",
+                "jobResponsibilities": [
+                    "Lead the development of complex web applications using React and Next.js.",
+                    "Architect and maintain robust server-side logic using Node.js and Express.",
+                    "Collaborate with the UI/UX team to ensure high-quality design implementation.",
+                    "Perform code reviews and mentor junior developers."
+                ],
+                "additionalRequirements": [
+                    "Expertise in TypeScript and modern JavaScript (ES6+).",
+                    "Deep understanding of state management like Redux or Zustand.",
+                    "Hands-on experience with MongoDB or PostgreSQL.",
+                    "Familiarity with AWS services and CI/CD workflows."
+                ]
+            },
+            "3": {
+                "jobTitle": "UI/UX Designer",
+                "jobType": "Full Time",
+                "location": "Dhaka, Bangladesh",
+                "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
+                "description": "Join our design team to create intuitive digital products and maintain consistent brand identities across platforms.",
+                "educationalRequirements": "Graduate in Graphic Design, Fine Arts, or related discipline.",
+                "experience": "2+ years of experience in product design.",
+                "jobResponsibilities": [
+                    "Create high-fidelity mockups, wireframes, and interactive prototypes.",
+                    "Conduct user research and usability testing to iterate on designs.",
+                    "Maintain and evolve our internal design system.",
+                    "Collaborate with developers to ensure pixel-perfect implementation."
+                ],
+                "additionalRequirements": [
+                    "Mastery of Figma, Adobe XD, and Photoshop.",
+                    "Strong understanding of visual hierarchy, typography, and color theory.",
+                    "Ability to present and defend design decisions to stakeholders.",
+                    "Knowledge of basic HTML/CSS is a plus."
+                ]
+            },
+            "4": {
+                "jobTitle": "AI & Machine Learning Engineer",
+                "jobType": "Full Time",
+                "location": "Remote / Office",
+                "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
+                "description": "Build and deploy machine learning models to solve complex real-world problems and enhance product intelligence.",
+                "educationalRequirements": "MSc or BSc in CSE, Mathematics, or Data Science.",
+                "experience": "2 to 4 years in AI/ML field.",
+                "jobResponsibilities": [
+                    "Design, develop, and test machine learning models for predictive analysis.",
+                    "Pre-process and clean large datasets for model training.",
+                    "Optimize existing ML algorithms for better performance and scalability.",
+                    "Deploy models to production using FastAPI or Flask."
+                ],
+                "additionalRequirements": [
+                    "Proficiency in Python and libraries like TensorFlow, PyTorch, or Scikit-learn.",
+                    "Experience with Natural Language Processing (NLP) or Computer Vision.",
+                    "Knowledge of SQL and Big Data technologies.",
+                    "Solid understanding of statistics and linear algebra."
+                ]
+            },
+            "5": {
+                "jobTitle": "IT Security Specialist",
+                "jobType": "Full Time",
+                "location": "Dhaka, Bangladesh",
+                "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
+                "description": "Ensure the security and integrity of our corporate networks and cloud infrastructure against cyber threats.",
+                "educationalRequirements": "BSc in CSE or Cyber Security.",
+                "experience": "3+ years in information security.",
+                "jobResponsibilities": [
+                    "Conduct regular security audits and vulnerability assessments.",
+                    "Monitor network traffic for suspicious activity and potential breaches.",
+                    "Develop and implement security protocols and firewalls.",
+                    "Respond to and investigate security incidents."
+                ],
+                "additionalRequirements": [
+                    "Certifications like CEH, CISSP, or CompTIA Security+.",
+                    "Experience with penetration testing tools like Kali Linux or Metasploit.",
+                    "Strong understanding of encryption, VPNs, and IAM.",
+                    "Excellent problem-solving and analytical skills."
+                ]
+            },
+            "6": {
+                "jobTitle": "Supply Chain Strategist",
+                "jobType": "Full Time",
+                "location": "Gazipur, Bangladesh",
+                "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
+                "description": "Optimize international export and import operations while ensuring compliance with global trade regulations.",
+                "educationalRequirements": "Bachelor in Supply Chain Management or Business Administration.",
+                "experience": "3 to 5 years in logistics or supply chain.",
+                "jobResponsibilities": [
+                    "Analyze and improve logistics workflows to reduce costs and lead times.",
+                    "Manage relationships with international vendors and freight forwarders.",
+                    "Ensure compliance with customs laws and global trade regulations.",
+                    "Oversee inventory management and demand forecasting."
+                ],
+                "additionalRequirements": [
+                    "Proficiency in ERP systems like SAP or Oracle.",
+                    "Strong negotiation and vendor management skills.",
+                    "Excellent analytical skills using Excel or Power BI.",
+                    "Knowledge of international shipping documentation."
+                ]
+            }
+        }
+    },
+    "ContactPage": {
+        "hero": {
+            "title": "Contact Us",
+            "home": "Home",
+            "breadcrumb": "Contact Us"
+        },
+        "getInTouch": "Get In Touch",
+        "mainHeading": "Let's connect and build your digital future.",
+        "generalEnquiry": "For general enquires you can touch with our front desk supporting team at",
+        "orCallOn": "or call on",
+        "email": "info@mysoftake.com.bd",
+        "phone": "+88 01910-219667",
+        "branchesText": "We are at 36 places over the country,",
+        "seeBranches": "see our branches.",
+        "contactInfo": {
+            "address": {
+                "title": "Address",
+                "details": "Sector 9, Road 3/E, House 04, Uttara, Dhaka-1230."
+            },
+            "phone": {
+                "title": "Phone",
+                "details": "+88 01910-219667"
+            },
+            "email": {
+                "title": "E-Mail",
+                "details": "info@mysoftake.com.bd"
+            }
+        },
+        "helpOptions": {
+            "webDevelopment": "Web Development",
+            "uiUxDesign": "UI/UX Design",
+            "appDevelopment": "App Development",
+            "digitalMarketing": "Digital Marketing",
+            "consultancy": "Consultancy"
+        },
+        "form": {
+            "sendYourMessage": "Send Your Message",
+            "name": "Name",
+            "namePlaceholder": "Full Name",
+            "emailLabel": "Email",
+            "emailPlaceholder": "Email Address",
+            "helpWith": "What can we help you with?",
+            "selectServices": "Select services",
+            "subject": "Subject",
+            "subjectPlaceholder": "Subject",
+            "message": "Message",
+            "messagePlaceholder": "Your Message",
+            "sendMessage": "Send Message"
+        }
+    },
+    "VisionMission": {
+        "visionTitle": "Our Vision",
+        "visionDesc": "MY SOFTAKE PLC aims to become a global leader in innovative technology and business solutions. We envision a smarter, more connected future where companies can grow confidently with the support of efficient, intelligent, and sustainable systems. Through ongoing innovation and a customer-first approach, we empower businesses to transform, thrive, and succeed in the evolving digital world.",
+        "missionTitle": "Our Mission",
+        "missionDesc": "MY SOFTAKE PLC is committed to delivering high-quality, innovative, and reliable solutions that address the changing needs of businesses across industries. Our mission is to improve operational efficiency, strengthen digital capabilities, and provide services that promote sustainable growth. We operate with integrity and professionalism, ensuring every solution we deliver drives long-term success and meaningful impact for our clients."
+    },
+    "AboutPage": {
+        "heroTitle": "About Us"
+    },
+    "OurCreators": {
+        "title": "Join with Our Creators Of Change",
+        "description": "Be part of a passionate community driving innovation, creativity, and meaningful impact for a better tomorrow.",
+        "teamworkQuote": "Teamwork turns vision into reality."
+    },
+    "FeaturedOn": {
+        "title": "We Featured On"
+    },
+    "TeamPage": {
+        "managementTeam": {
+            "title": "Management Team",
+            "subtitle": "efficient, customer-cen-tric development, and a commitment to excel-lence, we strive to empower businesses to transform, thrive, and achieve long-term success in an ever-evolving digital world."
+        },
+        "itTeam": {
+            "title": "IT Team"
+        },
+        "adviserTeam": {
+            "title": "Adviser Team"
+        },
+        "manufacturingTeam": {
+            "title": "Manufacturing & Product Team"
+        },
+        "exportImportTeam": {
+            "title": "Export & Import Team"
+        },
+        "transportLogisticsTeam": {
+            "title": "Transport & Logistics Team"
+        },
+        "marketingTeam": {
+            "title": "Marketing Team"
+        },
+        "loading": "Loading...",
+        "email": "Email:",
+        "phone": "Phone:",
+        "designations": {
+            "Chairman": "Chairman",
+            "Chief Executive Officer": "Chief Executive Officer",
+            "Director Finance": "Director Finance",
+            "Director Operations": "Director Operations",
+            "Managing Director": "Managing Director",
+            "Operations Head": "Operations Head",
+            "Software Engineer": "Software Engineer",
+            "UI/UX Designer": "UI/UX Designer",
+            "DevOps Engineer": "DevOps Engineer",
+            "Frontend Developer": "Frontend Developer",
+            "Backend Developer": "Backend Developer",
+            "Factory Supervisor": "Factory Supervisor",
+            "Line Manager": "Line Manager",
+            "Production Manager": "Production Manager",
+            "Quality Inspector": "Quality Inspector",
+            "International Coordinator": "International Coordinator",
+            "Export Manager": "Export Manager",
+            "Import Officer": "Import Officer",
+            "Transport Officer": "Transport Officer",
+            "Logistics Manager": "Logistics Manager",
+            "Fleet Supervisor": "Fleet Supervisor",
+            "Brand Strategist": "Brand Strategist",
+            "Marketing Head": "Marketing Head",
+            "Digital Marketer": "Digital Marketer",
+            "Development Director": "Development Director",
+            "Finance Director": "Finance Director",
+            "Chief Marketing Officer": "Chief Marketing Officer",
+            "Chief Technology Officer": "Chief Technology Officer",
+            "Admin & Adminstrative Officer": "Admin & Administrative Officer",
+            "Advisor": "Advisor",
+            "Product Sourceing Officer": "Product Sourcing Officer",
+            "Senior Marketing Officer": "Senior Marketing Officer",
+            "Sales Executive": "Sales Executive",
+            "Office Executive": "Office Executive",
+            "Backend Developer(Team Lead)": "Backend Developer (Team Lead)",
+            "Junior Backend Developer": "Junior Backend Developer",
+            "Junior Frontend Developer": "Junior Frontend Developer",
+            "Graphic Designer": "Graphic Designer",
+            "Senior Office Executive": "Senior Office Executive",
+            "Video Editor": "Video Editor"
+        },
+        "names": {
+            "Ye Feiqiang": "Ye Feiqiang",
+            "Mohammad Hellal": "Mohammad Hellal",
+            "Alma Khanam": "Alma Khanam",
+            "Mobarak Hossain Mahin": "Mobarak Hossain Mahin",
+            "Md Bellal Hossain": "Md Bellal Hossain",
+            "Abu Nahid Md Noorshat": "Abu Nahid Md Noorshat",
+            "Md Mukul Miya": "Md Mukul Miya",
+            "Monir Hossain": "Monir Hossain",
+            "Abu Fuzael": "Abu Fuzael",
+            "MD Sabuj Howlader": "MD Sabuj Howlader",
+            "Mohammad Masud": "Mohammad Masud",
+            "Mohammad Arman Hossain": "Mohammad Arman Hossain",
+            "Md Hacibul Haque": "Md Hacibul Haque",
+            "Mohammad fahim": "Mohammad fahim",
+            "Mohammad shorab": "Mohammad shorab",
+            "NURUL AMIN": "NURUL AMIN",
+            "Abir Al Faysal": "Abir Al Faysal",
+            "Musfiqur Rahman Niaz": "Musfiqur Rahman Niaz",
+            "MD Abu Taleb Khan": "MD Abu Taleb Khan",
+            "Rony Ahmed": "Rony Ahmed",
+            "Amrito Mondol": "Amrito Mondol",
+            "Habiba Jannat Bristy": "Habiba Jannat Bristy",
+            "Sadman Fardin Fiha": "Sadman Fardin Fiha",
+            "Arif Hossain": "Arif Hossain",
+            "Sayeed Mahmud": "Sayeed Mahmud",
+            "Mahbub Alam": "Mahbub Alam",
+            "Tareq Hasan": "Tareq Hasan",
+            "Md Yeasin Arafat": "Md Yeasin Arafat",
+            "Md Rony": "Md Rony",
+            "Rafiul Islam": "Rafiul Islam",
+            "Nafis Ahmed": "Nafis Ahmed",
+            "Shihab Uddin": "Shihab Uddin",
+            "Taleb Khan": "Taleb Khan",
+            "Hasan Mahmud": "Hasan Mahmud",
+            "Sohel Rana": "Sohel Rana",
+            "Kamal Uddin": "Kamal Uddin",
+            "Rakib Hossain": "Rakib Hossain",
+            "Sajib Islam": "Sajib Islam",
+            "Rashed Kabir": "Rashed Kabir",
+            "Shakil Ahmed": "Shakil Ahmed",
+            "Tanvir Hasan": "Tanvir Hasan",
+            "Sharif Uddin": "Sharif Uddin",
+            "Imran Khan": "Imran Khan",
+            "Nayeem Rahman": "Nayeem Rahman",
+            "Riyad Hossain": "Riyad Hossain",
+            "Fahim Rahman": "Fahim Rahman",
+            "Sabbir Ahmed": "Sabbir Ahmed"
+        }
+    },
+    "PrivacyPage": {
+        "title": "Privacy Policy",
+        "introduction1": "At MultiService Agency, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services.",
+        "introduction2": "Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access our services.",
+        "section1Title": "1. Information We Collect",
+        "section1_1Title": "1.1 Personal Information",
+        "section1_1Desc": "We collect personal information that you voluntarily provide to us when you:",
+        "section1_1List": ["Register for an account", "Use our services", "Contact us for support", "Make a payment", "Subscribe to our newsletter"],
+        "section1_1Desc2": "This information may include:",
+        "section1_1List2": ["Name and contact details (email, phone, address)", "Business information (company name, tax ID)", "Payment information (billing address, payment method)", "Service preferences and requirements"],
+        "contactEmail": "privacy@multiservice.com",
+        "contactPhone": "+880 1234 567890",
+        "contactAddress": "123 Business Street, Dhaka, Bangladesh",
+        "contactDPO": "dpo@multiservice.com"
+    },
+    "TermsPage": {
+        "title": "Terms of Service",
+        "lastUpdated": "Last Updated: December 1, 2024",
+        "importantNotice": "Important: Please read these terms carefully before using our services. By accessing or using our services, you agree to be bound by these terms.",
+        "section1Title": "1. Acceptance of Terms",
+        "section1Desc": "By accessing and using the services provided by MultiService Agency, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our services.",
+        "section1List": ["These terms constitute a legally binding agreement between you and MultiService Agency.", "We reserve the right to modify these terms at any time without prior notice.", "Continued use of our services after changes constitutes acceptance of the new terms."]
+    },
+    "SchedulePage": {
+        "schedule": "Schedule",
+        "meetings": "Meetings",
+        "availability": "Availability",
+        "liveBadge": "Live scheduling workspace",
+        "heroTitle": "Schedule meetings without the back-and-forth.",
+        "heroDesc": "Collect meeting polls, and keep every business conversation exactly where it belongs on your calendar.",
+        "createLink": "Create scheduling link",
+        "watchDemo": "Watch 90s demo",
+        "smartRouting": "Smart routing",
+        "smartRoutingDesc": "Round‑robin and collective scheduling for teams, with time zones handled automatically.",
+        "meetingPolls": "Meeting polls",
+        "meetingPollsDesc": "Let guests vote on times and confirm the winner with one click.",
+        "availabilityRules": "Availability rules",
+        "availabilityRulesDesc": "Define working hours, buffers, and caps per day to protect your focus time.",
+        "meetingsTitle": "Meetings",
+        "meetingsDesc": "Manage your past and upcoming syncs.",
+        "noMeetings": "No meetings yet",
+        "noMeetingsDesc": "Your scheduled appointments will show up here once confirmed.",
+        "BookingWidget": {
+            "title": "Booking with Maya",
+            "subtitle": "Pure JavaScript Fetch Mode",
+            "share": "Share",
+            "selectDateTime": "Select Date & Time",
+            "timezone": "Timezone",
+            "noSlots": "No slots available.",
+            "confirmSelection": "Confirm Selection",
+            "bookingDetails": "Booking Details",
+            "name": "Name",
+            "email": "Email",
+            "department": "Department",
+            "selectDepartment": "Select...",
+            "scheduleNow": "Schedule Now",
+            "selectSlotError": "Please select a time slot.",
+            "successMessage": "Successfully scheduled!",
+            "loadError": "Could not load slots"
+        },
+        "Availability": {
+            "description": "See exactly when you're free across calendars and event types.",
+            "description2": "Drag to block, tap to open.",
+            "syncCalendars": "Sync calendars",
+            "weekView": "Week view",
+            "bookableSlots": "Bookable slots",
+            "existingMeetings": "Existing meetings",
+            "blockedTime": "Blocked time",
+            "noMeetingsFree": "No meetings · All slots free",
+            "noSchedule": "No Schedule loaded for this week."
+        }
     }
-  },
- "CareerPage": {
-    "hero": {
-      "title": "Build Your Career with My Softake",
-      "subtitle": "Join our team of innovators and help shape the future through technology."
-    },
-    "whyJoin": {
-      "title": "Why Join My Softake?",
-      "item1Title": "Growth-Oriented Culture",
-      "item1Desc": "We value learning, innovation, and continuous development.",
-      "item2Title": "Flexible Work",
-      "item2Desc": "Work remotely with flexible hours.",
-      "item3Title": "Impactful Projects",
-      "item3Desc": "Engage in real projects that make a difference."
-    },
-    "openPositionsTitle": "Join Our Team",
-    "openPositionsSubtitle": "Advance Your Career",
-    "applyButton": "Apply Now",
-    "hiringProcess": {
-      "title": "Our Hiring Process",
-      "step1": "Submit Application",
-      "step2": "Initial Screening",
-      "step3": "Technical Interview",
-      "step4": "Final Selection"
-    },
-    "cta": {
-      "title": "Ready to Join Our Team?",
-      "subtitle": "Send your CV and start your journey with My Softake.",
-      "button": "careers@mysoftake.com"
-    }
-  },
-  "VisionMission": {
-    "visionTitle": "Our Vision",
-    "visionDesc": "MY SOFTAKE PLC aims to become a global leader in innovative technology and business solutions. We envision a smarter, more connected future where companies can grow confidently with the support of efficient, intelligent, and sustainable systems. Through ongoing innovation and a customer-first approach, we empower businesses to transform, thrive, and succeed in the evolving digital world.",
-    
-    "missionTitle": "Our Mission",
-    "missionDesc": "MY SOFTAKE PLC is committed to delivering high-quality, innovative, and reliable solutions that address the changing needs of businesses across industries. Our mission is to improve operational efficiency, strengthen digital capabilities, and provide services that promote sustainable growth. We operate with integrity and professionalism, ensuring every solution we deliver drives long-term success and meaningful impact for our clients."
-}
-
-
-
 }

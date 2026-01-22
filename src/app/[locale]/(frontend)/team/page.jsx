@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
  
 import TeamSection from "@/components/TeamSection";
 import FAQSection from "@/components/FAQSection";
 
 const TeamPage = () => {
+  const t = useTranslations("TeamPage");
   const [teams, setTeams] = useState(null);
 
   useEffect(() => {
@@ -22,17 +24,35 @@ const TeamPage = () => {
     fetchTeams();
   }, []);
 
-  if (!teams) return <p>Loading...</p>;
+  if (!teams) return <p>{t("loading")}</p>;
+
+  // Function to translate designations
+  const translateDesignation = (designation) => {
+    return t(`designations.${designation}`, { defaultValue: designation });
+  };
+
+  // Function to translate names
+  const translateName = (name) => {
+    return t(`names.${name}`, { defaultValue: name });
+  };
+
+  // Function to translate email label
+  const translateEmail = () => {
+    return t("email", { defaultValue: "Email:" });
+  };
+
+  // Function to translate phone label
+  const translatePhone = () => {
+    return t("phone", { defaultValue: "Phone:" });
+  };
 
   return (
     <div className="bg-gray-50">
       <div className="container mx-auto px-10 pt-30">
-      <TeamSection title="Management Team" subtitle="efficient, customer-cen-tric development, and a commitment to excel-lence, we strive to empower businesses to transform, thrive, and achieve long-term success in an ever-evolving digital world." members={teams.management} />
-      <TeamSection title="IT Team" subtitle="" members={teams.it} />
-      <TeamSection title="Manufacturing & Product Team" subtitle="" members={teams.manufacturing} />
-      <TeamSection title="Export & Import Team" subtitle="" members={teams.exportImport} />
-      <TeamSection title="Transport & Logistics Team" subtitle=" " members={teams.transport} />
-      <TeamSection title="Marketing Team"   members={teams.marketing} />
+      <TeamSection title={t("managementTeam.title")} subtitle={t("managementTeam.subtitle")} members={teams.management} translateDesignation={translateDesignation} translateName={translateName} translateEmail={translateEmail} translatePhone={translatePhone} />
+      <TeamSection title={t("adviserTeam.title")} subtitle="" members={teams.adviser} translateDesignation={translateDesignation} translateName={translateName} translateEmail={translateEmail} translatePhone={translatePhone} />
+      <TeamSection title={t("marketingTeam.title")} subtitle="" members={teams.marketing} translateDesignation={translateDesignation} translateName={translateName} translateEmail={translateEmail} translatePhone={translatePhone} />
+      <TeamSection title={t("itTeam.title")} subtitle="" members={teams.it} translateDesignation={translateDesignation} translateName={translateName} translateEmail={translateEmail} translatePhone={translatePhone} />
       <div className="mb-10">
         <FAQSection/>
       </div>

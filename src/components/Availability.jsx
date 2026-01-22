@@ -3,8 +3,10 @@ import React, { useState, useEffect } from "react";
 import { HiOutlineCalendarDays } from "react-icons/hi2";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdOutlineWatchLater } from "react-icons/md";
+import { useTranslations } from "next-intl";
 
 export default function Availability() {
+  const t = useTranslations("SchedulePage.Availability");
   const [currentDate, setCurrentDate] = useState(new Date(2026, 2, 10));
   const [allSchedules, setAllSchedules] = useState(null);
   const [displayData, setDisplayData] = useState([]);
@@ -71,8 +73,8 @@ export default function Availability() {
       {/* Header Section */}
       <div className="flex justify-between mt-10 mb-10">
         <div>
-          <p className="text-gray-600 text-lg">See exactly when you’re free across calendars and event types.</p>
-          <p className="text-gray-600 text-lg">Drag to block, tap to open.</p>
+          <p className="text-gray-600 text-lg">{t("description")}</p>
+          <p className="text-gray-600 text-lg">{t("description2")}</p>
         </div>
         <button
           onClick={handleSync}
@@ -90,7 +92,7 @@ export default function Availability() {
             onClick={handleWeekView}
             className="flex items-center gap-2 px-6 py-3 bg-[#0077B6] text-white rounded-xl font-bold text-sm shadow-sm active:bg-[#003594]"
           >
-            <HiOutlineCalendarDays size={20} /> Week view
+            <HiOutlineCalendarDays size={20} /> {t("weekView")}
           </button>
         </div>
 
@@ -153,14 +155,14 @@ export default function Availability() {
 
                   {dayData.day === "Fri" && dayData.events.length === 0 && (
                     <div className="absolute inset-3 border-2 border-dashed border-gray-300 rounded-2xl flex items-center justify-center text-center p-6 bg-slate-50/20">
-                      <p className="text-gray-600 font-bold text-[15px] leading-snug">No meetings · <br /> All slots free</p>
+                      <p className="text-gray-600 font-bold text-[15px] leading-snug">{t("noMeetingsFree")}</p>
                     </div>
                   )}
                 </div>
               ))
             : (
               <div className="col-span-5 flex flex-col items-center justify-center text-gray-300 gap-2 italic">
-                <p>No Schedule loaded for this week.</p>
+                <p>{t("noSchedule")}</p>
               </div>
             )}
         </div>
@@ -169,13 +171,13 @@ export default function Availability() {
       {/* Legend Footer */}
       <div className="mt-8 flex gap-10 px-2">
         <div className="flex items-center gap-3 text-gray-600 font-bold text-sm uppercase tracking-wide">
-          <span className="w-3.5 h-3.5 rounded-full bg-emerald-400 ring-4 ring-white shadow-sm"></span> Bookable slots
+          <span className="w-3.5 h-3.5 rounded-full bg-emerald-400 ring-4 ring-white shadow-sm"></span> {t("bookableSlots")}
         </div>
         <div className="flex items-center gap-3 text-gray-600 font-bold text-sm uppercase tracking-wide">
-          <span className="w-3.5 h-3.5 rounded-full bg-sky-400 ring-4 ring-white shadow-sm"></span> Existing meetings
+          <span className="w-3.5 h-3.5 rounded-full bg-sky-400 ring-4 ring-white shadow-sm"></span> {t("existingMeetings")}
         </div>
         <div className="flex items-center gap-3 text-gray-600 font-bold text-sm uppercase tracking-wide">
-          <span className="w-3.5 h-3.5 rounded-full bg-pink-400 ring-4 ring-white shadow-sm"></span> Blocked time
+          <span className="w-3.5 h-3.5 rounded-full bg-pink-400 ring-4 ring-white shadow-sm"></span> {t("blockedTime")}
         </div>
       </div>
     </div>

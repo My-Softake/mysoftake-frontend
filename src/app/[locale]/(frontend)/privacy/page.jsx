@@ -1,6 +1,11 @@
+"use client";
+
 import Link from 'next/link';
+import { useTranslations } from "next-intl";
 
 export default function PrivacyPolicy() {
+  const t = useTranslations("PrivacyPage");
+
   return (
     <div className="min-h-screen">
       <div className="container mx-auto md:px-10 px-4 py-8 mt-20">
@@ -8,7 +13,7 @@ export default function PrivacyPolicy() {
         {/* Header */}
         <div className="">
            
-          <h1 className="text-4xl font-bold text-gray-900">Privacy Policy</h1>
+          <h1 className="text-4xl font-bold text-gray-900">{t("title")}</h1>
           
         </div>
 
@@ -16,36 +21,33 @@ export default function PrivacyPolicy() {
         <div className="">
           <div className="mb-8 mt-6">
             <p className="text-gray-700 mb-4">
-              At MultiService Agency , we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services.
+              {t("introduction1")}
             </p>
             <p className="text-gray-700">
-              Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access our services.
+              {t("introduction2")}
             </p>
           </div>
 
           {/* 1. Information We Collect */}
           <div className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Information We Collect</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">{t("section1Title")}</h2>
             
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">1.1 Personal Information</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">{t("section1_1Title")}</h3>
             <p className="text-gray-700 mb-3">
-              We collect personal information that you voluntarily provide to us when you:
+              {t("section1_1Desc")}
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-              <li>Register for an account</li>
-              <li>Use our services</li>
-              <li>Contact us for support</li>
-              <li>Make a payment</li>
-              <li>Subscribe to our newsletter</li>
+              {t.raw("section1_1List").map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
             <p className="text-gray-700 mb-4">
-              This information may include:
+              {t("section1_1Desc2")}
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Name and contact details (email, phone, address)</li>
-              <li>Business information (company name, tax ID)</li>
-              <li>Payment information (billing address, payment method)</li>
-              <li>Service preferences and requirements</li>
+              {t.raw("section1_1List2").map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
 
             <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">1.2 Automatically Collected Information</h3>
@@ -240,10 +242,10 @@ export default function PrivacyPolicy() {
               If you have any questions about this Privacy Policy, please contact us:
             </p>
             <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-gray-700"><strong>Email:</strong> privacy@multiservice.com</p>
-              <p className="text-gray-700"><strong>Phone:</strong> +880 1234 567890</p>
-              <p className="text-gray-700"><strong>Address:</strong> 123 Business Street, Dhaka, Bangladesh</p>
-              <p className="text-gray-700"><strong>Data Protection Officer:</strong> dpo@multiservice.com</p>
+              <p className="text-gray-700"><strong>Email:</strong> {t("contactEmail")}</p>
+              <p className="text-gray-700"><strong>Phone:</strong> {t("contactPhone")}</p>
+              <p className="text-gray-700"><strong>Address:</strong> {t("contactAddress")}</p>
+              <p className="text-gray-700"><strong>Data Protection Officer:</strong> {t("contactDPO")}</p>
             </div>
           </div>
  
