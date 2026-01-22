@@ -1010,7 +1010,13 @@
             "uiUxDesign": "UI/UX Design",
             "appDevelopment": "App Development",
             "digitalMarketing": "Digital Marketing",
-            "consultancy": "Consultancy"
+            "consultancy": "Consultancy",
+            "manufacturing": "Manufacturing & Production",
+            "export": "Export & Import",
+            "it": "Information Technology",
+            "transport": "Transport & Logistics",
+            "travel": "Travel & Tourism",
+            "construction": "Construction & Infrastructure"
         },
         "form": {
             "sendYourMessage": "Send Your Message",
