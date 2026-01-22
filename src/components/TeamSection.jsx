@@ -3,9 +3,8 @@
 import Image from "next/image";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const TeamSection = ({ title, members, subtitle, translateDesignation, translateName, translateEmail, translatePhone }) => {
@@ -13,7 +12,7 @@ const TeamSection = ({ title, members, subtitle, translateDesignation, translate
 
   return (
     <section className="py-10 mb-10">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto md:px-10">
         <h2 className="text-4xl text-black text-center font-bold mb-3">{title}</h2>
         {subtitle && (
           <p className="font-normal text-gray-600 text-base w-full md:w-[500px] text-center mx-auto pt-2 pb-10">
@@ -22,52 +21,38 @@ const TeamSection = ({ title, members, subtitle, translateDesignation, translate
         )}
 
         <Swiper
-          modules={[Autoplay, Navigation, Pagination]}
+          modules={[Autoplay, Pagination]}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
-          loop={members.length > 3}
+          loop={members.length > 1}
           speed={800}
-          spaceBetween={24}
+          spaceBetween={20}
           slidesPerView={1}
-          navigation={members.length > 3}
           pagination={{
             clickable: true,
             dynamicBullets: true,
           }}
           breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 24,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 24,
-            },
-            1280: {
-              slidesPerView: 4,
-              spaceBetween: 24,
-            },
+            640: { slidesPerView: 2, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 24 },
+            1024: { slidesPerView: 3, spaceBetween: 24 },
+            1280: { slidesPerView: 3, spaceBetween: 24 },
           }}
           className="team-swiper"
         >
           {members.map((member) => (
             <SwiperSlide key={member.id}>
-              <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group h-full flex flex-col mb-10">
-                <div className="relative h-80 w-full overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-4">
+              <div className="  rounded-3xl shadow-lg h-[500px] w-full md:w-[350px] transition-all duration-300 overflow-hidden group flex flex-col mb-10">
+                <div className="relative w-full overflow-hidden flex items-center justify-center bg-gray-50">
                   <Image
                     src={member.image}
                     alt={translateName ? translateName(member.name) : member.name}
                     width={280}
                     height={280}
-                    className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-500 max-h-full max-w-full"
-                    style={{ objectFit: 'contain' }}
+                    className="object-contain w-full rounded-lg group-hover:scale-105 transition-transform duration-500 "
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                 </div>
@@ -104,27 +89,6 @@ const TeamSection = ({ title, members, subtitle, translateDesignation, translate
       </div>
 
       <style jsx global>{`
-        .team-swiper .swiper-button-next,
-        .team-swiper .swiper-button-prev {
-          color: #3b82f6;
-          background: white;
-          width: 44px;
-          height: 44px;
-          border-radius: 50%;
-          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-          transition: all 0.3s ease;
-        }
-        .team-swiper .swiper-button-next:hover,
-        .team-swiper .swiper-button-prev:hover {
-          background: #3b82f6;
-          color: white;
-          transform: scale(1.1);
-        }
-        .team-swiper .swiper-button-next::after,
-        .team-swiper .swiper-button-prev::after {
-          font-size: 18px;
-          font-weight: bold;
-        }
         .team-swiper .swiper-pagination-bullet {
           background: #3b82f6;
           opacity: 0.5;
