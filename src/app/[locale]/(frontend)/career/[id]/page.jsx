@@ -1,13 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import React, { useEffect, useState, use } from "react";
+import React, { use } from "react";
 import { useForm } from "react-hook-form";
+import { useTranslations } from "next-intl";
 
 const CareerDetailsPage = ({ params }) => {
   const resolvedParams = use(params);
   const id = resolvedParams.id;
-  //   form valideation
+  const t = useTranslations("CareerPage");
+
+  // Validate that the ID exists (1-6)
+  const validIds = ["1", "2", "3", "4", "5", "6"];
+  const isValidId = validIds.includes(String(id));
+
+  //   form validation
   const {
     register,
     handleSubmit,
@@ -15,40 +22,25 @@ const CareerDetailsPage = ({ params }) => {
   } = useForm();
 
   const onSubmit = (data) => {
-   console.log(data); 
+    console.log(data);
   };
-  //   form valideation end
-  const [careerForm, setCareerForm] = useState(null);
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchJobData = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch("/data/CareerData.json");
-        const data = await response.json();
-        const singleJob = data.find((item) => String(item.id) === String(id));
-        setCareerForm(singleJob);
-      } catch (error) {
-        console.error("Fetch error:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  if (!isValidId) {
+    return <div className="text-center py-20 text-red-500">{t("notFound")}</div>;
+  }
 
-    if (id) {
-      fetchJobData();
-    }
-  }, [id]);
-
-  if (loading)
-    return (
-      <div className="text-center py-20 text-gray-500">
-        Loading Job Details...
-      </div>
-    );
-  if (!careerForm)
-    return <div className="text-center py-20 text-red-500">Job Not Found!</div>;
+  // Get career data from translations
+  const careerForm = {
+    jobTitle: t(`items.${id}.jobTitle`),
+    jobType: t(`items.${id}.jobType`),
+    location: t(`items.${id}.location`),
+    description: t(`items.${id}.description`),
+    educationalRequirements: t(`items.${id}.educationalRequirements`),
+    experience: t(`items.${id}.experience`),
+    jobLink: t(`items.${id}.jobLink`),
+    jobResponsibilities: t.raw(`items.${id}.jobResponsibilities`),
+    additionalRequirements: t.raw(`items.${id}.additionalRequirements`)
+  };
 
   return (
     <div className="bg-white min-h-screen pt-16">
@@ -61,7 +53,7 @@ const CareerDetailsPage = ({ params }) => {
         <div className="container mx-auto px-4 md:px-10">
           {/* Heading */}
           <h1 className="font-semibold text-white text-3xl sm:text-4xl md:text-5xl pt-6 md:pt-10 text-center md:text-left">
-            Career Application Form
+            {t("careerApplicationForm")}
           </h1>
 
           {/* Divider & Text */}
@@ -71,8 +63,7 @@ const CareerDetailsPage = ({ params }) => {
 
             {/* Description */}
             <p className="font-normal text-sm sm:text-base text-white max-w-xl text-center md:text-left">
-              Please fill in all the necessary information before submitting for
-              the position you are interested in
+              {t("formDescription")}
             </p>
           </div>
         </div>
@@ -86,11 +77,11 @@ const CareerDetailsPage = ({ params }) => {
           </h1>
           <div className="flex flex-wrap gap-4 text-gray-600 text-sm">
             <span>
-              <strong>Location:</strong> {careerForm.location}
+              <strong>{t("location")}:</strong> {careerForm.location}
             </span>
             <span>|</span>
             <span>
-              <strong>Job Type:</strong> {careerForm.jobType}
+              <strong>{t("jobType")}:</strong> {careerForm.jobType}
             </span>
           </div>
         </div>
@@ -106,20 +97,20 @@ const CareerDetailsPage = ({ params }) => {
           {/* Educational Requirements */}
           <div>
             <h2 className="text-xl font-bold text-gray-900 mb-3  ">
-              Educational Requirements:
+              {t("educationalRequirements")}:
             </h2>
             <p className="text-gray-700 ml-1">
               {careerForm.educationalRequirements}
             </p>
             <p className="text-gray-700 ml-1 mt-1">
-              <strong>Experience:</strong> {careerForm.experience}
+              <strong>{t("experience")}:</strong> {careerForm.experience}
             </p>
           </div>
 
           {/* Job Responsibilities */}
           <div>
             <h2 className="text-xl font-bold text-gray-900 mb-3  ">
-              Job Responsibilities:
+              {t("jobResponsibilities")}:
             </h2>
             <ul className="list-disc ml-5 space-y-2 text-gray-700">
               {careerForm.jobResponsibilities?.map((item, index) => (
@@ -131,7 +122,7 @@ const CareerDetailsPage = ({ params }) => {
           {/* Additional Requirements */}
           <div>
             <h2 className="text-xl font-bold text-gray-900 mb-3 ">
-              Additional Requirements:
+              {t("additionalRequirements")}:
             </h2>
             <ul className="list-disc ml-5 space-y-2 text-gray-700">
               {careerForm.additionalRequirements?.map((item, index) => (
@@ -141,7 +132,7 @@ const CareerDetailsPage = ({ params }) => {
           </div>
           <div className="mt-6">
             <h3 className="font-bold text-xl md:text-2xl text-black">
-              Link:
+              {t("link")}:
               <Link
                 href={careerForm.jobLink}
                 target="_blank"
@@ -158,7 +149,7 @@ const CareerDetailsPage = ({ params }) => {
       {/* Application Form Section */}
       <div className="container mx-auto px-10  pb-10">
         <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center md:text-left">
-          Application Form
+          {t("applicationForm")}
         </h2>
 
         <form
@@ -167,11 +158,11 @@ const CareerDetailsPage = ({ params }) => {
         >
           {/* Name */}
           <div className="flex flex-col">
-            <label className="font-semibold mb-2 text-gray-700">Name*</label>
+            <label className="font-semibold mb-2 text-gray-700">{t("formLabels.name")}*</label>
             <input
               type="text"
-              {...register("name", { required: "Name is required" })}
-              placeholder="Full Name"
+              {...register("name", { required: `${t("formLabels.name")} is required` })}
+              placeholder={t("formLabels.name")}
               className="border border-gray-300 text-gray-700 p-3 py-5 rounded focus:outline-none focus:border-blue-500"
             />
             {errors.name && (
@@ -181,15 +172,15 @@ const CareerDetailsPage = ({ params }) => {
 
           {/* Gender */}
           <div className="flex flex-col">
-            <label className="font-semibold mb-2 text-gray-700">Gender*</label>
+            <label className="font-semibold mb-2 text-gray-700">{t("formLabels.gender")}*</label>
             <select
-              {...register("gender", { required: "Gender is required" })}
+              {...register("gender", { required: `${t("formLabels.gender")} is required` })}
               className="border border-gray-300 text-gray-700 p-3 py-5 rounded focus:outline-none focus:border-blue-500 bg-white"
             >
-              <option value="">Select Gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
+              <option value="">{t("formLabels.selectGender")}</option>
+              <option value="male">{t("formLabels.male")}</option>
+              <option value="female">{t("formLabels.female")}</option>
+              <option value="other">{t("formLabels.other")}</option>
             </select>
             {errors.gender && (
               <p className="text-red-500 text-sm">{errors.gender.message}</p>
@@ -199,22 +190,22 @@ const CareerDetailsPage = ({ params }) => {
           {/* Date of Birth */}
           <div className="flex flex-col">
             <label className="font-semibold mb-2 text-gray-700">
-              Date of Birth*
+              {t("formLabels.dateOfBirth")}*
             </label>
             <input
               type="date"
-              {...register("dob", { required: "Date of birth is required" })}
+              {...register("dob", { required: `${t("formLabels.dateOfBirth")} is required` })}
               className="border border-gray-300 text-gray-700 p-3 rounded py-5 focus:outline-none focus:border-blue-500"
             />
           </div>
 
           {/* Phone */}
           <div className="flex flex-col">
-            <label className="font-semibold mb-2 text-gray-700">Phone*</label>
+            <label className="font-semibold mb-2 text-gray-700">{t("formLabels.phone")}*</label>
             <input
               type="tel"
               {...register("phone", {
-                required: "Phone is required",
+                required: `${t("formLabels.phone")} is required`,
                 minLength: {
                   value: 10,
                   message: "Invalid phone number",
@@ -230,11 +221,11 @@ const CareerDetailsPage = ({ params }) => {
 
           {/* Email */}
           <div className="flex flex-col">
-            <label className="font-semibold mb-2 text-gray-700">Email*</label>
+            <label className="font-semibold mb-2 text-gray-700">{t("formLabels.email")}*</label>
             <input
               type="email"
               {...register("email", {
-                required: "Email is required",
+                required: `${t("formLabels.email")} is required`,
                 pattern: {
                   value: /^\S+@\S+$/i,
                   message: "Invalid email address",
@@ -248,14 +239,14 @@ const CareerDetailsPage = ({ params }) => {
           {/* Nationality */}
           <div className="flex flex-col">
             <label className="font-semibold mb-2 text-gray-700">
-              Nationality*
+              {t("formLabels.nationality")}*
             </label>
             <input
               type="text"
               {...register("nationality", {
-                required: "Nationality is required",
+                required: `${t("formLabels.nationality")} is required`,
               })}
-              placeholder="Bangladeshi"
+              placeholder={t("formLabels.nationality")}
               className="border text-gray-700 border-gray-300 p-3 py-5 rounded focus:outline-none focus:border-blue-500"
             />
             {errors.nationality && (
@@ -267,11 +258,11 @@ const CareerDetailsPage = ({ params }) => {
 
           {/* Address */}
           <div className="flex flex-col md:col-span-2">
-            <label className="font-semibold mb-2 text-gray-700">Address*</label>
+            <label className="font-semibold mb-2 text-gray-700">{t("formLabels.address")}*</label>
             <input
               type="text"
-              {...register("address", { required: "Address is required" })}
-              placeholder="Full Address"
+              {...register("address", { required: `${t("formLabels.address")} is required` })}
+              placeholder={t("formLabels.address")}
               className="border text-gray-700 border-gray-300 p-3 py-6 rounded focus:outline-none focus:border-blue-500"
             />
           </div>
@@ -279,12 +270,12 @@ const CareerDetailsPage = ({ params }) => {
           {/* Cover Letter */}
           <div className="flex flex-col md:col-span-2">
             <label className="font-semibold mb-2 text-gray-700">
-              Cover Letter
+              {t("formLabels.coverLetter")}
             </label>
             <textarea
               rows="5"
               {...register("coverLetter")}
-              placeholder="Tell us why you're a good fit..."
+              placeholder={t("formLabels.coverLetterPlaceholder")}
               className="border text-gray-700 border-gray-300 p-3 py-10 rounded focus:outline-none focus:border-blue-500"
             ></textarea>
           </div>
@@ -292,7 +283,7 @@ const CareerDetailsPage = ({ params }) => {
           {/* Attach CV */}
           <div className="flex flex-col md:col-span-2">
             <label className="font-semibold mb-2 text-gray-700">
-              Attach CV* (PDF only)
+              {t("formLabels.attachCV")}*
             </label>
             <input
               type="file"
@@ -313,7 +304,7 @@ const CareerDetailsPage = ({ params }) => {
               type="submit"
               className="w-full md:w-max bg-[#27A0DB] text-white px-12 py-4 rounded font-bold "
             >
-              Submit Application
+              {t("formLabels.submitApplication")}
             </button>
           </div>
         </form>
@@ -323,3 +314,4 @@ const CareerDetailsPage = ({ params }) => {
 };
 
 export default CareerDetailsPage;
+

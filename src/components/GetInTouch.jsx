@@ -1,8 +1,9 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
 import React from "react";
 
 const GetInTouch = () => {
-
+const locale = useLocale();  
    const t = useTranslations("GetInTouch");
   return (
     <div className="pb-10 pt-10 px-4">
@@ -35,17 +36,19 @@ const GetInTouch = () => {
           </p>
 
           {/* Button */}
-          <button
-            className="
-              px-6 py-3 sm:px-8 md:px-10 md:py-3 mt-8 sm:mt-10
-              bg-white text-[#17386f] font-bold text-base sm:text-lg
-              rounded-xl
-              hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-300
-              shadow-[0_10px_20px_rgba(0,0,0,0.2)] z-10
-            "
-          >
-            {t("btntext")}
-          </button>
+         <Link href={`/${locale}/contact`}>
+            <button
+              className="
+                px-6 py-3 sm:px-8 md:px-10 md:py-3 mt-8 sm:mt-10
+                bg-white text-[#17386f] font-bold text-base sm:text-lg
+                rounded-xl cursor-pointer
+                hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-300
+                shadow-[0_10px_20px_rgba(0,0,0,0.2)] z-10
+              "
+            >
+              {t("btntext")}
+            </button>
+          </Link>
         </div>
       </div>
     </div>

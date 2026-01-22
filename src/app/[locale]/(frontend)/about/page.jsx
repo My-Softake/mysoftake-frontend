@@ -7,9 +7,10 @@ import FeaturedOn from "@/components/FeaturedOn";
 import OurCreators from "@/components/OurCreators";
 import FAQSection from "@/components/FAQSection";
 import VisionMission from "@/components/VisionMission";
+import { useTranslations } from "next-intl";
 
 const AboutPage = () => {
-
+  const t = useTranslations("AboutPage");
 
   return (
     <main className="bg-white">
@@ -24,10 +25,10 @@ const AboutPage = () => {
         {/* Content */}
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl  md:text-5xl lg:text-6xl font-black tracking-tighter pt-16 mb-4 drop-shadow-lg">
-            About Us
+            {t("heroTitle")}
           </h1>
 
-           
+
         </div>
       </section>
 
@@ -44,3 +45,4 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+

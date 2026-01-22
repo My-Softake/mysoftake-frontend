@@ -1,5 +1,5 @@
 "use client";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
@@ -50,6 +50,7 @@ const sliderData = [
 
 const Hero = () => {
   const t = useTranslations("Hero");
+    const locale = useLocale();  
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () =>
@@ -104,7 +105,7 @@ const Hero = () => {
             <p className="text-gray-300 text-sm sm:text-base max-w-md">
               {t(sliderData[currentIndex].descKey)}
             </p>
-            <Link href="/contact">
+            <Link href={`/${locale}/contact`}>
               <Button className="cursor-pointer hover:bg-[#27A0DB] duration-300">
                 {t("getStarted")}
               </Button>
@@ -116,18 +117,18 @@ const Hero = () => {
         <div className="flex flex-col gap-6 pb-30 lg:pb-20">
           <div className="flex items-center gap-10">
             <div className="flex gap-6 text-xl text-gray-300">
-              <Link href="https://www.facebook.com/mysoftake">
+              <Link href="https://www.facebook.com/mysoftake"   target="_blank">
                 <FaFacebookF className="hover:text-[#27A0DB] duration-300 cursor-pointer transition-colors" />
               </Link>
-              <Link href="https://www.twiteer.com/mysoftake">
+              <Link href="https://www.twiteer.com/mysoftake"   target="_blank">
                 <FaTwitter className="hover:text-[#27A0DB] duration-300 cursor-pointer transition-colors" />
               </Link>
-              <Link href="https://www.insta.com/mysoftake">
+              <Link href="https://www.insta.com/mysoftake"   target="_blank">
                 <FaInstagram className="hover:text-[#27A0DB] duration-300 cursor-pointer transition-colors" />
               </Link>
 
 
-              <Link href="https://www.linkedin.com/company/my-softake/">
+              <Link href="https://www.linkedin.com/company/my-softake/"   target="_blank">
                 <FaLinkedinIn className="hover:text-[#27A0DB] duration-300 cursor-pointer transition-colors" />
               </Link>
 

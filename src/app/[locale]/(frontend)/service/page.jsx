@@ -59,15 +59,8 @@ export default function ServicePage() {
                   <Link href={`/${locale}/service/${id}`}>
                     <button className="flex items-center gap-3 font-bold text-[#27A0DB] group-hover:text-black transition-all duration-500 cursor-pointer">
                       <span className="text-sm tracking-wider">
-                        {t.raw("items.1.title") ? "Explore More" : "Explore More"}
+                        {t("exploreMore")}
                       </span>
-                      {/* Note: Ideally "Explore More" should also be translated, but it wasn't in the provided JSONs updates. 
-                          I will keep it hardcoded for now or use a generic key if available. 
-                          Looking at OtherService, it seems hardcoded or untranslated there too? 
-                          Wait, existing file had "Explore More" hardcoded.
-                          I will leave "Explore More" hardcoded for now as I didn't see a key for it in the ServiceData I added. 
-                          Actually I see "viewDetail" in "OurRecentCaseStudies", but not generic.
-                      */}
                       <BsArrowRight
                         size={20}
                         className="group-hover:translate-x-2 transition-transform duration-500"

@@ -16,6 +16,7 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
+import { useTranslations } from "next-intl";
 import CalendarWidget from "./CalendarWidget";
 
 const formatDateForAPI = (date) => {
@@ -27,6 +28,7 @@ const formatDateForAPI = (date) => {
 };
 
 const BookingWidget = () => {
+  const t = useTranslations("SchedulePage.BookingWidget");
   const [availableSlots, setAvailableSlots] = useState([]);
   const [departments, setDepartments] = useState([]);
   const [selectedSlot, setSelectedSlot] = useState(null);
@@ -51,7 +53,7 @@ const BookingWidget = () => {
         setAvailableSlots(data?.available_slots || []);
       } catch (error) {
         console.error("Error loading slots:", error);
-        toast.error("Could not load slots");
+        toast.error(t("loadError"));
       } finally {
         setIsSlotsLoading(false);
       }
@@ -77,7 +79,7 @@ const BookingWidget = () => {
   }, [isModalOpen]);
 
   const onSubmit = async (data) => {
-    if (!selectedSlot) return toast.error("Please select a time slot.");
+    if (!selectedSlot) return toast.error(t("selectSlotError"));
     setIsSubmitting(true);
     
     setTimeout(() => {
@@ -86,7 +88,7 @@ const BookingWidget = () => {
       setIsModalOpen(false);
       setSelectedSlot(null);
       reset();
-      toast.success("Successfully scheduled!");
+      toast.success(t("successMessage"));
     }, 1500);
   };
 
@@ -106,12 +108,12 @@ const BookingWidget = () => {
           <div className="flex items-center gap-4">
             <div className="h-12 w-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-lg">SL</div>
             <div>
-              <h2 className="text-xl font-bold text-black">Booking with Maya</h2>
-              <p className="text-sm text-gray-600">Pure JavaScript Fetch Mode</p>
+              <h2 className="text-xl font-bold text-black">{t("title")}</h2>
+              <p className="text-sm text-gray-600">{t("subtitle")}</p>
             </div>
           </div>
           <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 hover:bg-slate-50 transition-colors text-sm font-medium">
-            <IoShareOutline size={18} /> Share
+            <IoShareOutline size={18} /> {t("share")}
           </button>
         </div>
 
@@ -119,7 +121,7 @@ const BookingWidget = () => {
         <div className="flex flex-col lg:flex-row">
           <div className="p-8 lg:w-1/2 flex flex-col gap-8">
             <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-black">Select Date & Time</h3>
+              <h3 className="text-lg font-semibold text-black">{t("selectDateTime")}</h3>
               <CalendarWidget selectedDate={selectedDate} onDateSelect={setSelectedDate} />
             </div>
           </div>
@@ -127,7 +129,7 @@ const BookingWidget = () => {
           <div className="p-8 lg:w-1/2 lg:border-l border-slate-100 bg-slate-50/30">
             <div className="flex items-center justify-between mb-6 text-black">
               <span className="font-medium flex items-center gap-2"><HiOutlineSun className="text-blue-500" /> {formatDateLabel(selectedDate)}</span>
-              <span className="text-sm flex items-center gap-1 cursor-pointer"><IoLanguageOutline /> Timezone</span>
+              <span className="text-sm flex items-center gap-1 cursor-pointer"><IoLanguageOutline /> {t("timezone")}</span>
             </div>
 
             <div className="min-h-[220px]">
@@ -150,7 +152,7 @@ const BookingWidget = () => {
                       </button>
                     ))
                   ) : (
-                    <p className="col-span-2 text-center py-10 text-gray-400">No slots available.</p>
+                    <p className="col-span-2 text-center py-10 text-gray-400">{t("noSlots")}</p>
                   )}
                 </div>
               )}
@@ -163,7 +165,7 @@ const BookingWidget = () => {
                 !selectedSlot ? "bg-slate-200 text-slate-400 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-700 text-white"
               }`}
             >
-              Confirm Selection <HiOutlineArrowRight />
+              {t("confirmSelection")} <HiOutlineArrowRight />
             </button>
           </div>
         </div>
@@ -174,20 +176,20 @@ const BookingWidget = () => {
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
           <div className="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden">
             <div className="px-6 py-4 border-b flex justify-between items-center text-black">
-              <h3 className="text-lg font-bold">Booking Details</h3>
+              <h3 className="text-lg font-bold">{t("bookingDetails")}</h3>
               <button onClick={() => setIsModalOpen(false)}><IoCloseOutline size={24} /></button>
             </div>
             <form onSubmit={handleSubmit(onSubmit)} className="p-6 space-y-4">
-              <FormInput label="Name" name="name" register={register} errors={errors} required />
-              <FormInput label="Email" name="email" register={register} errors={errors} type="email" required />
+              <FormInput label={t("name")} name="name" register={register} errors={errors} required t={t} />
+              <FormInput label={t("email")} name="email" register={register} errors={errors} type="email" required t={t} />
               
               <div>
-                <label className="block text-sm font-medium mb-1 text-black">Department</label>
+                <label className="block text-sm font-medium mb-1 text-black">{t("department")}</label>
                 <select
-                  {...register("department", { required: "Select a department" })}
+                  {...register("department", { required: t("selectDepartment") })}
                   className="w-full px-4 py-2 rounded-lg border outline-none focus:ring-2 focus:ring-blue-100"
                 >
-                  <option value="">Select...</option>
+                  <option value="">{t("selectDepartment")}</option>
                   {departments.map((dept) => (
                     <option key={dept.id || dept.pk} value={dept.id || dept.pk}>{dept.name}</option>
                   ))}
@@ -200,7 +202,7 @@ const BookingWidget = () => {
                 disabled={isSubmitting}
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl shadow-md flex items-center justify-center gap-2"
               >
-                {isSubmitting ? <AiOutlineLoading3Quarters className="animate-spin" /> : "Schedule Now"}
+                {isSubmitting ? <AiOutlineLoading3Quarters className="animate-spin" /> : t("scheduleNow")}
               </button>
             </form>
           </div>
@@ -211,7 +213,7 @@ const BookingWidget = () => {
 };
 
 // Helper Input Component
-const FormInput = ({ label, name, register, errors, type = "text", required }) => (
+const FormInput = ({ label, name, register, errors, type = "text", required, t }) => (
   <div>
     <label className="block text-sm font-medium mb-1 text-black">{label}</label>
     <input

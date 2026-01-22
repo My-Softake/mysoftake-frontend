@@ -13,7 +13,7 @@
     },
     "Hero": {
         "slide1_title": "アイデアを強力なデジタルソリューションに変革",
-        "slide1_desc": "MY SOFTAKE PVT. PLC. は、ビジネス成長を加速させるために設計された、モダンでインテリジェントかつスケーラブルなソフトウェアソリューションを提供します。イノベーションとテクノロジーを組み合わせ、デジタル時代におけるビジネスの成功をサポートします。",
+        "slide1_desc": "MY SOFTAKE PVT. PLC. は、ビジネス成長を加速させるために設計された、モダンでインテリジェントかつスケーラブルなソフトウェアソリューションを提供します。",
         "slide2_title": "ワンストップで提供する完全なITソリューション",
         "slide2_desc": "オンラインで成功するために必要なすべてのツールとソリューションを提供します。デジタルマーケティングからウェブ開発まで、ビジネスの成長、顧客とのエンゲージメント、デジタル世界での成功をサポートします。",
         "slide3_title": "MY SOFTAKEで体験する違い",
@@ -60,7 +60,27 @@
     "OurRecentCaseStudies": {
         "title": "最近のケーススタディ",
         "loading": "読み込み中...",
-        "viewDetail": "詳細を見る"
+        "viewDetail": "詳細を見る",
+        "items": {
+            "1": {
+                "images": ["/images/Case-1.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "2": {
+                "images": ["/images/Case-2.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "3": {
+                "images": ["/images/Case-3.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "4": {
+                "images": ["/images/Case-4.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "5": {
+                "images": ["/images/Case 5.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "6": {
+                "images": ["/images/Case-6.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            }
+        }
     },
     "CounterSection": {
         "projectsDelivered": "完了したプロジェクト",
@@ -76,7 +96,7 @@
         "uae": "UAE"
     },
     "OurPartner": {
-        "title": "パートナー企業"
+        "title": "私たちは認可されています"
     },
     "Footer": {
         "quickLinks": "クイックリンク",
@@ -89,6 +109,7 @@
     "ServiceData": {
         "title": "私たちの主要産業",
         "description": "私たちは、製造、IT、物流、旅行、建設の各分野で質の高いソリューションを提供しています。",
+        "exploreMore": "もっと見る",
         "items": {
             "1": {
                 "title": "情報技術 (IT)",
@@ -562,74 +583,608 @@
             }
         }
     },
-     "CaseStudy": {
-    "title": "会社概要",
-    "description": "MY SOFTAKE PLC. は、複数の業界にわたり革新的で信頼性が...門知識、そして戦略的ビジョンを通じて卓越性を追求し続けています。"
-},
-"GetInTouch": {
-    "title": "スマートで信頼性の高いテクノロジーでビジネス成長を推進します。",
-    "peragraph": "お客様のビジネスニーズに合わせた最適なソリューションをご提案するため、ぜひミーティングをご予約ください。",
-    "btntext": "始める"
-  },
-   "FAQSection": {
-    "tag": "FAQ",
-    "title": "よくある質問",
-    "subtitle": "お探しの内容が見つかりませんか？私たちがお手伝いします。",
-
-    "q1": {
-      "question": "新しい教育機関を比較に追加するにはどうすればよいですか？",
-      "answer": "比較ツールから追加するか、詳細を記載の上でお問い合わせください。"
+    "CaseStudy": {
+        "title": "会社概要",
+        "description": "MY SOFTAKE PLC. は、複数の業界にわたり革新的なソリューションと測定可能な成果を提供し、専門知識と戦略的ビジョンを通じて卓越性を追求し続けています。",
+        "viewCaseStudy": "ケーススタディを見る",
+        "loading": "読み込み中...",
+        "notFound": "見つかりません",
+        "caseStudyDetails": "ケーススタディ詳細",
+        "bannerDescription": "さまざまな業界で革新的なソリューションと測定可能な成果を紹介する包括的なケーススタディをご覧ください。",
+        "totalDuration": "総期間",
+        "estimatedInvestment": "推定投資額",
+        "projectTarget": "プロジェクト目標",
+        "overview": "概要",
+        "challenges": "課題",
+        "approach": "アプローチ",
+        "result": "成果",
+        "items": {
+            "1": {
+                "title": "Assetra エンドツーエンド資産最適化",
+                "duration": "16-24ヶ月",
+                "investment": "2.5億円 – 4.5億円",
+                "target": "TCOを最大35%削減",
+                "overview": "Assetraは、運用コストの上昇と断片化された資産管理慣行に直面している大規模な資産集約型組織と提携しました。私たちのチームは、非効率性を特定し、包括的な最適化戦略を策定するために、資産ポートフォリオ全体を評価しました。",
+                "challenges": "ライフサイクル全体での可視性の欠如、事後対応型メンテナンス、分散した資産データにより、高い運用リスクとコスト増加を招いていました。",
+                "approach": "資産評価、予知保全、高度な分析を活用した長期的な更新計画を網羅するエンドツーエンド戦略を実施しました。",
+                "results": [
+                    "総所有コスト40%削減",
+                    "計画外ダウンタイムの大幅な減少",
+                    "資産信頼性と稼働率の向上",
+                    "将来の投資に向けた明確なライフサイクルロードマップ"
+                ],
+                "images": [
+                    "/images/Case-1.jpg",
+                    "/images/Case-2.jpg",
+                    "/images/Case-3.jpg"
+                ]
+            },
+            "2": {
+                "title": "スマートファクトリー自動化アップグレード",
+                "duration": "12-18ヶ月",
+                "investment": "3.5億円 – 5.6億円",
+                "target": "生産効率を25%向上",
+                "overview": "製造大手と協力し、IoTとAI駆動の自動化を使用してレガシーシステムを近代化し、生産性を向上させました。",
+                "challenges": "手動プロセス、頻繁なハードウェア障害、リアルタイム生産監視の欠如が全体的な効率に影響していました。",
+                "approach": "スマートセンサーと集中制御システムを導入し、すべての生産ユニット全体でワークフローと監視を自動化しました。",
+                "results": [
+                    "生産スループット30%増加",
+                    "エネルギーコスト20%削減",
+                    "すべてのユニットにわたるリアルタイムデータの可視化"
+                ],
+                "images": [
+                    "/images/Case-2.jpg",
+                    "/images/Case-2.jpg",
+                    "/images/Case-3.jpg"
+                ]
+            },
+            "3": {
+                "title": "サプライチェーンデジタルトランスフォーメーション",
+                "duration": "10-14ヶ月",
+                "investment": "1.7億円 – 2.8億円",
+                "target": "物流コストを20%削減",
+                "overview": "グローバル小売ブランドのサプライチェーンネットワークを再設計し、配送速度の向上と運用オーバーヘッドの削減を実現しました。",
+                "challenges": "不正確な在庫予測と非効率なルート計画により、配送遅延と顧客不満が発生していました。",
+                "approach": "AI予測ツールを統合し、機械学習アルゴリズムを使用して物流ルートを最適化し、精度を向上させました。",
+                "results": [
+                    "倉庫オーバーヘッド15%削減",
+                    "オンタイム配送率99%",
+                    "在庫回転率の改善"
+                ],
+                "images": [
+                    "/images/Case-3.jpg",
+                    "/images/Case-2.jpg",
+                    "/images/Case-3.jpg"
+                ]
+            },
+            "4": {
+                "title": "再生可能エネルギーグリッド統合",
+                "duration": "24-30ヶ月",
+                "investment": "7億円 – 10.5億円",
+                "target": "再生可能電力源への50%移行",
+                "overview": "地域の電力会社が既存のグリッドインフラストラクチャに太陽光と風力エネルギーを統合するのを支援しました。",
+                "challenges": "グリッドの不安定性と、従来の電力システムへの非連続エネルギー源統合の高コストが課題でした。",
+                "approach": "信頼性の高いエネルギー配電のための先進的なバッテリー貯蔵ソリューションを備えたスマートグリッド管理システムを開発しました。",
+                "results": [
+                    "再生可能エネルギー55%採用に成功",
+                    "年間4万トンの炭素フットプリント削減",
+                    "グリッドの安定性と貯蔵容量の向上"
+                ],
+                "images": [
+                    "/images/Case-4.jpg",
+                    "/images/Case-2.jpg",
+                    "/images/Case-3.jpg"
+                ]
+            },
+            "5": {
+                "title": "ヘルスケアデータ相互運用性プロジェクト",
+                "duration": "8-12ヶ月",
+                "investment": "1.3億円 – 2.1億円",
+                "target": "15クリニック間で統一患者記録",
+                "overview": "ヘルスケアプロバイダーのネットワーク向けにシームレスなデータ共有プラットフォームを作成し、患者ケアの調整を改善しました。",
+                "challenges": "サイロ化された患者データとプライバシーへの懸念が、複数の施設間での効率的なケア調整を妨げていました。",
+                "approach": "すべてのクリニック向けにAPIアクセスを備えた安全でHIPAA準拠のクラウドデータベースを構築し、データセキュリティとアクセシビリティを確保しました。",
+                "results": [
+                    "初年度のデータ漏洩ゼロ",
+                    "患者処理時間25%短縮",
+                    "臨床意思決定支援の改善"
+                ],
+                "images": [
+                    "/images/Case 5.jpg",
+                    "/images/Case-2.jpg",
+                    "/images/Case-3.jpg"
+                ]
+            },
+            "6": {
+                "title": "スマートシティインフラストラクチャ開発",
+                "duration": "36-48ヶ月",
+                "investment": "14億円 – 21億円",
+                "target": "都市のモビリティと公共安全の向上",
+                "overview": "市当局と提携し、都市部向けのスマート照明と交通管理ソリューションを実装しました。",
+                "challenges": "交通渋滞と照明不足の都市部での高い犯罪率が、市民の安全とモビリティに影響していました。",
+                "approach": "スマートLED街路灯とAI駆動の交通信号制御装置を設置し、都市管理を最適化しました。",
+                "results": [
+                    "交通渋滞20%削減",
+                    "夜間犯罪率15%低下",
+                    "市のエネルギー請求35%節約"
+                ],
+                "images": [
+                    "/images/Case-6.jpg",
+                    "/images/Case-2.jpg",
+                    "/images/Case-3.jpg"
+                ]
+            }
+        }
     },
-    "q2": {
-      "question": "情報はどのくらいの頻度で更新されますか？",
-      "answer": "データベースは四半期ごとに更新され、変更があれば随時確認しています。"
+    "GetInTouch": {
+        "title": "スマートで信頼性の高いテクノロジーでビジネス成長を推進します。",
+        "peragraph": "お客様のビジネスニーズに合わせた最適なソリューションをご提案するため、ぜひミーティングをご予約ください。",
+        "btntext": "始める"
     },
-    "q3": {
-      "question": "このサービスは無料ですか？",
-      "answer": "はい、学生向けの比較ツールは完全に無料です。"
+    "FAQSection": {
+        "tag": "FAQ",
+        "title": "よくある質問",
+        "subtitle": "お探しの内容が見つかりませんか？私たちがお手伝いします。",
+        "q1": {
+            "question": "新しい教育機関を比較に追加するにはどうすればよいですか？",
+            "answer": "比較ツールから追加するか、詳細を記載の上でお問い合わせください。"
+        },
+        "q2": {
+            "question": "情報はどのくらいの頻度で更新されますか？",
+            "answer": "データベースは四半期ごとに更新され、変更があれば随時確認しています。"
+        },
+        "q3": {
+            "question": "このサービスは無料ですか？",
+            "answer": "はい、学生向けの比較ツールは完全に無料です。"
+        },
+        "q4": {
+            "question": "教育機関はプロフィールを管理できますか？",
+            "answer": "はい、教育機関はプロフィールを申請・管理し、情報の正確性を保つことができます。"
+        }
     },
-    "q4": {
-      "question": "教育機関はプロフィールを管理できますか？",
-      "answer": "はい、教育機関はプロフィールを申請・管理し、情報の正確性を保つことができます。"
+    "CareerPage": {
+        "hero": {
+            "title": "My Softake でキャリアを築こう",
+            "subtitle": "革新的なチームに参加し、技術で未来を形作りましょう。"
+        },
+        "whyJoin": {
+            "title": "なぜ My Softake に参加するのか？",
+            "item1Title": "成長志向のカルチャー",
+            "item1Desc": "学習、イノベーション、継続的な成長を重視しています。",
+            "item2Title": "柔軟な働き方",
+            "item2Desc": "リモート対応で柔軟な勤務時間。",
+            "item3Title": "影響力のあるプロジェクト",
+            "item3Desc": "実際のプロジェクトに参加して有意義な成果を生み出します。"
+        },
+        "openPositionsTitle": "チームに参加する",
+        "openPositionsSubtitle": "キャリアを成長させよう",
+        "applyButton": "今すぐ応募",
+        "hiringProcess": {
+            "title": "採用プロセス",
+            "step1": "オンライン応募",
+            "step2": "一次選考",
+            "step3": "技術面接",
+            "step4": "最終選考"
+        },
+        "cta": {
+            "title": "チームに参加する準備はできていますか？",
+            "subtitle": "履歴書を送信し、My Softake でのキャリアを始めましょう。",
+            "button": "careers@mysoftake.com"
+        },
+        "loading": "求人情報を読み込み中...",
+        "notFound": "求人が見つかりません！",
+        "careerApplicationForm": "キャリア応募フォーム",
+        "formDescription": "応募するポジションに必要な情報をすべて入力してください",
+        "location": "勤務地",
+        "jobType": "雇用形態",
+        "educationalRequirements": "学歴要件",
+        "experience": "経験",
+        "jobResponsibilities": "職務内容",
+        "additionalRequirements": "その他の要件",
+        "link": "リンク",
+        "applicationForm": "応募フォーム",
+        "formLabels": {
+            "name": "氏名",
+            "gender": "性別",
+            "selectGender": "性別を選択",
+            "male": "男性",
+            "female": "女性",
+            "other": "その他",
+            "dateOfBirth": "生年月日",
+            "phone": "電話番号",
+            "email": "メールアドレス",
+            "nationality": "国籍",
+            "address": "住所",
+            "coverLetter": "カバーレター",
+            "coverLetterPlaceholder": "なぜ適任なのかお書きください...",
+            "attachCV": "履歴書を添付（PDFのみ）",
+            "submitApplication": "応募を送信"
+        },
+        "items": {
+            "1": {
+                "jobTitle": "クラウドDevOpsエンジニア",
+                "jobType": "正社員",
+                "location": "ダッカ、バングラデシュ",
+                "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
+                "description": "最新のDevOpsツールとクラウドプラットフォームを使用して、クラウドインフラストラクチャ、CI/CDパイプライン、自動化、デプロイメントを管理するクラウドDevOpsエンジニアを募集しています。",
+                "educationalRequirements": "コンピューターサイエンス学士号",
+                "experience": "パブリッククラウドプラットフォーム（Azure/AWS/GCP）での1〜3年の実務経験",
+                "jobResponsibilities": [
+                    "DevOpsチームのメンバーとして、または独立して作業する。",
+                    "最新のクラウドネイティブ技術を使用して、ビジネス要件に基づいたDevSecOpsソリューションを設計・実装する。",
+                    "チームリードをサポートし、クラウド＆DevOpsサービスの完全なソリューションを設計する。",
+                    "DockerとKubernetes（AKS/EKS/GKE）を使用してコンテナ化されたアプリケーションをデプロイ・管理する。",
+                    "Prometheus/GrafanaまたはDatadogを使用して監視とオブザーバビリティソリューションを実装する。"
+                ],
+                "additionalRequirements": [
+                    "Terraformでの強力な実務経験。",
+                    "シークレット管理とネットワークポリシーを含むセキュリティベストプラクティスの経験。",
+                    "RDBMS（PostgreSQL/MySQL）およびNoSQLデータベースの実務知識。",
+                    "自動化のためのPythonまたはGoの基本的なプログラミングスキル。"
+                ]
+            },
+            "2": {
+                "jobTitle": "シニアフルスタック開発者",
+                "jobType": "リモート",
+                "location": "グローバル",
+                "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
+                "description": "Next.jsとNode.jsに精通したシニアフルスタック開発者を募集しています。スケーラブルなWebアプリケーションを構築します。",
+                "educationalRequirements": "CSE、IT、または関連分野の学士号。",
+                "experience": "4年以上のプロフェッショナルなソフトウェア開発経験。",
+                "jobResponsibilities": [
+                    "ReactとNext.jsを使用した複雑なWebアプリケーションの開発をリードする。",
+                    "Node.jsとExpressを使用した堅牢なサーバーサイドロジックを設計・維持する。",
+                    "UI/UXチームと協力して高品質なデザイン実装を確保する。",
+                    "コードレビューを実施し、ジュニア開発者を指導する。"
+                ],
+                "additionalRequirements": [
+                    "TypeScriptとモダンJavaScript（ES6+）の専門知識。",
+                    "ReduxやZustandなどの状態管理の深い理解。",
+                    "MongoDBまたはPostgreSQLの実務経験。",
+                    "AWSサービスとCI/CDワークフローの知識。"
+                ]
+            },
+            "3": {
+                "jobTitle": "UI/UXデザイナー",
+                "jobType": "正社員",
+                "location": "ダッカ、バングラデシュ",
+                "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
+                "description": "デザインチームに参加し、直感的なデジタル製品を作成し、プラットフォーム全体で一貫したブランドアイデンティティを維持します。",
+                "educationalRequirements": "グラフィックデザイン、美術、または関連分野の卒業生。",
+                "experience": "プロダクトデザインで2年以上の経験。",
+                "jobResponsibilities": [
+                    "高精度のモックアップ、ワイヤーフレーム、インタラクティブなプロトタイプを作成する。",
+                    "ユーザーリサーチとユーザビリティテストを実施してデザインを改善する。",
+                    "社内デザインシステムを維持・進化させる。",
+                    "開発者と協力してピクセルパーフェクトな実装を確保する。"
+                ],
+                "additionalRequirements": [
+                    "Figma、Adobe XD、Photoshopのマスタリー。",
+                    "視覚的階層、タイポグラフィ、色理論の強い理解。",
+                    "ステークホルダーにデザイン決定を提示・擁護する能力。",
+                    "基本的なHTML/CSSの知識があれば尚可。"
+                ]
+            },
+            "4": {
+                "jobTitle": "AI＆機械学習エンジニア",
+                "jobType": "正社員",
+                "location": "リモート / オフィス",
+                "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
+                "description": "複雑な実世界の問題を解決し、製品インテリジェンスを向上させるための機械学習モデルを構築・デプロイします。",
+                "educationalRequirements": "CSE、数学、またはデータサイエンスの修士号または学士号。",
+                "experience": "AI/ML分野で2〜4年の経験。",
+                "jobResponsibilities": [
+                    "予測分析のための機械学習モデルを設計、開発、テストする。",
+                    "モデルトレーニングのための大規模データセットを前処理・クリーニングする。",
+                    "既存のMLアルゴリズムを最適化してパフォーマンスとスケーラビリティを向上させる。",
+                    "FastAPIまたはFlaskを使用してモデルを本番環境にデプロイする。"
+                ],
+                "additionalRequirements": [
+                    "PythonとTensorFlow、PyTorch、Scikit-learnなどのライブラリの習熟。",
+                    "自然言語処理（NLP）またはコンピュータビジョンの経験。",
+                    "SQLとビッグデータ技術の知識。",
+                    "統計学と線形代数の確固たる理解。"
+                ]
+            },
+            "5": {
+                "jobTitle": "ITセキュリティスペシャリスト",
+                "jobType": "正社員",
+                "location": "ダッカ、バングラデシュ",
+                "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
+                "description": "サイバー脅威から企業ネットワークとクラウドインフラストラクチャのセキュリティと完全性を確保します。",
+                "educationalRequirements": "CSEまたはサイバーセキュリティの学士号。",
+                "experience": "情報セキュリティで3年以上の経験。",
+                "jobResponsibilities": [
+                    "定期的なセキュリティ監査と脆弱性評価を実施する。",
+                    "不審な活動と潜在的な侵害についてネットワークトラフィックを監視する。",
+                    "セキュリティプロトコルとファイアウォールを開発・実装する。",
+                    "セキュリティインシデントに対応・調査する。"
+                ],
+                "additionalRequirements": [
+                    "CEH、CISSP、CompTIA Security+などの資格。",
+                    "Kali LinuxやMetasploitなどのペネトレーションテストツールの経験。",
+                    "暗号化、VPN、IAMの強い理解。",
+                    "優れた問題解決能力と分析スキル。"
+                ]
+            },
+            "6": {
+                "jobTitle": "サプライチェーンストラテジスト",
+                "jobType": "正社員",
+                "location": "ガジプール、バングラデシュ",
+                "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
+                "description": "グローバル貿易規制に準拠しながら、国際的な輸出入業務を最適化します。",
+                "educationalRequirements": "サプライチェーン管理または経営学の学士号。",
+                "experience": "物流またはサプライチェーンで3〜5年の経験。",
+                "jobResponsibilities": [
+                    "コストとリードタイムを削減するために物流ワークフローを分析・改善する。",
+                    "国際ベンダーおよび貨物運送業者との関係を管理する。",
+                    "税関法およびグローバル貿易規制への準拠を確保する。",
+                    "在庫管理と需要予測を監督する。"
+                ],
+                "additionalRequirements": [
+                    "SAPやOracleなどのERPシステムの習熟。",
+                    "強力な交渉力とベンダー管理スキル。",
+                    "ExcelまたはPower BIを使用した優れた分析スキル。",
+                    "国際配送書類の知識。"
+                ]
+            }
+        }
+    },
+    "ContactPage": {
+        "hero": {
+            "title": "お問い合わせ",
+            "home": "ホーム",
+            "breadcrumb": "お問い合わせ"
+        },
+        "getInTouch": "お気軽にご連絡ください",
+        "mainHeading": "デジタルな未来を一緒に築きましょう。",
+        "generalEnquiry": "一般的なお問い合わせは、フロントデスクサポートチームまでご連絡ください",
+        "orCallOn": "または電話",
+        "email": "info@mysoftake.com.bd",
+        "phone": "+88 01910-219667",
+        "branchesText": "全国36か所に拠点があります。",
+        "seeBranches": "支店一覧を見る。",
+        "contactInfo": {
+            "address": {
+                "title": "住所",
+                "details": "セクター9、ロード3/E、ハウス04、ウッタラ、ダッカ-1230"
+            },
+            "phone": {
+                "title": "電話",
+                "details": "+88 01910-219667"
+            },
+            "email": {
+                "title": "メール",
+                "details": "info@mysoftake.com.bd"
+            }
+        },
+        "helpOptions": {
+            "webDevelopment": "Web開発",
+            "uiUxDesign": "UI/UXデザイン",
+            "appDevelopment": "アプリ開発",
+            "digitalMarketing": "デジタルマーケティング",
+            "consultancy": "コンサルティング"
+        },
+        "form": {
+            "sendYourMessage": "メッセージを送信",
+            "name": "氏名",
+            "namePlaceholder": "フルネーム",
+            "emailLabel": "メール",
+            "emailPlaceholder": "メールアドレス",
+            "helpWith": "どのようなお手伝いが必要ですか？",
+            "selectServices": "サービスを選択",
+            "subject": "件名",
+            "subjectPlaceholder": "件名",
+            "message": "メッセージ",
+            "messagePlaceholder": "メッセージ内容",
+            "sendMessage": "メッセージを送信"
+        }
+    },
+    "VisionMission": {
+        "visionTitle": "私たちのビジョン",
+        "visionDesc": "MY SOFTAKE PLCは、革新的な技術とビジネスソリューションのグローバルリーダーになることを目指しています。私たちのビジョンは、効率的でインテリジェント、持続可能なシステムのサポートにより、企業が自信を持って成長できる、よりスマートでつながった未来を創造することです。継続的なイノベーションと顧客中心の開発、卓越性へのコミットメントを通じて、企業が変革し、成長し、デジタル世界で長期的な成功を達成できるよう支援します。",
+        "missionTitle": "私たちのミッション",
+        "missionDesc": "MY SOFTAKE PLCは、さまざまな業界の企業の進化するニーズに対応する、高品質で革新的かつ信頼性の高いソリューションを提供することに専念しています。私たちの使命は、業務効率を向上させ、デジタル能力を強化し、持続可能な成長を支援するサービスを提供することです。私たちは誠実さと専門性をもって業務に取り組み、提供するすべてのソリューションが長期的な成功とクライアントへの有意義な影響をもたらすことを保証します。"
+    },
+    "AboutPage": {
+        "heroTitle": "会社概要"
+    },
+    "OurCreators": {
+        "title": "変革の創造者たちと共に",
+        "description": "イノベーション、創造性、そしてより良い明日のための有意義なインパクトを推進する情熱的なコミュニティの一員になりましょう。",
+        "teamworkQuote": "チームワークがビジョンを現実に変える。"
+    },
+    "FeaturedOn": {
+        "title": "掲載メディア"
+    },
+    "TeamPage": {
+        "managementTeam": {
+            "title": "管理チーム",
+            "subtitle": "効率的で顧客中心の開発、そして卓越性への取り組みにより、企業が変革し、成長し、絶えず進化するデジタル世界で長期的な成功を達成できるよう支援します。"
+        },
+        "itTeam": {
+            "title": "ITチーム"
+        },
+        "adviserTeam": {
+            "title": "アドバイザーチーム"
+        },
+        "manufacturingTeam": {
+            "title": "製造・生産チーム"
+        },
+        "exportImportTeam": {
+            "title": "輸出入チーム"
+        },
+        "transportLogisticsTeam": {
+            "title": "輸送・物流チーム"
+        },
+        "marketingTeam": {
+            "title": "マーケティングチーム"
+        },
+        "loading": "読み込み中...",
+        "email": "メール：",
+        "phone": "電話：",
+        "designations": {
+            "Chairman": "会長",
+            "Chief Executive Officer": "最高経営責任者",
+            "Director Finance": "財務ディレクター",
+            "Director Operations": "運営ディレクター",
+            "Managing Director": "代表取締役",
+            "Operations Head": "運営責任者",
+            "Software Engineer": "ソフトウェアエンジニア",
+            "UI/UX Designer": "UI/UXデザイナー",
+            "DevOps Engineer": "DevOpsエンジニア",
+            "Frontend Developer": "フロントエンド開発者",
+            "Backend Developer": "バックエンド開発者",
+            "Factory Supervisor": "工場監督",
+            "Line Manager": "ラインマネージャー",
+            "Production Manager": "生産マネージャー",
+            "Quality Inspector": "品質検査官",
+            "International Coordinator": "国際コーディネーター",
+            "Export Manager": "輸出マネージャー",
+            "Import Officer": "輸入担当者",
+            "Transport Officer": "運輸担当者",
+            "Logistics Manager": "物流マネージャー",
+            "Fleet Supervisor": "車両管理者",
+            "Brand Strategist": "ブランド戦略家",
+            "Marketing Head": "マーケティング責任者",
+            "Digital Marketer": "デジタルマーケター",
+            "Development Director": "開発ディレクター",
+            "Finance Director": "財務ディレクター",
+            "Chief Marketing Officer": "最高マーケティング責任者",
+            "Chief Technology Officer": "最高技術責任者",
+            "Admin & Adminstrative Officer": "管理・行政担当者",
+            "Advisor": "アドバイザー",
+            "Product Sourceing Officer": "製品調達担当者",
+            "Senior Marketing Officer": "シニアマーケティング担当者",
+            "Sales Executive": "営業担当者",
+            "Office Executive": "事務担当者",
+            "Backend Developer(Team Lead)": "バックエンド開発者（チームリーダー）",
+            "Junior Backend Developer": "ジュニアバックエンド開発者",
+            "Junior Frontend Developer": "ジュニアフロントエンド開発者",
+            "Graphic Designer": "グラフィックデザイナー",
+            "Senior Office Executive": "シニア事務担当者",
+            "Video Editor": "動画編集者"
+        },
+        "names": {
+            "Ye Feiqiang": "イェ・フェイチャン",
+            "Abir Al Faysal": "アビル・アル・ファイサル",
+            "Musfiqur Rahman Niaz": "ムシュフィクル・ラフマン・ニアズ",
+            "MD Abu Taleb Khan": "ムハンマド・アブ・タレブ・カーン",
+            "Rony Ahmed": "ロニー・アフマド",
+            "Amrito Mondol": "アムリト・モンドル",
+            "Habiba Jannat Bristy": "ハビバ・ジャンナト・ブリスティ",
+            "Sadman Fardin Fiha": "サドマン・ファルディン・フィハ",
+            "Mohammad Hellal": "ムハンマド・ヘラル",
+            "Alma Khanam": "アルマ・カナム",
+            "Mobarak Hossain Mahin": "モバラク・ホセイン・マヒン",
+            "Md Bellal Hossain": "ムハンマド・ベラル・ホセイン",
+            "Abu Nahid Md Noorshat": "アブ・ナヒド・ムハンマド・ヌールシャト",
+            "Md Mukul Miya": "ムハンマド・ムクル・ミヤ",
+            "Monir Hossain": "モニル・ホセイン",
+            "Abu Fuzael": "アブ・フザール",
+            "MD Sabuj Howlader": "ムハンマド・サブジ・ハウラダー",
+            "Mohammad Masud": "ムハンマド・マスード",
+            "Mohammad Arman Hossain": "ムハンマド・アルマン・ホセイン",
+            "Md Hacibul Haque": "ムハンマド・ハシブル・ハク",
+            "Mohammad fahim": "ムハンマド・ファヒム",
+            "Mohammad shorab": "ムハンマド・ショラブ",
+            "NURUL AMIN": "ヌルル・アミン",
+            "Arif Hossain": "アリフ・ホセイン",
+            "Sayeed Mahmud": "サイード・マフムード",
+            "Mahbub Alam": "マフブ・アラム",
+            "Tareq Hasan": "タレク・ハサン",
+            "Md Yeasin Arafat": "ムハンマド・イエシン・アラファト",
+            "Md Rony": "ムハンマド・ロニー",
+            "Rafiul Islam": "ラフィウル・イスラム",
+            "Nafis Ahmed": "ナフィス・アフマド",
+            "Shihab Uddin": "シハブ・ウディン",
+            "Taleb Khan": "タレブ・カーン",
+            "Hasan Mahmud": "ハサン・マフムード",
+            "Sohel Rana": "ソヘル・ラナ",
+            "Kamal Uddin": "カマル・ウディン",
+            "Rakib Hossain": "ラキブ・ホセイン",
+            "Sajib Islam": "サジブ・イスラム",
+            "Rashed Kabir": "ラシェド・カビール",
+            "Shakil Ahmed": "シャキール・アフマド",
+            "Tanvir Hasan": "タンビル・ハサン",
+            "Sharif Uddin": "シャリフ・ウディン",
+            "Imran Khan": "イムラン・カーン",
+            "Nayeem Rahman": "ナイーム・ラフマン",
+            "Riyad Hossain": "リヤド・ホセイン",
+            "Fahim Rahman": "ファヒム・ラフマン",
+            "Sabbir Ahmed": "サビール・アフマド"
+        }
+    },
+    "PrivacyPage": {
+        "title": "プライバシーポリシー",
+        "introduction1": "MultiService Agencyでは、お客様のプライバシー保護に取り組んでいます。本プライバシーポリシーは、当社のサービスをご利用いただく際に、当社がお客様の情報をどのように収集、使用、開示、保護するかを説明しています。",
+        "introduction2": "本プライバシーポリシーをよくお読みください。本プライバシーポリシーの条件に同意されない場合は、当社のサービスにアクセスしないでください。",
+        "section1Title": "1. 収集する情報",
+        "section1_1Title": "1.1 個人情報",
+        "section1_1Desc": "お客様が以下の操作を行う際に、お客様が自発的に提供する個人情報を収集します：",
+        "section1_1List": ["アカウントを登録する", "当社のサービスを使用する", "サポートのために連絡する", "支払いを行う", "ニュースレターを購読する"],
+        "section1_1Desc2": "この情報には以下が含まれる場合があります：",
+        "section1_1List2": ["名前と連絡先（メール、電話、住所）", "ビジネス情報（会社名、税務ID）", "支払い情報（請求先住所、支払い方法）", "サービス設定と要件"],
+        "contactEmail": "privacy@multiservice.com",
+        "contactPhone": "+880 1234 567890",
+        "contactAddress": "123 Business Street, Dhaka, Bangladesh",
+        "contactDPO": "dpo@multiservice.com"
+    },
+    "TermsPage": {
+        "title": "利用規約",
+        "lastUpdated": "最終更新：2024年12月1日",
+        "importantNotice": "重要：サービスをご利用になる前に、これらの規約をよくお読みください。当社のサービスにアクセスまたは使用することにより、お客様はこれらの規約に拘束されることに同意したものとみなされます。",
+        "section1Title": "1. 規約の承認",
+        "section1Desc": "MultiService Agencyが提供するサービスにアクセスし、使用することにより、お客様は本利用規約を読み、理解し、それに拘束されることに同意したことを確認したことになります。これらの規約のいずれの部分にも同意しない場合は、当社のサービスを使用しないでください。",
+        "section1List": ["これらの規約は、お客様とMultiService Agencyの間の法的拘束力のある合意を構成します。", "当社は事前通知なくいつでもこれらの規約を変更する権利を留保します。", "変更後のサービスの継続的な使用は、新しい規約の受諾を構成します。"]
+    },
+    "SchedulePage": {
+        "schedule": "スケジュール",
+        "meetings": "会議",
+        "availability": "空き状況",
+        "liveBadge": "ライブスケジューリングワークスペース",
+        "heroTitle": "やり取りなしで会議をスケジュール。",
+        "heroDesc": "会議の投票を収集し、すべてのビジネス会話をカレンダー上の適切な場所に正確に配置します。",
+        "createLink": "スケジュールリンクを作成",
+        "watchDemo": "90秒デモを見る",
+        "smartRouting": "スマートルーティング",
+        "smartRoutingDesc": "チームのラウンドロビンおよび集団スケジューリング。タイムゾーンは自動処理されます。",
+        "meetingPolls": "会議投票",
+        "meetingPollsDesc": "ゲストに時間に投票させ、ワンクリックで勝者を確認。",
+        "availabilityRules": "空き状況ルール",
+        "availabilityRulesDesc": "営業時間、バッファ、1日あたりの上限を定義して、集中時間を保護します。",
+        "meetingsTitle": "会議",
+        "meetingsDesc": "過去および今後の同期を管理します。",
+        "noMeetings": "会議はまだありません",
+        "noMeetingsDesc": "確認され次第、予約した約束がここに表示されます。",
+        "BookingWidget": {
+            "title": "Maya での予約",
+            "subtitle": "純粋な JavaScript フェッチモード",
+            "share": "共有",
+            "selectDateTime": "日時を選択",
+            "timezone": "タイムゾーン",
+            "noSlots": "利用可能なスロットがありません。",
+            "confirmSelection": "選択を確認",
+            "bookingDetails": "予約詳細",
+            "name": "名前",
+            "email": "メール",
+            "department": "部門",
+            "selectDepartment": "選択...",
+            "scheduleNow": "今すぐ予約",
+            "selectSlotError": "タイムスロットを選択してください。",
+            "successMessage": "予約に成功しました！",
+            "loadError": "スロットを読み込めませんでした"
+        },
+        "Availability": {
+            "description": "カレンダーとイベントタイプ全体で、正確にいつ空いているかを確認します。",
+            "description2": "ドラッグしてブロック、タップして開く。",
+            "syncCalendars": "カレンダーを同期",
+            "weekView": "週表示",
+            "bookableSlots": "予約可能なスロット",
+            "existingMeetings": "既存の会議",
+            "blockedTime": "ブロックされた時間",
+            "noMeetingsFree": "会議なし · すべてのスロットが空いています",
+            "noSchedule": "今週のスケジュールが読み込まれていません。"
+        }
     }
-  },
- "CareerPage": {
-    "hero": {
-      "title": "My Softake でキャリアを築こう",
-      "subtitle": "革新的なチームに参加し、技術で未来を形作りましょう。"
-    },
-    "whyJoin": {
-      "title": "なぜ My Softake に参加するのか？",
-      "item1Title": "成長志向のカルチャー",
-      "item1Desc": "学習、イノベーション、継続的な成長を重視しています。",
-      "item2Title": "柔軟な働き方",
-      "item2Desc": "リモート対応で柔軟な勤務時間。",
-      "item3Title": "影響力のあるプロジェクト",
-      "item3Desc": "実際のプロジェクトに参加して有意義な成果を生み出します。"
-    },
-    "openPositionsTitle": "チームに参加する",
-    "openPositionsSubtitle": "キャリアを成長させよう",
-    "applyButton": "今すぐ応募",
-    "hiringProcess": {
-      "title": "採用プロセス",
-      "step1": "オンライン応募",
-      "step2": "一次選考",
-      "step3": "技術面接",
-      "step4": "最終選考"
-    },
-    "cta": {
-      "title": "チームに参加する準備はできていますか？",
-      "subtitle": "履歴書を送信し、My Softake でのキャリアを始めましょう。",
-      "button": "careers@mysoftake.com"
-    }
-  },
-  "VisionMission": {
-    "visionTitle": "私たちのビジョン",
-    "visionDesc": "MY SOFTAKE PLCは、革新的な技術とビジネスソリューションのグローバルリーダーになることを目指しています。私たちのビジョンは、効率的でインテリジェント、持続可能なシステムのサポートにより、企業が自信を持って成長できる、よりスマートでつながった未来を創造することです。継続的なイノベーションと顧客中心の開発、卓越性へのコミットメントを通じて、企業が変革し、成長し、デジタル世界で長期的な成功を達成できるよう支援します。",
-    
-    "missionTitle": "私たちのミッション",
-    "missionDesc": "MY SOFTAKE PLCは、さまざまな業界の企業の進化するニーズに対応する、高品質で革新的かつ信頼性の高いソリューションを提供することに専念しています。私たちの使命は、業務効率を向上させ、デジタル能力を強化し、持続可能な成長を支援するサービスを提供することです。私たちは誠実さと専門性をもって業務に取り組み、提供するすべてのソリューションが長期的な成功とクライアントへの有意義な影響をもたらすことを保証します。"
-}
-
-
 }
