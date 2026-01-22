@@ -12,6 +12,7 @@ const ContactPage = () => {
   const locale = useLocale();
   const [selectedHelp, setSelectedHelp] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
+  const [inputValue, setInputValue] = useState(""); // for custom user input
   const dropdownRef = useRef(null);
 
   const helpOptions = [
@@ -20,8 +21,13 @@ const ContactPage = () => {
     { key: "appDevelopment", label: t("helpOptions.appDevelopment") },
     { key: "digitalMarketing", label: t("helpOptions.digitalMarketing") },
     { key: "consultancy", label: t("helpOptions.consultancy") },
+    { key: "manufacturing", label: t("helpOptions.manufacturing") },
+    { key: "export", label: t("helpOptions.export") },
+    { key: "it", label: t("helpOptions.it") },
+    { key: "transport", label: t("helpOptions.transport") },
+    { key: "travel", label: t("helpOptions.travel") },
+    { key: "construction", label: t("helpOptions.construction") },
   ];
-
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -39,6 +45,20 @@ const ContactPage = () => {
     } else {
       setSelectedHelp([...selectedHelp, option]);
     }
+  };
+
+  const handleInputKeyDown = (e) => {
+    if (e.key === "Enter" && inputValue.trim() !== "") {
+      e.preventDefault();
+      if (!selectedHelp.includes(inputValue.trim())) {
+        setSelectedHelp([...selectedHelp, inputValue.trim()]);
+      }
+      setInputValue("");
+    }
+  };
+
+  const handleRemoveSelected = (item) => {
+    setSelectedHelp(selectedHelp.filter((i) => i !== item));
   };
 
   const contactInfo = [
@@ -68,10 +88,8 @@ const ContactPage = () => {
       <section className="relative h-[40vh] md:h-[40vh] flex items-center justify-center bg-slate-900 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('/images/about banner.png')`,
-          }}
-        ></div>
+          style={{ backgroundImage: `url('/images/about banner.png')` }}
+        />
         <div className="relative z-10 text-center text-white pt-10 px-4">
           <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-4 drop-shadow-lg">
             {t("hero.title")}
@@ -87,7 +105,7 @@ const ContactPage = () => {
       </section>
 
       {/* Info & Form Section */}
-      <section className="bg-white  pt-10 px-4 font-sans">
+      <section className="bg-white pt-10 px-4 font-sans">
         <div className="container mx-auto max-w-6xl text-center">
           <span className="text-blue-600 font-bold uppercase tracking-[0.2em] text-sm">
             {t("getInTouch")}
@@ -104,10 +122,7 @@ const ContactPage = () => {
             >
               {t("email")}
             </Link>
-            {t("orCallOn")}{" "}
-            <span className="text-blue-600 font-semibold">
-              {t("phone")}
-            </span>
+            {t("orCallOn")} <span className="text-blue-600 font-semibold">{t("phone")}</span>
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 text-left">
@@ -119,35 +134,32 @@ const ContactPage = () => {
                 <div className="w-16 h-16 text-blue-600 rounded-full flex items-center justify-center bg-blue-50">
                   {item.icon}
                 </div>
-                <div className="ml-7  ">
-                  <h4 className="font-bold text-xl text-slate-800 mb-1">
-                    {item.title}
-                  </h4>
+                <div className="ml-7">
+                  <h4 className="font-bold text-xl text-slate-800 mb-1">{item.title}</h4>
                   <p className="text-slate-500 font-medium w-46">{item.details}</p>
                 </div>
               </div>
             ))}
           </div>
+
           {/* Branches Link & Map */}
-          <p className="text-slate-600 font-medium text-lg my-10">
-            {t("branchesText")}{" "}
-            
-          </p>
+          <p className="text-slate-600 font-medium text-lg my-10">{t("branchesText")}</p>
           <div className="w-full h-[550px] rounded-2xl overflow-hidden shadow-inner bg-gray-100 border border-gray-100">
-              <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4297.131886628774!2d90.39888879389679!3d23.875514034491435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1768989416841!5m2!1sen!2sbd"
-        className="w-full h-full border-0"
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4297.131886628774!2d90.39888879389679!3d23.875514034491435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1768989416841!5m2!1sen!2sbd"
+              className="w-full h-full border-0"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
+
           {/* Contact Form with Multi-Select Dropdown */}
-          <div className=" bg-white p-8 md:p-12  mt-10">
+          <div className="bg-white p-8 md:p-12 mt-10">
             <form className="space-y-6 text-left">
               <h3 className="font-bold text-4xl dark:text-black">{t("form.sendYourMessage")}</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">
                     {t("form.name")}
@@ -177,38 +189,56 @@ const ContactPage = () => {
                 </label>
                 <div
                   onClick={() => setIsOpen(!isOpen)}
-                  className="w-full px-5 py-4   border dark:text-gray-600 border-gray-300 rounded cursor-pointer flex justify-between items-center transition-all focus-within:border-blue-500"
+                  className="w-full px-5 py-4 border dark:text-gray-600 border-gray-300 rounded cursor-pointer flex justify-between items-center transition-all focus-within:border-blue-500"
                 >
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 items-center">
                     {selectedHelp.length > 0 ? (
                       selectedHelp.map((item) => (
                         <span
                           key={item}
-                          className="bg-blue-600 text-white text-xs px-2 py-1 rounded-md"
+                          className="bg-blue-600 text-white text-xs px-2 py-1 rounded-md flex items-center gap-1"
                         >
                           {item}
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleRemoveSelected(item);
+                            }}
+                            className="ml-1 text-white hover:text-gray-200 font-bold"
+                          >
+                            ×
+                          </button>
                         </span>
                       ))
                     ) : (
                       <span className="text-gray-400">{t("form.selectServices")}</span>
                     )}
+                    <input
+                      type="text"
+                      value={inputValue}
+                      onChange={(e) => setInputValue(e.target.value)}
+                      onKeyDown={handleInputKeyDown}
+                      placeholder=""
+                      className="outline-none px-1 py-0.5 text-sm text-slate-700"
+                    />
                   </div>
                   <HiChevronDown
-                    className={`text-gray-400 transition-transform ${isOpen ? "rotate-180" : ""
-                      }`}
+                    className={`text-gray-400 transition-transform ${isOpen ? "rotate-180" : ""}`}
                   />
                 </div>
 
                 {isOpen && (
-                  <div className="absolute z-50 w-full mt-2 dark:text-gray-600 bg-white border border-gray-100 shadow-2xl rounded-xl overflow-hidden animate-in fade-in slide-in-from-top-2">
+                  <div className="absolute z-50 w-full mt-2 dark:text-gray-600 bg-white border border-gray-100 shadow-2xl rounded-xl overflow-hidden animate-in fade-in slide-in-from-top-2 max-h-60 overflow-y-auto">
                     {helpOptions.map((option) => (
                       <div
                         key={option.key}
                         onClick={() => handleHelpToggle(option.label)}
-                        className={`px-5 py-3 cursor-pointer transition-colors flex justify-between items-center ${selectedHelp.includes(option.label)
+                        className={`px-5 py-3 cursor-pointer transition-colors flex justify-between items-center ${
+                          selectedHelp.includes(option.label)
                             ? "bg-blue-50 text-blue-600 font-semibold"
                             : "text-gray-600 hover:bg-gray-50"
-                          }`}
+                        }`}
                       >
                         {option.label}
                         {selectedHelp.includes(option.label) && (
@@ -227,7 +257,7 @@ const ContactPage = () => {
                 <input
                   type="text"
                   placeholder={t("form.subjectPlaceholder")}
-                  className="w-full px-5 py-4 border  dark:text-gray-600 border-gray-300 rounded focus:outline-none focus:border-blue-500 transition-all"
+                  className="w-full px-5 py-4 border dark:text-gray-600 border-gray-300 rounded focus:outline-none focus:border-blue-500 transition-all"
                 />
               </div>
 
@@ -238,7 +268,7 @@ const ContactPage = () => {
                 <textarea
                   rows="5"
                   placeholder={t("form.messagePlaceholder")}
-                  className="w-full px-5 py-4 border dark:text-gray-600  border-gray-300 rounded focus:outline-none focus:border-blue-500 transition-all"
+                  className="w-full px-5 py-4 border dark:text-gray-600 border-gray-300 rounded focus:outline-none focus:border-blue-500 transition-all"
                 ></textarea>
               </div>
 
@@ -250,7 +280,8 @@ const ContactPage = () => {
               </button>
             </form>
           </div>
-          <div className="">
+
+          <div>
             <FAQSection />
           </div>
         </div>
@@ -260,4 +291,3 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-

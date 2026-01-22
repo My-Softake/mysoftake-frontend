@@ -958,13 +958,19 @@
                 "details": "info@mysoftake.com.bd"
             }
         },
-        "helpOptions": {
-            "webDevelopment": "网站开发",
-            "uiUxDesign": "UI/UX设计",
-            "appDevelopment": "应用开发",
-            "digitalMarketing": "数字营销",
-            "consultancy": "咨询服务"
-        },
+         "helpOptions": {
+      "webDevelopment": "网页开发",
+      "uiUxDesign": "UI/UX 设计",
+      "appDevelopment": "应用开发",
+      "digitalMarketing": "数字营销",
+      "consultancy": "咨询",
+      "manufacturing": "制造与生产",
+      "export": "进出口",
+      "it": "信息技术",
+      "transport": "运输与物流",
+      "travel": "旅游与观光",
+      "construction": "建筑与基础设施"
+    },
         "form": {
             "sendYourMessage": "发送您的消息",
             "name": "姓名",
