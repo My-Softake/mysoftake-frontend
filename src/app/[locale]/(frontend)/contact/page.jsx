@@ -256,7 +256,6 @@ const ContactPage = () => {
               </button>
             </form>
           </div>
-
           <div className="">
             <FAQSection/>
           </div>
