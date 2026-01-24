@@ -31,7 +31,7 @@
         "description1": "MY SOFTAKE PLC. is a forward-thinking technology and business solutions company committed to delivering innovative, reliable, and efficient services across multiple industries. With a focus on quality, customer satisfaction, and sustainable growth, the company provides modern digital solutions, profes-sional support, and value-driven services that help businesses operate smarter and faster. MY SOFTAKE PLC. continues to expand its capabilities, ensuring excellence through technology, expertise, and strategic vision.",
         "description2": "We continue to move forward with confidence, shaping a future where global reach is guided by shared values and lasting trust.",
         "experience_title": "Experience",
-        "experience_desc": "Our great team of more than 1400 software experts.",
+        "experience_desc": "Our great team of more than 20 software experts.",
         "quickSupport_title": "Quick Support",
         "quickSupport_desc": "We’ll help you test bold new ideas while sharing your.",
         "introVideo": "Intro video"
@@ -102,11 +102,14 @@
         "quickLinks": "Quick Links",
         "corporateOffice": "Corporate Office, Bangladesh",
         "manufacturingOffice": "Manufacturing Office, China",
-        "rightsReserved": "© 2025 MY SOFTAKE PLC. All rights reserved.",
+        "rightsReserved": "All rights reserved.",
         "termsOfService": "Terms of Service",
         "privacyPolicy": "Privacy Policy"
     },
     "ServiceData": {
+        "servicedetailspage": "Service Details Page",
+        "servicedetailspageparagraph": "From Manufacturing to IT, Transport, Tourism, and Construction – delivering innovative solutions for every industry.",
+        "herotitle":"Our Services",
         "title": "Our Core Industries",
         "description": "We deliver quality solutions across manufacturing, IT, logistics, travel, and construction.",
         "exploreMore": "Explore More",
@@ -726,20 +729,20 @@
         "title": "Frequently Asked Questions",
         "subtitle": "Can't find what you're looking for? We're here to help.",
         "q1": {
-            "question": "How can I add a new institution to compare?",
-            "answer": "You can add institutions using our comparison tool or contact us with the necessary details."
+            "question": "What services does your company provide?",
+            "answer": "We provide IT & software solutions, import–export services, and tour & travel management under one company. Our services include website & app development, international trading support, logistics coordination, and domestic & international tour packages."
         },
         "q2": {
-            "question": "How often is the information updated?",
-            "answer": "We update our database quarterly and continuously monitor for any changes."
+            "question": "Do you offer international import-export and logistics support?",
+            "answer": "Yes, we handle end-to-end import and export services including product sourcing, documentation, customs clearance, and shipment coordination with trusted global partners."
         },
         "q3": {
-            "question": "Is this service free?",
-            "answer": "Yes, our comparison tool is completely free for students."
+            "question": "Can I get customized IT solutions or tour packages?",
+            "answer": "Absolutely. All our IT solutions and travel packages are fully customized based on your business requirements, budget, destination, and timeline."
         },
         "q4": {
-            "question": "Can institutions claim their profile?",
-            "answer": "Yes, institutions can claim and manage their profiles to keep information accurate."
+            "question": "How can I contact your team for consultation or business inquiries?",
+            "answer": "You can contact us through our website, email, phone, or WhatsApp. Initial consultation is free, and our team will guide you through the next steps."
         }
     },
     "CareerPage": {
@@ -769,7 +772,7 @@
         "cta": {
             "title": "Ready to Join Our Team?",
             "subtitle": "Send your CV and start your journey with My Softake.",
-            "button": "careers@mysoftake.com"
+            "button": "careers@mysoftake.com.bd"
         },
         "loading": "Loading Job Details...",
         "notFound": "Job Not Found!",
@@ -887,13 +890,13 @@
                 ]
             },
             "5": {
-                "jobTitle": "IT Security Specialist",
+                "jobTitle": "Cyber Security Specialist",
                 "jobType": "Full Time",
                 "location": "Dhaka, Bangladesh",
                 "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
                 "description": "Ensure the security and integrity of our corporate networks and cloud infrastructure against cyber threats.",
                 "educationalRequirements": "BSc in CSE or Cyber Security.",
-                "experience": "3+ years in information security.",
+                "experience": "3+ years in cyber security.",
                 "jobResponsibilities": [
                     "Conduct regular security audits and vulnerability assessments.",
                     "Monitor network traffic for suspicious activity and potential breaches.",

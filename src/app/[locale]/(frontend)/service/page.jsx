@@ -13,8 +13,20 @@ export default function ServicePage() {
   const serviceIds = ["1", "2", "3", "4", "5", "6"];
 
   return (
-    <section className="pt-29  bg-[#f8f9fa]">
-      <div className="container mx-auto px-4">
+    <section className="pt-20 bg-[#f8f9fa]">
+      <section className="relative h-[40vh] md:h-[32vh] flex items-center justify-center bg-slate-900 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('/images/about banner.png')` }}
+        />
+        <div className="relative z-10 text-center text-white pt-6 px-4">
+          <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-4 drop-shadow-lg">
+            {t("herotitle")}
+          </h1>
+          
+        </div>
+      </section>
+      <div className="container mx-auto px-4 mt-10">
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-slate-900">

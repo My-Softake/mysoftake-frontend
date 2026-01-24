@@ -161,7 +161,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3 md:gap-5">
           <LanguageDropdown />
 
-          {/* ✅ FIXED Desktop Button */}
+          {/*  FIXED Desktop Button */}
           <Link href="/schedule">
             <Button className="hidden md:inline-flex whitespace-nowrap px-6 hover:bg-[#27A0DB] duration-300">
               {t("bookNow")}
@@ -247,7 +247,7 @@ const Navbar = () => {
             </div>
           ))}
 
-          {/* ✅ Mobile Book Now Button */}
+          {/*  Mobile Book Now Button */}
           <Link href="/schedule" onClick={() => setOpen(false)}>
             <Button className="w-full mt-4 bg-[#27A0DB] text-white hover:bg-[#1e8cc3]">
               {t("bookNow")}

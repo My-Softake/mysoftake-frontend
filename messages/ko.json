@@ -31,7 +31,7 @@
     "description1": "MY SOFTAKE PLC.는 다양한 산업 분야에 걸쳐 혁신적이고 신뢰할 수 있으며 효율적인 서비스를 제공하는 데 전념하는 미래 지향적인 기술 및 비즈니스 솔루션 기업입니다. 품질, 고객 만족, 지속 가능한 성장에 중점을 두고, 기업이 더 똑똑하고 빠르게 운영될 수 있도록 돕는 현대적인 디지털 솔루션, 전문적인 지원, 가치 중심의 서비스를 제공합니다. MY SOFTAKE PLC.는 기술, 전문성, 전략적 비전을 통해 탁월함을 보장하며 역량을 지속적으로 확장하고 있습니다.",
     "description2": "우리는 공유된 가치와 지속적인 신뢰를 바탕으로 글로벌 영향력을 미치는 미래를 만들어가며 자신감을 가지고 계속 전진하고 있습니다.",
     "experience_title": "경험",
-    "experience_desc": "1,400명 이상의 소프트웨어 전문가로 구성된 훌륭한 팀.",
+    "experience_desc": "20명 이상의 소프트웨어 전문가로 구성된 훌륭한 팀.",
     "quickSupport_title": "빠른 지원",
     "quickSupport_desc": "우리는 귀하의 대담한 새로운 아이디어를 테스트하는 동시에 우리의 경험을 공유할 것입니다.",
     "introVideo": "소개 영상"
@@ -126,11 +126,14 @@
     "quickLinks": "빠른 링크",
     "corporateOffice": "본사, 방글라데시",
     "manufacturingOffice": "제조 사무소, 중국",
-    "rightsReserved": "© 2025 MY SOFTAKE PLC. All rights reserved.",
+    "rightsReserved": "All rights reserved.",
     "termsOfService": "이용 약관",
     "privacyPolicy": "개인정보 보호정책"
   },
   "ServiceData": {
+    "servicedetailspage": "서비스 상세 페이지",
+        "servicedetailspageparagraph": "제조에서 IT, 운송, 관광 및 건설에 이르기까지 모든 산업에 혁신적인 솔루션을 제공합니다.",
+    "herotitle":"서비스 안내",
     "title": "우리의 핵심 산업",
     "description": "우리는 제조, IT, 물류, 여행 및 건설 전반에 걸쳐 고품질 솔루션을 제공합니다.",
     "exploreMore": "더 알아보기",
@@ -663,24 +666,25 @@
   "FAQSection": {
     "tag": "FAQ",
     "title": "자주 묻는 질문",
-    "subtitle": "원하시는 정보를 찾지 못하셨나요? 저희가 도와드리겠습니다.",
+    "subtitle": "찾고 있는 정보를 찾지 못하셨나요? 저희가 도와드리겠습니다.",
     "q1": {
-      "question": "새로운 기관을 비교 목록에 추가하려면 어떻게 해야 하나요?",
-      "answer": "비교 도구를 사용하거나 자세한 내용을 포함해 문의해 주세요."
+        "question": "귀사는 어떤 서비스를 제공하나요?",
+        "answer": "저희 회사는 IT 및 소프트웨어 솔루션, 수출입 서비스, 여행 관리를 하나의 회사에서 제공합니다. 서비스에는 웹사이트 및 앱 개발, 국제 무역 지원, 물류 조정, 국내외 여행 패키지가 포함됩니다."
     },
     "q2": {
-      "question": "정보는 얼마나 자주 업데이트되나요?",
-      "answer": "데이터베이스는 분기별로 업데이트되며 변경 사항을 지속적으로 확인합니다."
+        "question": "국제 수출입 및 물류 지원을 제공하나요?",
+        "answer": "네. 저희는 신뢰할 수 있는 글로벌 파트너와 협력하여 제품 조달, 문서 작성, 통관, 배송 조정을 포함한 수출입 서비스를 전반적으로 처리합니다."
     },
     "q3": {
-      "question": "이 서비스는 무료인가요?",
-      "answer": "네, 학생을 위한 비교 도구는 완전히 무료입니다."
+        "question": "맞춤형 IT 솔루션이나 여행 패키지를 제공받을 수 있나요?",
+        "answer": "물론입니다. 모든 IT 솔루션과 여행 패키지는 귀사의 비즈니스 요구 사항, 예산, 목적지, 일정에 맞춰 완전히 맞춤화됩니다."
     },
     "q4": {
-      "question": "기관이 자신의 프로필을 관리할 수 있나요?",
-      "answer": "네, 기관은 프로필을 등록하고 관리하여 정보의 정확성을 유지할 수 있습니다."
+        "question": "상담이나 비즈니스 문의는 어떻게 하면 되나요?",
+        "answer": "저희 웹사이트, 이메일, 전화, WhatsApp을 통해 연락하실 수 있습니다. 초기 상담은 무료이며, 저희 팀이 다음 단계 안내를 도와드립니다."
     }
-  },
+},
+
   "CareerPage": {
     "hero": {
       "title": "My Softake와 함께 커리어를 시작하세요",
@@ -708,7 +712,7 @@
     "cta": {
       "title": "팀에 합류할 준비가 되셨나요?",
       "subtitle": "이력서를 제출하고 My Softake에서의 여정을 시작하세요.",
-      "button": "careers@mysoftake.com"
+      "button": "careers@mysoftake.com.bd"
     },
     "loading": "채용 정보 로딩 중...",
     "notFound": "채용 정보를 찾을 수 없습니다!",
@@ -826,13 +830,13 @@
         ]
       },
       "5": {
-        "jobTitle": "IT 보안 전문가",
+        "jobTitle": "Cyber 보안 전문가",
         "jobType": "정규직",
         "location": "다카, 방글라데시",
         "jobLink": "https://www.linkedin.com/company/my-softake/jobs/",
         "description": "사이버 위협으로부터 기업 네트워크와 클라우드 인프라의 보안과 무결성을 보장합니다.",
         "educationalRequirements": "CSE 또는 사이버 보안 학사.",
-        "experience": "정보 보안 3년 이상 경험.",
+        "experience": "사이버 보안 3년 이상 경험.",
         "jobResponsibilities": [
           "정기적인 보안 감사 및 취약성 평가를 수행합니다.",
           "의심스러운 활동 및 잠재적 침해에 대해 네트워크 트래픽을 모니터링합니다.",
@@ -840,7 +844,7 @@
           "보안 사고에 대응하고 조사합니다."
         ],
         "additionalRequirements": [
-          "CEH, CISSP 또는 CompTIA Security+와 같은 자격증.",
+          "CEH, CISSP 또는 CompTIA Cyber Security+와 같은 자격증.",
           "Kali Linux 또는 Metasploit과 같은 침투 테스팅 도구 경험.",
           "암호화, VPN 및 IAM에 대한 강한 이해.",
           "우수한 문제 해결 및 분석 능력."

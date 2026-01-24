@@ -7,7 +7,7 @@ import { useLocale } from "next-intl";
 
 const countries = [
   { code: "US", label: "United States" },
-  { code: "GB", label: "United Kingdom" },
+ 
   { code: "JP", label: "Japan" },
   { code: "CN", label: "China" },
   { code: "KR", label: "South Korea" },
