@@ -8,15 +8,26 @@ const CaseStudyCard = () => {
   const locale = useLocale();
   const t = useTranslations("CaseStudy");
 
-  // Case study IDs (1-6)
-  const caseStudyIds = ["1", "2", "3", "4", "5", "6"];
+  // Case study IDs (1-12)
+  const caseStudyIds = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+
+  // Helper to safely get array data
+  const getArrayData = (key) => {
+    try {
+      const raw = t.raw(key);
+      return Array.isArray(raw) ? raw : [];
+    } catch (error) {
+      console.warn(`Could not resolve ${key} in messages for locale ${locale}.`);
+      return [];
+    }
+  };
 
   return (
     <div className="container mx-auto md:px-10 md:py-16 py-7">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {caseStudyIds.map((id) => {
-          const images = t.raw(`items.${id}.images`);
-          const results = t.raw(`items.${id}.results`);
+          const images = getArrayData(`items.${id}.images`);
+          const results = getArrayData(`items.${id}.results`);
 
           return (
             <div
@@ -43,11 +54,13 @@ const CaseStudyCard = () => {
                   {t(`items.${id}.title`)}
                 </h3>
 
-                <div className="max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 ease-in-out">
-                  <p className="text-gray-200 text-sm md:text-base border-l-4 border-[#27A0DB] pl-4 italic">
-                    {results && results[0]}
-                  </p>
-                </div>
+                {results && results.length > 0 && (
+                  <div className="max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                    <p className="text-gray-200 text-sm md:text-base border-l-4 border-[#27A0DB] pl-4 italic">
+                      {results[0]}
+                    </p>
+                  </div>
+                )}
 
                 {/* View Case Study Button */}
                 <div className="mt-6">
