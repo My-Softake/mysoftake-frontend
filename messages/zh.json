@@ -107,10 +107,11 @@
     }
   },
   "CounterSection": {
-    "projectsDelivered": "已交付项目",
-    "teamMembers": "团队成员（3个国籍）",
-    "cloudSavings": "云客户节省成本",
-    "awsReviews": "5星AWS客户评价"
+    "projectComplete": "已交付项目",
+    "happyClients": "满意的客户",
+    "yearsExperiance": "经验年数",
+    "servicesProvide": "提供的服务",
+    "countries": "国家"
   },
   "AreaWeServe": {
     "title": "服务领域",

@@ -107,10 +107,11 @@
     }
   },
   "CounterSection": {
-    "projectsDelivered": "완료된 프로젝트",
-    "teamMembers": "팀원 (3개 국적)",
-    "cloudSavings": "클라우드 고객 절감액",
-    "awsReviews": "5성급 AWS 고객 리뷰"
+    "projectComplete": "완료된 프로젝트",
+    "happyClients": "행복한 고객",
+    "yearsExperiance": "경험년수",
+    "servicesProvide": "제공하는 서비스",
+    "countries": "국가"
   },
   "AreaWeServe": {
     "title": "서비스 지역",

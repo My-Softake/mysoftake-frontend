@@ -40,38 +40,43 @@ const CounterSection = () => {
   const stats = [
     {
       id: 1,
-      labelKey: "projectsDelivered",
-      value: 200,
+      labelKey: "projectComplete",
+      value: 50,
       suffix: "+",
       icon: <HiOutlineBriefcase />,
     },
     {
       id: 2,
-      labelKey: "teamMembers",
-      value: 60,
+      labelKey: "happyClients",
+      value: 40,
       suffix: "+",
       icon: <HiOutlineGlobeAlt />,
     },
     {
       id: 3,
-      labelKey: "cloudSavings",
-      prefix: "$",
-      value: 20,
-      suffix: "m +",
+      labelKey: "yearsExperiance",
+      value: 4,
+      suffix: "+",
     },
     {
       id: 4,
-      labelKey: "awsReviews",
-      value: 95,
-      suffix: "%",
+      labelKey: "servicesProvide",
+      value: 10,
+      suffix: "+",
       icon: <HiOutlineEmojiHappy />,
+    },
+    {
+      id: 5,
+      labelKey: "countries",
+      value: 5,
+      suffix: "+",
     },
   ];
 
   return (
     <section className="md:py-16 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 md:gap-6">
           {stats.map((stat) => (
             <motion.div
               key={stat.id}
