@@ -20,9 +20,11 @@ import Button from "@/components/sheard/Button";
 // Helper to safely get arrays from translations
 const getArray = (t, key) => {
   try {
-    const raw = t.raw(key);
-    return Array.isArray(raw) ? raw : [];
-  } catch {
+    // Check if the key exists first
+    const message = t.raw(key);
+    return Array.isArray(message) ? message : [];
+  } catch (error) {
+    // Return empty array if key doesn't exist (prevents console warnings)
     return [];
   }
 };
@@ -45,6 +47,14 @@ const ProjectDetails = ({ params }) => {
   const challenges = getArray(t, `items.${projectId}.challenges`);
   const techStack = getArray(t, `items.${projectId}.techStack`);
   const tags = getArray(t, `items.${projectId}.tags`);
+  
+  // Try to get benefits - fallback to empty if not available in translations
+  let benefits = [];
+  try {
+    benefits = getArray(t, `items.${projectId}.benefits`);
+  } catch {
+    benefits = [];
+  }
 
   if (!projectExists) return (
     <div className="h-screen flex flex-col items-center justify-center gap-4">
@@ -91,33 +101,19 @@ const ProjectDetails = ({ params }) => {
                   {t(`items.${projectId}.longDescription`) || t(`items.${projectId}.description`)}
                 </p>
               </div>
-              <div className="mb-10">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">{t("labels.itFieldUsage")}</h3>
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  {t(`items.${projectId}.longDescription`) || t(`items.${projectId}.description`)}
-                </p>
-              </div>
-              <div className="mb-10">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">{t("labels.resultsBenefits")}</h3>
-                <p className="text-gray-600 leading-relaxed text-lg">
-                  {t(`items.${projectId}.longDescription`) || t(`items.${projectId}.description`)}
-                </p>
-              </div>
 
               {/* Challenges Section */}
               {challenges.length > 0 && (
                 <section className="mb-10">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
-                    <HiOutlineLightBulb className="text-yellow-500" /> {t("labels.keyChallenges")}
-                  </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">{t("labels.keyChallenges")}</h3>
+                  <ul className="space-y-2 text-gray-600">
                     {challenges.map((item, index) => (
-                      <div key={index} className="flex gap-3 p-4 bg-gray-200 rounded-xl border border-gray-100">
-                        <HiOutlineCheckCircle className="text-blue-600 text-xl flex-shrink-0" />
-                        <p className="text-gray-700 font-medium">{item}</p>
-                      </div>
+                      <li key={index} className="flex gap-3">
+                        <span className="text-black font-bold">•</span>
+                        <span>{item}</span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </section>
               )}
 
@@ -134,6 +130,21 @@ const ProjectDetails = ({ params }) => {
                       </div>
                     ))}
                   </div>
+                </section>
+              )}
+
+              {/* Benefits Section */}
+              {benefits.length > 0 && (
+                <section className="mb-10">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">{t("labels.resultsBenefits")}</h3>
+                  <ul className="space-y-2 text-gray-600">
+                    {benefits.map((item, index) => (
+                      <li key={index} className="flex gap-3">
+                        <span className="text-green-600 font-bold">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </section>
               )}
 
@@ -155,9 +166,15 @@ const ProjectDetails = ({ params }) => {
                 <InfoItem icon={<HiOutlineCalendar />} label={t("labels.date")} value={t(`items.${projectId}.date`)} notSpecified={t("labels.notSpecified")} />
                 <InfoItem icon={<HiOutlineCheckCircle />} label={t("labels.status")} value={t(`items.${projectId}.status`)} isStatus notSpecified={t("labels.notSpecified")} />
               </div>
+              {/* Case Study Link - For all projects 1-12 */}
+              <Link href={`/${locale}/case-study/${projectId}`} className="">
+                <Button className="w-full mt-6 !bg-purple-600 !text-white py-4 rounded-xl font-bold cursor-pointer">
+                  View Case Study
+                </Button>
+              </Link>
+              
               <Link href={`/${locale}/contact`} className="">
-
-                <Button className="w-full mt-10 !bg-blue-600 !text-white py-4 rounded-xl font-bold cursor-pointer">
+                <Button className="w-full mt-4 !bg-blue-600 !text-white py-4 rounded-xl font-bold cursor-pointer">
                   {t("startSimilarProject")}
                 </Button>
               </Link>

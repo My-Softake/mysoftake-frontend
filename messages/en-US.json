@@ -299,184 +299,154 @@
             "details": "Details",
             "notSpecified": "Not specified",
             "projectOverview": "Project Overview",
-            "itFieldUsage": "You May Also Know How it Uses In IT Field?",
-            "resultsBenefits": "Project Result & Benefits of Project",
+            "itFieldUsage": "Project Result & Benefits",
+            "resultsBenefits": "Project Benefits",
             "keyChallenges": "Key Challenges",
             "technologyStack": "Technology Stack",
             "projectOutcome": "Project Outcome"
         },
         "categories": {
-            "1": "Manufacturing & Production",
-            "2": "Export & Import",
-            "3": "Information Technology",
-            "4": "Transport & Logistics",
-            "5": "Travel & Tourism",
-            "6": "Construction & Infrastructure"
+            "1": "Information Technology",
+            "2": "Travel & Tourism",
+            "3": "Transport & Logistics"
         },
         "items": {
             "1": {
+                "title": "Pi 360 Institute Management",
+                "category": "Information Technology",
+                "description": "Multi-campus, data-driven educational ERP designed to bridge the gap between administration, teachers, and students.",
+                "longDescription": "Pi 360 is a multi-campus, data-driven educational ERP designed to bridge the gap between administration, teachers, and students. It provides a centralized 'control tower' view for management while offering personalized dashboards for individual academic tracking.",
+                "image": "/images/information.jpg",
+                "client": "MY SOFTAKE PVT LTD",
+                "date": "January 2026",
+                "status": "Processing",
+                "tags": ["ERP", "Education", "Dashboard"],
+                "challenges": ["Cross-Campus Synchronization: Maintaining real-time data consistency across different physical campus locations.", "UI/UX Complexity: Condensing massive amounts of data (Financials, Attendance, Results) into a clean, mobile-responsive dashboard without overwhelming the user.", "Performance Optimization: Ensuring the 'Explore Institutions' search remains fast even when filtering through thousands of data points."],
+                "techStack": ["React.js", "Next.js", "Tailwind CSS", "D3.js", "ApexCharts", "Node.js", "Python (Django)", "AWS", "Azure", "PostgreSQL", "Redis"],
+                "results": "99.99% Uptime maintained. Successfully migrated 10TB of legacy institutional data with zero downtime. Predictive analytics help management forecast revenue and student growth trends.",
+                "benefits": ["Transparency: Real-time Fees Management and Overdue tracking reduces financial leakages and improves collection rates.", "Efficiency: Automates Notice Board and Class Schedules, reducing administrative manual labor by 40%.", "Academic Improvement: Visual Marks in Each Subject bars allow parents and teachers to identify weak spots instantly through predictive analytics."]
+            },
+            "2": {
+                "title": "GadgetAdda E-commerce Platform",
+                "category": "Information Technology",
+                "description": "Comprehensive digital transformation of a retail electronics business with robust, high-traffic e-commerce engine.",
+                "longDescription": "A comprehensive digital transformation of a retail electronics business. This project involved building a robust, high-traffic e-commerce engine (Ecom2) with a sophisticated admin panel to manage multi-vendor inventory, real-time order tracking, and automated customer notifications. The platform is designed to handle thousands of SKUs and high-volume seasonal traffic with ease.",
+                "image": "/images/information.jpg",
+                "client": "GadgetAdda Retailers",
+                "date": "January 2024",
+                "status": "Completed",
+                "tags": ["E-commerce", "Single Vendor", "High Performance"],
+                "challenges": ["Dynamic Stock Syncing: Coordinating real-time inventory updates across the online store and physical warehouse to prevent overselling.", "Security & Fraud Prevention: Implementing secure checkout protocols and SSL encryption to protect sensitive customer payment data.", "Scalability: Optimizing server-side rendering to maintain fast load times during high-traffic flash sales."],
+                "techStack": ["Next.js", "React", "Node.js", "Express", "Laravel", "MySQL", "MongoDB", "AWS", "DigitalOcean"],
+                "results": "Achieved 40% growth in monthly sales within the first quarter post-launch and maintained 99.9% system uptime during peak holiday sales.",
+                "benefits": ["35% increase in operational efficiency for the warehouse team.", "Centralized admin dashboard reduced order processing time from minutes to seconds.", "Responsive design ensured seamless shopping experience across mobile and desktop devices."]
+            },
+            "3": {
+                "title": "Shobpi Multi-Vendor Marketplace",
+                "category": "Information Technology",
+                "description": "Sophisticated 'Multi-Vendor' marketplace designed to host thousands of independent sellers like Amazon or Daraz.",
+                "longDescription": "Shobpi is a sophisticated 'Multi-Vendor' marketplace (similar to Amazon or Daraz) designed to host thousands of independent sellers. The platform provides each vendor with a private dashboard to manage their own products, orders, and earnings, while the 'Super Admin' maintains global control over commissions, site-wide promotions, and vendor payouts.",
+                "image": "/images/information.jpg",
+                "client": "Shobpi Marketplace Group",
+                "date": "January 2025",
+                "status": "Completed",
+                "tags": ["Marketplace", "Multi-Vendor", "B2B2C"],
+                "challenges": ["Vendor Quality Control: Implementing automated verification systems to ensure only legitimate sellers are onboarded.", "Complex Logistics: Coordinating shipping when a single customer order contains items from three different vendors in different locations.", "Wallet & Payout Security: Ensuring precise financial auditing for thousands of sub-accounts and automated tax calculations."],
+                "techStack": ["PHP (Laravel Multi-tenant)", "Python (Django)", "WebSockets (Socket.io)", "AWS S3", "Cloudfront CDN", "Microservices"],
+                "results": "Enables Rapid Catalog Expansion without physical inventory holdings. Scalable Revenue Model based on commissions and vendor subscription fees.",
+                "benefits": ["One-Stop-Shop experience for customers with diverse range of products.", "Rapid Catalog Expansion without the need for the owner to hold physical inventory.", "Scalable Revenue Model based on commissions and vendor subscription fees."]
+            },
+            "4": {
+                "title": "ShoShikha Educational Initiative",
+                "category": "Information Technology",
+                "description": "Comprehensive educational program designed to bridge gap between academic learning and industry-standard backend development.",
+                "longDescription": "A comprehensive educational initiative designed to bridge the gap between academic learning and industry-standard backend development. The project features a structured, 4-month curriculum that guides students through web fundamentals, Django core architecture, and REST API development. It integrates a hybrid learning model with live sessions, recorded resources, and intensive one-to-one mentorship.",
+                "image": "/images/information.jpg",
+                "client": "ShoShikha Educational Institute",
+                "date": "Ongoing",
+                "status": "Ongoing",
+                "tags": ["EdTech", "Backend", "Mentorship"],
+                "challenges": ["Curriculum Pacing: Designing a flow that moves students from zero experience to advanced concepts like JWT authentication and Redis workflows in 4 months.", "One-to-One Support: Maintaining high-quality mentorship and query resolution across both on-site and digital Discord communities.", "Real-World Integration: Ensuring students can successfully integrate AI tools like GitHub Copilot and Cursor into their manual coding workflows."],
+                "techStack": ["Django (MVT)", "Django REST Framework (DRF)", "Git", "GitHub", "Docker", "Postman", "Insomnia", "Redis", "Render.com"],
+                "results": "Students complete a full-scale To-Do REST API project deployed with industry-standard security. Established a permanent learning-based Discord community for ongoing technical support.",
+                "benefits": ["Successfully transforms beginners into job-ready developers.", "6-month mentorship program assists with portfolio building, code reviews, and career guidance.", "Learners gain ability to build and maintain complex backend systems, ready for junior developer roles."]
+            },
+            "5": {
+                "title": "Import-Export Management System",
+                "category": "Information Technology",
+                "description": "Comprehensive digital framework designed to manage the complexities of international trade and cross-border operations.",
+                "longDescription": "A comprehensive digital framework designed to manage the complexities of international trade. This project focuses on the end-to-end 'Import-Export' lifecycle—from sourcing global suppliers and managing customs documentation to tracking real-time shipments across borders. The system acts as a bridge between manufacturers, freight forwarders, and customs authorities to ensure the smooth flow of goods.",
+                "image": "/images/export import.jpg",
+                "client": "Manufacturer",
+                "date": "In Progress",
+                "status": "Processing",
+                "tags": ["Trade", "Logistics", "Compliance"],
+                "challenges": ["Regulatory Compliance: Keeping pace with frequently changing trade policies, sanctions, and tax laws across different countries.", "Logistics Complexity: Coordinating 'Last-Mile Delivery' and multimodal transfers (Sea to Rail to Road) without losing data continuity.", "Financial Risk: Managing currency volatility and ensuring secure international payments through automated banking integrations."],
+                "techStack": ["Java (Spring Boot)", "Python (Django)", "EDI", "XML", "GPS/IoT sensors", "Big Data", "Blockchain", "PostgreSQL", "Oracle"],
+                "results": "Achieved 40% faster customs clearance through pre-validated digital documentation. Reduced document-related errors and penalties by over 90%.",
+                "benefits": ["Efficiency: Significant reduction in lead times and administrative costs.", "Accuracy: Automating Commercial Invoices and Packing Lists minimizes human error.", "Global Reach: 360-degree visibility into landed costs, helping maintain better profit margins."]
+            },
+            "6": {
+                "title": "Tour & Travel Booking Platform",
+                "category": "Travel & Tourism",
+                "description": "Modern, end-to-end digital solution designed to simplify the complexities of the travel industry with real-time booking.",
+                "longDescription": "A modern, end-to-end digital solution designed to simplify the complexities of the travel industry. This project involves a high-performance booking engine that connects travelers with real-time inventory for flights, hotels, and local tours. The platform serves as a centralized hub for tour operators to create dynamic holiday packages, manage group departures, and provide automated travel assistance.",
+                "image": "/images/tourisam.jpg",
+                "client": "Travel & Tourism Operators",
+                "date": "In Progress",
+                "status": "Processing",
+                "tags": ["Booking", "Travel", "Real-time Inventory"],
+                "challenges": ["Real-time Inventory Sync: Preventing overbooking by maintaining millisecond-level synchronization with global airline and hotel databases.", "Payment Complexity: Integrating multi-currency payment gateways with automated conversion and secure 'Buy Now Pay Later' (BNPL) options.", "Peak Traffic Scalability: Managing extreme traffic surges during holiday seasons or 'flash sale' events without system latency."],
+                "techStack": ["React.js", "Next.js", "Node.js", "Python (FastAPI/Django)", "GDS APIs (Amadeus, Sabre)", "Google Maps API", "AWS", "Google Cloud", "CDN"],
+                "results": "45% increase in booking speed by removing manual inquiry processes. Achieved 99.95% Uptime during peak vacation booking windows.",
+                "benefits": ["Instant confirmation and digital vouchers for travelers.", "Automated upsells through analytics (travel insurance, airport transfers).", "30% reduction in administrative overhead through automated invoice generation."]
+            },
+            "7": {
+                "title": "POS & ERP Solution",
+                "category": "Information Technology",
+                "description": "High-performance, SaaS-ready Point of Sale (POS) and Enterprise Resource Planning solution transforming retail operations.",
+                "longDescription": "A high-performance, SaaS-ready Point of Sale (POS) and Enterprise Resource Planning (ERP) solution. This project transforms traditional retail counters into digital hubs by integrating sales, inventory, accounting, and HRM into a single cloud-based dashboard. Designed for scalability, it supports multi-warehouse management and real-time synchronization between web panels and mobile POS terminals.",
+                "image": "/images/information.jpg",
+                "client": "Retail & Enterprise Businesses",
+                "date": "In Progress",
+                "status": "Processing",
+                "tags": ["POS", "ERP", "Multi-Store"],
+                "challenges": ["Offline Synchronization: Ensuring that sales can be processed even during internet outages and synced back to the cloud once a connection is restored.", "Complex Tax/Discount Logic: Building a flexible engine that can handle flat discounts, percentage taxes, and coupon codes simultaneously at checkout.", "Concurrent Transaction Handling: Optimizing the database to handle hundreds of simultaneous 'Read/Write' operations across multiple store outlets."],
+                "techStack": ["Laravel (PHP)", ".NET 8", "Vue.js", "React.js", "Flutter", "MySQL", "ESC/POS", "Barcode SDKs", "AWS", "DigitalOcean"],
+                "results": "Maintained 99.9% availability for critical retail operations. Achieved zero discrepancies in daily cash register closing reports.",
+                "benefits": ["30-40% reduction in manual data entry errors.", "Landed Cost Calculations and Profit/Loss Analytics automatically.", "Enabled business owners to manage 10+ different branch locations from a single mobile device."]
+            },
+            "8": {
+                "title": "Real-time GPS Tracking System",
+                "category": "Transport & Logistics",
+                "description": "High-performance IoT-based tracking solution for real-time monitoring of vehicles, assets, and personnel across the globe.",
+                "longDescription": "A high-performance IoT-based tracking solution designed for real-time monitoring of vehicles, assets, and personnel. The system integrates hardware GPS trackers with a robust cloud-based dashboard to provide live location updates, route history, and engine diagnostics. It is engineered to help businesses reduce operational costs, prevent theft, and optimize route efficiency through data-driven insights.",
+                "image": "/images/transport.jpg",
+                "client": "Logistics Companies / Private Security Firms",
+                "date": "May 2024",
+                "status": "Completed",
+                "tags": ["IoT", "GPS Tracking", "Fleet Management"],
+                "challenges": ["Connectivity Dead Zones: Implementing 'Data Buffering' where the device stores coordinates in internal memory when offline and syncs them automatically.", "Battery Optimization: Balancing the frequency of data pings (e.g., every 10 seconds) with the power consumption of the GPS hardware.", "Geofencing Logic: Creating high-speed spatial queries to detect instantly when a vehicle enters or exits a predefined virtual boundary."],
+                "techStack": ["Node.js", "Python (FastAPI)", "React.js", "Leaflet", "Mapbox", "TimescaleDB", "MongoDB", "MQTT", "TCP/UDP", "AWS", "Azure"],
+                "results": "Achieved location accuracy within 3-5 meters under clear sky conditions. Sub-second data transmission from vehicle to mobile app. 100% reliability in push notifications.",
+                "benefits": ["20-25% reduction in fuel consumption through better route planning.", "Total visibility over mobile assets, improving security and response times.", "Automated Maintenance Reminders based on mileage tracking extend fleet lifespan."]
+            },
+            "9": {
                 "title": "Smart Factory Automation",
-                "category": "Manufacturing & Production",
+                "category": "Information Technology",
                 "description": "Automated production line to increase efficiency and reduce downtime.",
                 "longDescription": "Our Smart Factory Automation project revolutionizes traditional manufacturing by integrating industry 4.0 standards. We implemented IoT sensors and automated arms that communicate in real-time to prevent errors before they happen. This system allows managers to monitor every aspect of production from a central dashboard.",
                 "image": "/images/menufactaring and production.jpg",
                 "client": "IndustriX Corp",
                 "date": "March 2024",
                 "status": "Completed",
-                "tags": [
-                    "Automation",
-                    "AI",
-                    "Robotics"
-                ],
-                "challenges": [
-                    "Integrating legacy machinery with modern IoT sensors.",
-                    "Ensuring zero-latency communication between robotic arms.",
-                    "Training staff to operate the new automated dashboard."
-                ],
-                "techStack": [
-                    "Python",
-                    "AWS IoT",
-                    "TensorFlow",
-                    "Node.js"
-                ],
-                "results": "Increased production speed by 45% and reduced human error by 90%."
+                "tags": ["Automation", "AI", "Robotics"],
+                "challenges": ["Integrating legacy machinery with modern IoT sensors.", "Ensuring zero-latency communication between robotic arms.", "Training staff to operate the new automated dashboard."],
+                "techStack": ["Python", "AWS IoT", "TensorFlow", "Node.js"],
+                "results": "Increased production speed by 45% and reduced human error by 90%.",
+                "benefits": ["Reduced production downtime and maintenance costs significantly.", "Improved product quality through real-time error prevention.", "Enhanced worker safety by automating dangerous manufacturing tasks."]
             },
-            "2": {
-                "title": "Industrial IoT Project",
-                "category": "Manufacturing & Production",
-                "description": "IoT-enabled machines for real-time monitoring and predictive maintenance.",
-                "longDescription": "This project involves deploying thousands of sensors across the factory floor to collect data on machine health, temperature, and performance. The system predicts potential failures before they occur, saving millions in repair costs.",
-                "image": "/images/manufactiring.jpg",
-                "client": "TechGear Ltd",
-                "date": "January 2024",
-                "status": "Ongoing",
-                "tags": [
-                    "IoT",
-                    "Data",
-                    "Cloud"
-                ],
-                "challenges": [
-                    "Handling high-frequency data streams without latency.",
-                    "Ensuring sensor durability in high-temperature environments.",
-                    "End-to-end data encryption for security."
-                ],
-                "techStack": [
-                    "Node.js",
-                    "MQTT",
-                    "Azure IoT Hub",
-                    "React"
-                ],
-                "results": "Reduced unplanned downtime by 35% within the first quarter."
-            },
-            "3": {
-                "title": "Global Export Hub",
-                "category": "Export & Import",
-                "description": "A platform to manage international export and import operations seamlessly.",
-                "longDescription": "A centralized hub designed to track shipments, manage documentation, and handle customs clearance in a single digital environment. It connects exporters, importers, and logistics providers in real-time.",
-                "image": "/images/export import 2.png",
-                "client": "Global Trade Co.",
-                "date": "February 2024",
-                "status": "Completed",
-                "tags": [
-                    "Logistics",
-                    "Trade",
-                    "Cloud-SaaS"
-                ],
-                "challenges": [
-                    "Integrating multiple international customs APIs.",
-                    "Real-time currency conversion and tax calculation.",
-                    "Multi-language support for global users."
-                ],
-                "techStack": [
-                    "Next.js",
-                    "PostgreSQL",
-                    "Stripe API",
-                    "Docker"
-                ],
-                "results": "Reduced documentation processing time by 60%."
-            },
-            "4": {
-                "title": "Export Compliance System",
-                "category": "Export & Import",
-                "description": "Digital solution to ensure compliance with international trade regulations.",
-                "longDescription": "This system automates the legal checks required for international trade, ensuring all cargo meets the destination country's specific laws and avoids heavy penalties.",
-                "image": "/images/export import.jpg",
-                "client": "TradeWatch Group",
-                "date": "November 2023",
-                "status": "Completed",
-                "tags": [
-                    "Compliance",
-                    "Legal-Tech",
-                    "Automation"
-                ],
-                "challenges": [
-                    "Keeping the database updated with global law changes.",
-                    "Automated PDF document generation for legal filing.",
-                    "Secure digital signatures for all trade documents."
-                ],
-                "techStack": [
-                    "TypeScript",
-                    "NestJS",
-                    "MongoDB",
-                    "Firebase"
-                ],
-                "results": "Eliminated 100% of compliance-related shipping delays."
-            },
-            "5": {
-                "title": "Company IT Infrastructure",
-                "category": "Information Technology",
-                "description": "Setting up secure IT infrastructure for company-wide operations.",
-                "longDescription": "A complete overhaul of corporate networking, server management, and cybersecurity protocols. We moved the entire operation to a hybrid cloud model for maximum security and scalability.",
-                "image": "/images/information 2.png",
-                "client": "Nexus Enterprises",
-                "date": "December 2023",
-                "status": "Completed",
-                "tags": [
-                    "Infrastructure",
-                    "Cybersecurity",
-                    "Networking"
-                ],
-                "challenges": [
-                    "Migrating 10TB of data without downtime.",
-                    "Setting up hardware firewalls across 3 branch offices.",
-                    "Implementing Zero-Trust security architecture."
-                ],
-                "techStack": [
-                    "Cisco Networking",
-                    "Azure Cloud",
-                    "Docker",
-                    "Kubernetes"
-                ],
-                "results": "Achieved 99.99% uptime and zero security breaches."
-            },
-            "6": {
-                "title": "Corporate IT Helpdesk",
-                "category": "Information Technology",
-                "description": "24/7 IT support system for employees and business operations.",
-                "longDescription": "An AI-powered ticketing system and support portal that provides instant technical assistance to over 5,000 employees worldwide, reducing manual support workload.",
-                "image": "/images/information.jpg",
-                "client": "Standard Solutions",
-                "date": "January 2024",
-                "status": "Ongoing",
-                "tags": [
-                    "Support",
-                    "ITSM",
-                    "AI-Chatbot"
-                ],
-                "challenges": [
-                    "Training AI to understand complex technical queries.",
-                    "Integration with Microsoft Teams and Slack.",
-                    "Managing high ticket volumes during system updates."
-                ],
-                "techStack": [
-                    "React",
-                    "Python (NLP)",
-                    "GraphQL",
-                    "Redis"
-                ],
-                "results": "Improved ticket resolution time by 50%."
-            },
-            "7": {
+            "10": {
                 "title": "City Logistics Network",
                 "category": "Transport & Logistics",
                 "description": "Optimized logistics network connecting warehouses and stores efficiently.",
@@ -485,52 +455,13 @@
                 "client": "Urban Delivery Inc.",
                 "date": "March 2024",
                 "status": "Completed",
-                "tags": [
-                    "Logistics",
-                    "Green-Tech",
-                    "Route-Optimization"
-                ],
-                "challenges": [
-                    "Real-time GPS tracking and traffic prediction.",
-                    "Balancing load distribution across the delivery fleet.",
-                    "Reducing carbon footprint of last-mile delivery."
-                ],
-                "techStack": [
-                    "Go",
-                    "Google Maps API",
-                    "RabbitMQ",
-                    "React Native"
-                ],
-                "results": "Reduced fuel costs by 20% and delivery time by 15 mins per order."
+                "tags": ["Logistics", "Green-Tech", "Route-Optimization"],
+                "challenges": ["Real-time GPS tracking and traffic prediction.", "Balancing load distribution across the delivery fleet.", "Reducing carbon footprint of last-mile delivery."],
+                "techStack": ["Go", "Google Maps API", "RabbitMQ", "React Native"],
+                "results": "Reduced fuel costs by 20% and delivery time by 15 mins per order.",
+                "benefits": ["Optimized routes save fuel and reduce operational costs.", "Faster deliveries improve customer satisfaction and loyalty.", "Real-time visibility enables proactive issue resolution."]
             },
-            "8": {
-                "title": "Airport Transport Management",
-                "category": "Transport & Logistics",
-                "description": "End-to-end management of airport transport services for passengers and cargo.",
-                "longDescription": "Integrated software to manage airport shuttles, cargo loaders, and flight synchronization for ground handling teams at major international airports.",
-                "image": "/images/transport.jpg",
-                "client": "Skyport Authority",
-                "date": "February 2024",
-                "status": "Ongoing",
-                "tags": [
-                    "Aviation",
-                    "Transport",
-                    "Fleet-Management"
-                ],
-                "challenges": [
-                    "Syncing schedules with real-time flight delay data.",
-                    "High-security protocol for airside vehicle access.",
-                    "Managing driver shifts and vehicle maintenance logs."
-                ],
-                "techStack": [
-                    "Java",
-                    "Spring Boot",
-                    "MySQL",
-                    "Socket.io"
-                ],
-                "results": "Optimized cargo loading speed by 25%."
-            },
-            "9": {
+            "11": {
                 "title": "Tourist Booking Portal",
                 "category": "Travel & Tourism",
                 "description": "An online portal for booking travel and tourism packages easily.",
@@ -539,183 +470,26 @@
                 "client": "Wonderlust Travels",
                 "date": "April 2024",
                 "status": "Completed",
-                "tags": [
-                    "Booking",
-                    "Travel-Tech",
-                    "E-commerce"
-                ],
-                "challenges": [
-                    "Handling real-time inventory for tour operators.",
-                    "Secure payment processing in multiple currencies.",
-                    "Mobile-first responsive design for travelers."
-                ],
-                "techStack": [
-                    "Next.js",
-                    "Tailwind CSS",
-                    "Sanity CMS",
-                    "PayPal API"
-                ],
-                "results": "Increased online bookings by 40% in the first two months."
+                "tags": ["Booking", "Travel-Tech", "E-commerce"],
+                "challenges": ["Handling real-time inventory for tour operators.", "Secure payment processing in multiple currencies.", "Mobile-first responsive design for travelers."],
+                "techStack": ["Next.js", "Tailwind CSS", "Sanity CMS", "PayPal API"],
+                "results": "Increased online bookings by 40% in the first two months.",
+                "benefits": ["Simplified booking process increases conversion rates.", "Multi-language support expands global customer reach.", "Automated itineraries reduce manual planning workload."]
             },
-            "10": {
-                "title": "Urban Infrastructure Development",
-                "category": "Construction & Infrastructure",
-                "description": "Development of roads, bridges, and buildings with modern techniques.",
-                "longDescription": "Implementing sustainable building materials and smart sensors in construction to monitor structural integrity and energy efficiency over time.",
-                "image": "/images/constraction.jpg",
-                "client": "City Planning Board",
-                "date": "May 2024",
-                "status": "Ongoing",
-                "tags": [
-                    "Construction",
-                    "Smart-City",
-                    "Engineering"
-                ],
-                "challenges": [
-                    "Sourcing eco-friendly construction materials.",
-                    "Installing fiber-optic sensors inside concrete structures.",
-                    "Adhering to strict urban safety and noise regulations."
-                ],
-                "techStack": [
-                    "AutoCAD",
-                    "IoT Sensors",
-                    "BIM Software",
-                    "Python"
-                ],
-                "results": "Structure lifespan estimated to increase by 20 years through predictive monitoring."
-            }
-        }
-    },
-    "CaseStudy": {
-        "title": "Company Overview",
-        "description": "MY SOFTAKE PLC. is a modern company providing innovative and dependable services across various industries, consistently pursuing excellence through knowledge and strategic vision.",
-        "viewCaseStudy": "View Case Study",
-        "loading": "Loading...",
-        "notFound": "Not Found",
-        "caseStudyDetails": "Case Study Details",
-        "bannerDescription": "Explore our comprehensive case studies showcasing innovative solutions and measurable results across industries.",
-        "totalDuration": "Total Duration",
-        "estimatedInvestment": "Estimated Investment",
-        "projectTarget": "Project Target",
-        "overview": "Overview",
-        "challenges": "Challenges",
-        "approach": "Approach",
-        "result": "Result",
-        "items": {
-            "1": {
-                "title": "Assetra End-to-End Asset Optimization",
-                "duration": "16-24 months",
-                "investment": "$1.8M – $3.2M",
-                "target": "Reduce TCO by up to 35%",
-                "overview": "Assetra partnered with a large asset-intensive organization facing rising operational costs and fragmented asset management practices. Our team assessed their entire asset portfolio to identify inefficiencies and develop a comprehensive optimization strategy.",
-                "challenges": "Limited visibility across lifecycle, reactive maintenance, and scattered asset data leading to high operational risk and increased costs.",
-                "approach": "Implemented end-to-end strategy covering asset assessment, predictive maintenance, and long-term renewal planning with advanced analytics.",
-                "results": [
-                    "40% reduction in Total Cost of Ownership",
-                    "Significant decrease in unplanned downtime",
-                    "Improved asset reliability and utilization",
-                    "Clear lifecycle roadmap for future investments"
-                ],
-                "images": [
-                    "/images/Case-1.jpg",
-                    "/images/Case-2.jpg",
-                    "/images/Case-3.jpg"
-                ]
-            },
-            "2": {
-                "title": "Smart Factory Automation Upgrade",
-                "duration": "12-18 months",
-                "investment": "$2.5M – $4.0M",
-                "target": "Increase production efficiency by 25%",
-                "overview": "Collaborated with a manufacturing giant to modernize legacy systems using IoT and AI-driven automation for enhanced productivity.",
-                "challenges": "Manual processes, frequent hardware failures, and lack of real-time production monitoring affecting overall efficiency.",
-                "approach": "Deployment of smart sensors and a centralized control system to automate workflow and monitoring across all production units.",
-                "results": [
-                    "30% increase in production throughput",
-                    "20% energy cost reduction",
-                    "Real-time data visibility across all units"
-                ],
-                "images": [
-                    "/images/Case-2.jpg",
-                    "/images/Case-2.jpg",
-                    "/images/Case-3.jpg"
-                ]
-            },
-            "3": {
-                "title": "Supply Chain Digital Transformation",
-                "duration": "10-14 months",
-                "investment": "$1.2M – $2.0M",
-                "target": "Reduce logistics costs by 20%",
-                "overview": "Redesigning the supply chain network for a global retail brand to enhance delivery speed and reduce operational overhead.",
-                "challenges": "Inaccurate inventory forecasting and inefficient route planning causing delivery delays and customer dissatisfaction.",
-                "approach": "Integrated an AI forecasting tool and optimized logistics routes using machine learning algorithms for better accuracy.",
-                "results": [
-                    "15% reduction in warehouse overhead",
-                    "99% on-time delivery rate",
-                    "Better inventory turnover ratio"
-                ],
-                "images": [
-                    "/images/Case-3.jpg",
-                    "/images/Case-2.jpg",
-                    "/images/Case-3.jpg"
-                ]
-            },
-            "4": {
-                "title": "Renewable Energy Grid Integration",
-                "duration": "24-30 months",
-                "investment": "$5.0M – $7.5M",
-                "target": "Transition to 50% renewable power sources",
-                "overview": "Assisting a regional power utility in integrating solar and wind energy into their existing grid infrastructure.",
-                "challenges": "Grid instability and high cost of integrating non-continuous energy sources with traditional power systems.",
-                "approach": "Developed a smart grid management system with advanced battery storage solutions for reliable energy distribution.",
-                "results": [
-                    "Successful 55% renewable energy adoption",
-                    "Lower carbon footprint by 40k tons/year",
-                    "Enhanced grid stability and storage capacity"
-                ],
-                "images": [
-                    "/images/Case-4.jpg",
-                    "/images/Case-2.jpg",
-                    "/images/Case-3.jpg"
-                ]
-            },
-            "5": {
-                "title": "Healthcare Data Interoperability Project",
-                "duration": "8-12 months",
-                "investment": "$900K – $1.5M",
-                "target": "Unified patient records across 15 clinics",
-                "overview": "Creating a seamless data sharing platform for a network of healthcare providers to improve patient care coordination.",
-                "challenges": "Siloed patient data and privacy concerns preventing efficient care coordination across multiple facilities.",
-                "approach": "Built a secure, HIPAA-compliant cloud database with API access for all clinics ensuring data security and accessibility.",
-                "results": [
-                    "Zero data breaches during first year",
-                    "25% faster patient processing time",
-                    "Improved clinical decision support"
-                ],
-                "images": [
-                    "/images/Case 5.jpg",
-                    "/images/Case-2.jpg",
-                    "/images/Case-3.jpg"
-                ]
-            },
-            "6": {
-                "title": "Smart City Infrastructure Development",
-                "duration": "36-48 months",
-                "investment": "$10M – $15M",
-                "target": "Enhance urban mobility and public safety",
-                "overview": "Partnering with municipal authorities to implement smart lighting and traffic management solutions for urban areas.",
-                "challenges": "Congested traffic flow and high crime rates in under-lit urban areas affecting citizen safety and mobility.",
-                "approach": "Installed smart LED streetlights and AI-powered traffic signal controllers for optimized urban management.",
-                "results": [
-                    "20% reduction in traffic congestion",
-                    "15% drop in nighttime crime rates",
-                    "35% savings in municipal energy bills"
-                ],
-                "images": [
-                    "/images/Case-6.jpg",
-                    "/images/Case-2.jpg",
-                    "/images/Case-3.jpg"
-                ]
+            "12": {
+                "title": "Company IT Infrastructure",
+                "category": "Information Technology",
+                "description": "Setting up secure IT infrastructure for company-wide operations.",
+                "longDescription": "A complete overhaul of corporate networking, server management, and cybersecurity protocols. We moved the entire operation to a hybrid cloud model for maximum security and scalability.",
+                "image": "/images/information 2.png",
+                "client": "Nexus Enterprises",
+                "date": "December 2023",
+                "status": "Completed",
+                "tags": ["Infrastructure", "Cybersecurity", "Networking"],
+                "challenges": ["Migrating 10TB of data without downtime.", "Setting up hardware firewalls across 3 branch offices.", "Implementing Zero-Trust security architecture."],
+                "techStack": ["Cisco Networking", "Azure Cloud", "Docker", "Kubernetes"],
+                "results": "Achieved 99.99% uptime and zero security breaches.",
+                "benefits": ["Enterprise-grade security protects sensitive company data.", "Seamless cloud migration improves scalability and flexibility.", "Automated backup systems ensure business continuity."]
             }
         }
     },
@@ -1126,7 +900,7 @@
     },
     "PrivacyPage": {
         "title": "Privacy Policy",
-        "introduction1": "At MultiService Agency, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services.",
+        "introduction1": "At MY SOFTAKE PLC, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services.",
         "introduction2": "Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access our services.",
         "section1Title": "1. Information We Collect",
         "section1_1Title": "1.1 Personal Information",
@@ -1134,18 +908,80 @@
         "section1_1List": ["Register for an account", "Use our services", "Contact us for support", "Make a payment", "Subscribe to our newsletter"],
         "section1_1Desc2": "This information may include:",
         "section1_1List2": ["Name and contact details (email, phone, address)", "Business information (company name, tax ID)", "Payment information (billing address, payment method)", "Service preferences and requirements"],
-        "contactEmail": "privacy@multiservice.com",
-        "contactPhone": "+880 1234 567890",
-        "contactAddress": "123 Business Street, Dhaka, Bangladesh",
-        "contactDPO": "dpo@multiservice.com"
+        "section1_2Title": "1.2 Automatically Collected Information",
+        "section1_2Desc": "When you use our services, we automatically collect:",
+        "section1_2List": ["IP address and device information", "Browser type and version", "Pages you visit and time spent", "Referring website addresses", "Service usage patterns"],
+        "section1_3Title": "1.3 Service-Specific Information",
+        "section1_3Desc": "Depending on the service category, we may collect additional information:",
+        "section1_3List": ["Manufacturing: Product specifications, quality requirements", "Export/Import: Shipping details, customs information", "Transport: Delivery addresses, package details", "Travel: Passport information, travel preferences"],
+        "section2Title": "2. How We Use Your Information",
+        "section2Desc": "We use the information we collect to:",
+        "section2List": ["Provide and maintain our services", "Process your transactions and payments", "Communicate with you about services and updates", "Improve our services and user experience", "Comply with legal obligations", "Protect against fraudulent activities", "Send marketing communications (with your consent)"],
+        "section3Title": "3. Information Sharing and Disclosure",
+        "section3Desc": "We do not sell your personal information. We may share your information with:",
+        "section3_1Title": "3.1 Service Providers",
+        "section3_1List": ["Payment processors", "Shipping and logistics partners", "Cloud hosting providers", "Customer support services"],
+        "section3_2Title": "3.2 Legal Requirements",
+        "section3_2Desc": "We may disclose your information if required by law:",
+        "section3_2List": ["To comply with legal obligations", "To protect our rights and property", "To prevent or investigate wrongdoing", "To ensure safety of our users and the public"],
+        "section3_3Title": "3.3 Business Transfers",
+        "section3_3Desc": "In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the transaction.",
+        "section4Title": "4. Data Security",
+        "section4Desc": "We implement appropriate technical and organizational measures to protect your personal information:",
+        "section4List": ["SSL/TLS encryption for data transmission", "Secure servers and firewalls", "Regular security assessments", "Access controls and authentication", "Regular data backups"],
+        "section4Disclaimer": "However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee absolute security.",
+        "section5Title": "5. Data Retention",
+        "section5Desc": "We retain your personal information only for as long as necessary:",
+        "section5List": ["Account information: Until you request deletion or 2 years after account inactivity", "Transaction records: 7 years for tax and legal compliance", "Service records: Duration of service plus 3 years", "Marketing data: Until you unsubscribe or request removal"],
+        "section6Title": "6. Your Rights",
+        "section6Desc": "Depending on your location, you may have the following rights:",
+        "section6List": ["Access: Request access to your personal information", "Correction: Request correction of inaccurate information", "Deletion: Request deletion of your personal information", "Restriction: Request restriction of processing", "Portability: Request transfer of your data to another service", "Objection: Object to processing of your data", "Withdraw Consent: Withdraw consent at any time"],
+        "section6Contact": "To exercise these rights, please contact us using the information provided below.",
+        "section7Title": "7. Cookies and Tracking Technologies",
+        "section7Desc": "We use cookies and similar tracking technologies to:",
+        "section7List": ["Remember your preferences", "Analyze website traffic", "Improve user experience", "Provide personalized content"],
+        "section7Note": "You can control cookies through your browser settings. However, disabling cookies may affect your ability to use certain features of our services.",
+        "section8Title": "8. Third-Party Links",
+        "section8Desc": "Our services may contain links to third-party websites. We are not responsible for the privacy practices or content of these websites. We encourage you to review the privacy policies of any third-party sites you visit.",
+        "section9Title": "9. Children's Privacy",
+        "section9Desc": "Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately.",
+        "section10Title": "10. International Data Transfers",
+        "section10Desc": "Your information may be transferred to and processed in countries other than your own. These countries may have different data protection laws. By using our services, you consent to this transfer.",
+        "section10Safeguards": "We ensure appropriate safeguards are in place for international data transfers in compliance with applicable laws.",
+        "section11Title": "11. Changes to This Policy",
+        "section11Desc": "We may update this Privacy Policy from time to time. We will notify you of any changes by:",
+        "section11List": ["Posting the new Privacy Policy on this page", "Sending an email notification", "Updating the Effective Date at the top"],
+        "section11Note": "You are advised to review this Privacy Policy periodically for any changes. Changes are effective when posted."
     },
     "TermsPage": {
         "title": "Terms of Service",
-        "lastUpdated": "Last Updated: December 1, 2024",
-        "importantNotice": "Important: Please read these terms carefully before using our services. By accessing or using our services, you agree to be bound by these terms.",
         "section1Title": "1. Acceptance of Terms",
         "section1Desc": "By accessing and using the services provided by MultiService Agency, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our services.",
-        "section1List": ["These terms constitute a legally binding agreement between you and MultiService Agency.", "We reserve the right to modify these terms at any time without prior notice.", "Continued use of our services after changes constitutes acceptance of the new terms."]
+        "section1List": ["These terms constitute a legally binding agreement between you and MultiService Agency.", "We reserve the right to modify these terms at any time without prior notice.", "Continued use of our services after changes constitutes acceptance of the new terms."],
+        "section2Title": "2. Service Categories",
+        "section2Desc": "Our agency provides services across six main categories. Specific terms apply to each category:",
+        "section2List": ["Manufacturing & Production: All manufacturing services are subject to project-specific agreements.", "Export & Import: International trade services are governed by applicable international laws and regulations.", "Information Technology: IT services include specific SLA agreements for each project.", "Transport & Logistics: Transportation services follow industry-standard liability limits.", "Travel & Tourism: Travel bookings are subject to provider terms and cancellation policies.", "Construction & Infrastructure: Construction projects require separate detailed contracts."],
+        "section3Title": "3. User Responsibilities",
+        "section3Desc": "As a user of our services, you agree to:",
+        "section3List": ["Provide accurate and complete information for service requests", "Comply with all applicable laws and regulations", "Maintain the confidentiality of your account credentials", "Not use our services for any illegal or unauthorized purpose", "Pay all applicable fees in a timely manner", "Respect intellectual property rights of all parties"],
+        "section4Title": "4. Payment Terms",
+        "section4Desc": "All services are subject to the following payment terms:",
+        "section4List": ["Quotes are valid for 30 days from the date of issuance", "A 30% advance payment is required for project initiation", "Balance payments are due as per agreed milestones", "Late payments may incur interest charges of 2% per month", "All prices are exclusive of applicable taxes", "Refund policies vary by service category"],
+        "section5Title": "5. Intellectual Property",
+        "section5Desc": "Intellectual property rights are protected as follows:",
+        "section5List": ["All proprietary information remains the property of MultiService Agency", "Client-provided materials remain the property of the client", "Deliverables include specified usage rights as per contract", "Unauthorized use of copyrighted material is strictly prohibited", "Confidentiality agreements protect sensitive information"],
+        "section6Title": "6. Liability and Limitations",
+        "section6Desc": "Our liability is limited as follows:",
+        "section6List": ["We are not liable for indirect, incidental, or consequential damages", "Maximum liability is limited to the service fee paid", "Force majeure events exempt us from liability", "Third-party service issues are not our responsibility", "Proper insurance is required for high-risk projects"],
+        "section7Title": "7. Termination",
+        "section7Desc": "Either party may terminate services under these conditions:",
+        "section7List": ["30 days written notice for ongoing services", "Immediate termination for breach of terms", "Termination fees may apply as per contract", "Outstanding payments become immediately due", "Data retention follows applicable laws"],
+        "section8Title": "8. Governing Law",
+        "section8Desc": "These terms are governed by:",
+        "section8List": ["Bangladeshi law for domestic transactions", "UNCITRAL for international transactions", "Disputes resolved through arbitration in Dhaka", "Arbitration awards are binding and final", "English version of terms prevails"],
+        "section9Title": "9. Definitions",
+        "section9Desc": "",
+        "section9List": ["Services: Refers to any and all services provided by MultiService Agency across all categories.", "Client: Any individual or entity that uses or purchases our services.", "Agreement: The complete set of terms, conditions, and specific service contracts.", "Force Majeure: Unforeseeable circumstances preventing service fulfillment."]
     },
     "SchedulePage": {
         "schedule": "Schedule",
@@ -1194,6 +1030,156 @@
             "blockedTime": "Blocked time",
             "noMeetingsFree": "No meetings · All slots free",
             "noSchedule": "No Schedule loaded for this week."
+        }
+    },
+    "CaseStudy": {
+        "title": "Company Overview",
+        "description": "MY SOFTAKE PLC. is a forward-thinking company delivering innovative and reliable solutions across multiple industries, continually striving for excellence through expertise and strategic vision.",
+        "viewCaseStudy": "View Case Study",
+        "loading": "Loading...",
+        "notFound": "Not Found",
+        "caseStudyDetails": "Case Study Details",
+        "bannerDescription": "Explore our comprehensive case studies showcasing innovative solutions and measurable results across industries.",
+        "totalDuration": "Total Duration",
+        "estimatedInvestment": "Estimated Investment",
+        "projectTarget": "Project Target",
+        "overview": "Overview",
+        "challenges": "Challenges",
+        "approach": "Approach",
+        "result": "Result",
+        "items": {
+            "1": {
+                "title": "Pi 360 Institute Management",
+                "duration": "16-24 months",
+                "investment": "Multi-campus ERP",
+                "target": "Unified data across institutions",
+                "overview": "Pi 360 is a multi-campus, data-driven educational ERP designed to bridge the gap between administration, teachers, and students. Provides a centralised control tower view for management whilst offering personalised dashboards for individual academic tracking.",
+                "challenges": "Cross-Campus Synchronization: Maintaining real-time data consistency across different physical campus locations.",
+                "approach": "Implemented with React.js, Next.js, Tailwind CSS, D3.js, ApexCharts, Node.js, Python (Django), AWS, Azure, PostgreSQL, Redis.",
+                "results": ["99.99% Uptime maintained", "Successfully migrated 10TB of legacy institutional data with zero downtime", "Predictive analytics help management forecast revenue and student growth trends"],
+                "images": ["/images/information.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "2": {
+                "title": "GadgetAdda E-commerce Platform",
+                "duration": "12-18 months",
+                "investment": "High-performance e-commerce",
+                "target": "40% sales growth",
+                "overview": "A comprehensive digital transformation of a retail electronics business with a robust, high-traffic e-commerce engine featuring sophisticated admin panel for multi-vendor inventory management.",
+                "challenges": "Dynamic Stock Syncing: Coordinating real-time inventory updates across the online store and physical warehouse.",
+                "approach": "Built with Next.js, React, Node.js, Express, Laravel, MySQL, MongoDB, AWS, DigitalOcean.",
+                "results": ["Achieved 40% growth in monthly sales within first quarter", "Maintained 99.9% system uptime during peak holiday sales", "Seamless customer experience with real-time order tracking"],
+                "images": ["/images/information.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "3": {
+                "title": "Shobpi Multi-Vendor Marketplace",
+                "duration": "14-20 months",
+                "investment": "Marketplace platform",
+                "target": "Support thousands of vendors",
+                "overview": "A sophisticated multi-vendor marketplace similar to Amazon or Daraz, hosting thousands of independent sellers with private dashboards for vendor management.",
+                "challenges": "Vendor Quality Control: Implementing automated verification systems to ensure only legitimate sellers are onboarded.",
+                "approach": "Developed with PHP (Laravel Multi-tenant), Python (Django), WebSockets (Socket.io), AWS S3, Cloudfront CDN, Microservices.",
+                "results": ["Rapid Catalog Expansion without physical inventory", "Scalable Revenue Model based on commissions and vendor subscription fees", "Hundreds of vendors successfully onboarded"],
+                "images": ["/images/information.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "4": {
+                "title": "ShoShikha Educational Initiative",
+                "duration": "4-6 months (ongoing)",
+                "investment": "EdTech platform",
+                "target": "Train backend developers",
+                "overview": "A comprehensive educational initiative designed to bridge the gap between academic learning and industry-standard backend development with a 4-month structured curriculum.",
+                "challenges": "Curriculum Pacing: Designing a flow that moves students from zero experience to advanced concepts in 4 months.",
+                "approach": "Integrated with Django (MVT), Django REST Framework (DRF), Git, GitHub, Docker, Postman, Insomnia, Redis, Render.com.",
+                "results": ["Students complete a full-scale REST API project deployed with industry standards", "Established permanent learning Discord community", "100% student satisfaction with hands-on projects"],
+                "images": ["/images/information.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "5": {
+                "title": "Import-Export Management System",
+                "duration": "18-24 months",
+                "investment": "Trade platform",
+                "target": "Streamline international trade",
+                "overview": "A comprehensive digital framework designed to manage the complexities of international trade, covering end-to-end import-export lifecycle from sourcing to tracking real-time shipments.",
+                "challenges": "Regulatory Compliance: Keeping pace with frequently changing trade policies and tax laws across different countries.",
+                "approach": "Implemented with Java (Spring Boot), Python (Django), EDI, XML, GPS/IoT sensors, Big Data, Blockchain, PostgreSQL, Oracle.",
+                "results": ["40% faster customs clearance through pre-validated documentation", "Reduced document-related errors and penalties by over 90%", "Full visibility of supply chain operations"],
+                "images": ["/images/export import.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "6": {
+                "title": "Tour & Travel Booking Platform",
+                "duration": "12-16 months",
+                "investment": "Booking engine",
+                "target": "Real-time inventory management",
+                "overview": "A modern, end-to-end digital solution designed to simplify travel industry complexities with a high-performance booking engine connecting travelers with real-time inventory.",
+                "challenges": "Real-time Inventory Sync: Preventing overbooking by maintaining millisecond-level synchronization with global airline and hotel databases.",
+                "approach": "Built with React.js, Next.js, Node.js, Python (FastAPI/Django), GDS APIs (Amadeus, Sabre), Google Maps API, AWS, Google Cloud, CDN.",
+                "results": ["45% increase in booking speed by removing manual inquiry processes", "Achieved 99.95% Uptime during peak vacation booking windows", "Global coverage across 50+ destinations"],
+                "images": ["/images/tourisam.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "7": {
+                "title": "POS & ERP Solution",
+                "duration": "12-18 months",
+                "investment": "Retail solution",
+                "target": "Multi-store management",
+                "overview": "A high-performance, SaaS-ready Point of Sale and Enterprise Resource Planning solution transforming retail operations into digital hubs.",
+                "challenges": "Offline Synchronization: Ensuring sales can be processed during internet outages and synced back when connection is restored.",
+                "approach": "Developed with Laravel (PHP), .NET 8, Vue.js, React.js, Flutter, MySQL, ESC/POS, Barcode SDKs, AWS, DigitalOcean.",
+                "results": ["Maintained 99.9% availability for critical retail operations", "Achieved zero discrepancies in daily cash register closing", "30-40% reduction in manual data entry errors"],
+                "images": ["/images/information.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "8": {
+                "title": "Real-time GPS Tracking System",
+                "duration": "10-14 months",
+                "investment": "Fleet tracking solution",
+                "target": "Global asset monitoring",
+                "overview": "A high-performance IoT-based tracking solution for real-time monitoring of vehicles, assets, and personnel engineered to help businesses reduce operational costs and optimize efficiency.",
+                "challenges": "Connectivity Dead Zones: Implementing data buffering where devices store coordinates and sync automatically.",
+                "approach": "Built with Node.js, Python (FastAPI), React.js, Leaflet, Mapbox, TimescaleDB, MongoDB, MQTT, TCP/UDP, AWS, Azure.",
+                "results": ["Achieved location accuracy within 3-5 meters under clear conditions", "Sub-second data transmission from vehicle to mobile app", "100% reliability in push notifications"],
+                "images": ["/images/transport.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "9": {
+                "title": "Smart Factory Automation",
+                "duration": "9-12 months",
+                "investment": "Manufacturing solution",
+                "target": "Increase production efficiency",
+                "overview": "Our Smart Factory Automation project revolutionizes traditional manufacturing by integrating industry 4.0 standards with IoT sensors and automated arms.",
+                "challenges": "Integrating legacy machinery with modern IoT sensors while ensuring zero-latency communication.",
+                "approach": "Implemented with Python, AWS IoT, TensorFlow, Node.js for real-time monitoring and automation.",
+                "results": ["Increased production speed by 45%", "Reduced human error by 90%", "Significantly reduced production downtime"],
+                "images": ["/images/menufactaring and production.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "10": {
+                "title": "City Logistics Network",
+                "duration": "8-10 months",
+                "investment": "Urban delivery solution",
+                "target": "Optimize delivery routes",
+                "overview": "Smart route planning and fleet management software designed to reduce delivery times and fuel consumption using real-time traffic data.",
+                "challenges": "Real-time GPS tracking and traffic prediction for optimal route planning across multiple delivery zones.",
+                "approach": "Developed with Go, Google Maps API, RabbitMQ, React Native for comprehensive fleet management.",
+                "results": ["Reduced fuel costs by 20%", "Delivery time reduced by 15 mins per order", "Enhanced customer satisfaction with faster delivery"],
+                "images": ["/images/transport log 2.png", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "11": {
+                "title": "Tourist Booking Portal",
+                "duration": "6-8 months",
+                "investment": "Travel booking platform",
+                "target": "Streamline tourism bookings",
+                "overview": "An online portal for booking travel and tourism packages with a feature-rich engine offering personalized itineraries and integrated payment gateway.",
+                "challenges": "Handling real-time inventory for tour operators and secure payment processing in multiple currencies.",
+                "approach": "Built with Next.js, Tailwind CSS, Sanity CMS, PayPal API for seamless booking experience.",
+                "results": ["Increased online bookings by 40% in first two months", "95% customer satisfaction rate", "Global payment support across 50+ currencies"],
+                "images": ["/images/tourisam.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            },
+            "12": {
+                "title": "Company IT Infrastructure",
+                "duration": "6-9 months",
+                "investment": "Enterprise IT solution",
+                "target": "Secure infrastructure setup",
+                "overview": "A complete overhaul of corporate networking, server management, and cybersecurity protocols with migration to hybrid cloud model.",
+                "challenges": "Migrating 10TB of data without downtime and implementing Zero-Trust security architecture.",
+                "approach": "Implemented with Cisco Networking, Azure Cloud, Docker, Kubernetes for robust enterprise infrastructure.",
+                "results": ["Achieved 99.99% uptime", "Zero security breaches", "Improved operational efficiency by 30%"],
+                "images": ["/images/information 2.png", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+            }
         }
     }
 }

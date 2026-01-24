@@ -1,99 +1,146 @@
 [
   {
     "id": 1,
-    "title": "Assetra End-to-End Asset Optimization",
-    "duration": "16-24 months",
-    "investment": "$1.8M – $3.2M",
-    "target": "Reduce TCO by up to 35%",
-    "overview": "Assetra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. partnered with a large asset-intensive organization facing rising operational costs and fragmented asset management practices.",
-    "challenges": "Limited Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. visibility across lifecycle, reactive maintenance, and scattered asset data leading to high operational risk.",
-    "approach": "Implemented Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. end-to-end strategy covering asset assessment, predictive maintenance, and long-term renewal planning.",
-    "results": [
-      "40% reduction in Total Cost of Ownership",
-      "Significant decrease in unplanned downtime",
-      "Improved asset reliability and utilization",
-      "Clear lifecycle roadmap for future investments"
-    ],
-    "images": ["/images/Case-1.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+    "title": "Pi 360 Institute Management",
+    "duration": "January 2026",
+    "investment": "Multi-Campus Solution",
+    "target": "Enable 99.99% Uptime for Educational ERP",
+    "overview": "Pi 360 is a multi-campus, data-driven educational ERP designed to bridge the gap between administration, teachers, and students. It provides a centralized 'control tower' view for management while offering personalized dashboards for individual academic tracking.",
+    "challenges": "Cross-Campus Synchronization: Maintaining real-time data consistency across different physical campus locations. UI/UX Complexity: Condensing massive amounts of data (Financials, Attendance, Results) into a clean, mobile-responsive dashboard without overwhelming the user. Performance Optimization: Ensuring the 'Explore Institutions' search remains fast even when filtering through thousands of data points.",
+    "approach": "Implemented a robust cloud-based infrastructure using AWS and Azure with real-time data synchronization, advanced caching with Redis, and visualization tools like D3.js and ApexCharts for intuitive data presentation.",
+    "results": ["99.99% Uptime maintained", "Successfully migrated 10TB of legacy institutional data with zero downtime", "Predictive analytics help management forecast revenue and student growth trends", "40% reduction in administrative manual labor"],
+    "images": ["/images/information.jpg", "/images/information.jpg", "/images/information.jpg"]
   },
   {
     "id": 2,
-    "title": "Smart Factory Automation Upgrade",
-    "duration": "12-18 months",
-    "investment": "$2.5M – $4.0M",
-    "target": "Increase production efficiency by 25%",
-    "overview": "Collaborated with Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. a manufacturing giant to modernize legacy systems using IoT and AI-driven automation.",
-    "challenges": "Manual processes, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. frequent hardware failures, and lack of real-time production monitoring.",
-    "approach": "Deployment of smart Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. sensors and a centralized control system to automate workflow and monitoring.",
-    "results": [
-      "30% increase in production throughput",
-      "20% energy cost reduction",
-      "Real-time data visibility across all units"
-    ],
-   "images": ["/images/Case-2.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+    "title": "GadgetAdda E-commerce Platform",
+    "duration": "January 2024",
+    "investment": "High-Traffic E-Commerce Solution",
+    "target": "Achieve 40% Growth in Monthly Sales",
+    "overview": "A comprehensive digital transformation of a retail electronics business. This project involved building a robust, high-traffic e-commerce engine (Ecom2) with a sophisticated admin panel to manage multi-vendor inventory, real-time order tracking, and automated customer notifications.",
+    "challenges": "Dynamic Stock Syncing: Coordinating real-time inventory updates across the online store and physical warehouse to prevent overselling. Security & Fraud Prevention: Implementing secure checkout protocols and SSL encryption to protect sensitive customer payment data. Scalability: Optimizing server-side rendering to maintain fast load times during high-traffic flash sales.",
+    "approach": "Deployed Next.js frontend with Node.js backend, implemented real-time inventory syncing, integrated secure SSL encryption, and optimized server-side rendering for fast load times.",
+    "results": ["40% growth in monthly sales within first quarter", "99.9% system uptime during peak holiday sales", "35% increase in operational efficiency", "Seamless mobile and desktop experience"],
+    "images": ["/images/information.jpg", "/images/information.jpg", "/images/information.jpg"]
   },
   {
     "id": 3,
-    "title": "Supply Chain Digital Transformation",
-    "duration": "10-14 months",
-    "investment": "$1.2M – $2.0M",
-    "target": "Reduce logistics costs by 20%",
-    "overview": "Redesigning the supply chain Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. network for a global retail brand to enhance delivery speed.",
-    "challenges": "Inaccurate inventory Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. forecasting and inefficient route planning causing delivery delays.",
-    "approach": "Integrated an AI forecasting Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. tool and optimized logistics routes using machine learning algorithms.",
-    "results": [
-      "15% reduction in warehouse overhead",
-      "99% on-time delivery rate",
-      "Better inventory turnover ratio"
-    ],
-   "images": ["/images/Case-3.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+    "title": "Shobpi Multi-Vendor Marketplace",
+    "duration": "January 2025",
+    "investment": "B2B2C Marketplace Platform",
+    "target": "Host Thousands of Independent Sellers",
+    "overview": "Shobpi is a sophisticated multi-vendor marketplace (similar to Amazon or Daraz) designed to host thousands of independent sellers. Each vendor gets a private dashboard to manage products, orders, and earnings, while the Super Admin maintains global control over commissions and payouts.",
+    "challenges": "Vendor Quality Control: Implementing automated verification systems to ensure only legitimate sellers are onboarded. Complex Logistics: Coordinating shipping when a single customer order contains items from three different vendors in different locations. Wallet & Payout Security: Ensuring precise financial auditing for thousands of sub-accounts and automated tax calculations.",
+    "approach": "Built with Laravel multi-tenant architecture, WebSocket real-time notifications, AWS S3 for image hosting, and CloudFront CDN for global distribution.",
+    "results": ["Scalable revenue model through commissions", "Rapid catalog expansion capability", "One-stop-shop experience for customers", "Secure multi-vendor payment system"],
+    "images": ["/images/information.jpg", "/images/information.jpg", "/images/information.jpg"]
   },
   {
     "id": 4,
-    "title": "Renewable Energy Grid Integration",
-    "duration": "24-30 months",
-    "investment": "$5.0M – $7.5M",
-    "target": "Transition to 50% renewable power sources",
-    "overview": "Assisting a regional power utility Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. in integrating solar and wind energy into their existing grid.",
-    "challenges": "Grid instability and high cost Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. of integrating non-continuous energy sources.",
-    "approach": "Developed a smart grid management Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. system with advanced battery storage solutions.",
-    "results": [
-      "Successful 55% renewable energy adoption",
-      "Lower carbon footprint by 40k tons/year",
-      "Enhanced grid stability and storage capacity"
-    ],
-   "images": ["/images/Case-4.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+    "title": "ShoShikha Educational Initiative",
+    "duration": "Ongoing",
+    "investment": "EdTech Mentorship Program",
+    "target": "Transform Beginners into Job-Ready Developers",
+    "overview": "A comprehensive educational initiative designed to bridge the gap between academic learning and industry-standard backend development. Features a structured 4-month curriculum with Django core architecture, REST API development, and 6-month extended mentorship.",
+    "challenges": "Curriculum Pacing: Designing a flow that moves students from zero experience to advanced concepts like JWT authentication and Redis workflows in 4 months. One-to-One Support: Maintaining high-quality mentorship and query resolution across both on-site and digital Discord communities. Real-World Integration: Ensuring students can successfully integrate AI tools like GitHub Copilot and Cursor into their manual coding workflows.",
+    "approach": "Structured curriculum using Django and DRF, live sessions with recorded resources, Docker containerization for consistent environments, and GitHub integration for version control learning.",
+    "results": ["Students deploy full-scale REST API projects", "High post-course employment rates", "Active Discord learning community", "Portfolio building and career guidance support"],
+    "images": ["/images/information.jpg", "/images/information.jpg", "/images/information.jpg"]
   },
   {
     "id": 5,
-    "title": "Healthcare Data Interoperability Project",
-    "duration": "8-12 months",
-    "investment": "$900K – $1.5M",
-    "target": "Unified patient records across 15 clinics",
-    "overview": "Creating Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. a seamless data sharing platform for a network of healthcare providers.",
-    "challenges": "Siloed Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. patient data and privacy concerns preventing efficient care coordination.",
-    "approach": "Built a Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. secure, HIPAA-compliant cloud database with API access for all clinics.",
-    "results": [
-      "Zero data breaches during first year",
-      "25% faster patient processing time",
-      "Improved clinical decision support"
-    ],
-    "images": ["/images/Case 5.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+    "title": "Import-Export Management System",
+    "duration": "In Progress",
+    "investment": "International Trade Platform",
+    "target": "40% Faster Customs Clearance",
+    "overview": "A comprehensive digital framework designed to manage the complexities of international trade. This project focuses on the end-to-end Import-Export lifecycle—from sourcing global suppliers and managing customs documentation to tracking real-time shipments across borders.",
+    "challenges": "Regulatory Compliance: Keeping pace with frequently changing trade policies, sanctions, and tax laws across different countries. Logistics Complexity: Coordinating Last-Mile Delivery and multimodal transfers (Sea to Rail to Road) without losing data continuity. Financial Risk: Managing currency volatility and ensuring secure international payments through automated banking integrations.",
+    "approach": "Built with Spring Boot backend, EDI and XML data interchange standards, GPS/IoT sensors for tracking, Blockchain for documentation security, and PostgreSQL for transactional records.",
+    "results": ["40% faster customs clearance", "90% reduction in document errors", "Global operational reach", "360-degree visibility into landed costs"],
+    "images": ["/images/export import.jpg", "/images/export import.jpg", "/images/export import.jpg"]
   },
   {
     "id": 6,
-    "title": "Smart City Infrastructure Development",
-    "duration": "36-48 months",
-    "investment": "$10M – $15M",
-    "target": "Enhance urban mobility and public safety",
-    "overview": "Partnering with Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. municipal authorities to implement smart lighting and traffic management.",
-    "challenges": "Congested Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. traffic flow and high crime rates in under-lit urban areas.",
-    "approach": "Installed smart LED streetlights Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus lobortis maecenas mattis sed ullamcorper fermentum, porttitor adipiscing venenatis. Convallis turpis suscipit et congue quam gravida malesuada auctor. Egestas et dictum risus eu dolor sollicitudin. Mauris bibendum in ornare egestas et cras. and AI-powered traffic signal controllers.",
-    "results": [
-      "20% reduction in traffic congestion",
-      "15% drop in nighttime crime rates",
-      "35% savings in municipal energy bills"
-    ],
-    "images": ["/images/Case-6.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+    "title": "Tour & Travel Booking Platform",
+    "duration": "In Progress",
+    "investment": "Travel & Tourism Solution",
+    "target": "99.95% Uptime During Peak Seasons",
+    "overview": "A modern, end-to-end digital solution designed to simplify the complexities of the travel industry. This project involves a high-performance booking engine that connects travelers with real-time inventory for flights, hotels, and local tours.",
+    "challenges": "Real-time Inventory Sync: Preventing overbooking by maintaining millisecond-level synchronization with global airline and hotel databases. Payment Complexity: Integrating multi-currency payment gateways with automated conversion and secure Buy Now Pay Later (BNPL) options. Peak Traffic Scalability: Managing extreme traffic surges during holiday seasons or flash sale events without system latency.",
+    "approach": "Next.js frontend with React, Node.js backend, integrated GDS APIs (Amadeus, Sabre), Google Maps API integration, AWS with auto-scaling and CDN.",
+    "results": ["45% increase in booking speed", "99.95% uptime during peak seasons", "Instant confirmation and digital vouchers", "Automated upsell analytics dashboard"],
+    "images": ["/images/tourisam.jpg", "/images/tourisam.jpg", "/images/tourisam.jpg"]
+  },
+  {
+    "id": 7,
+    "title": "POS & ERP Solution",
+    "duration": "In Progress",
+    "investment": "Retail Enterprise Solution",
+    "target": "Manage 10+ Store Locations from Single Device",
+    "overview": "A high-performance, SaaS-ready Point of Sale (POS) and Enterprise Resource Planning (ERP) solution. This project transforms traditional retail counters into digital hubs by integrating sales, inventory, accounting, and HRM into a single cloud-based dashboard.",
+    "challenges": "Offline Synchronization: Ensuring that sales can be processed even during internet outages and synced back to the cloud once a connection is restored. Complex Tax/Discount Logic: Building a flexible engine that can handle flat discounts, percentage taxes, and coupon codes simultaneously at checkout. Concurrent Transaction Handling: Optimizing the database to handle hundreds of simultaneous Read/Write operations across multiple store outlets.",
+    "approach": "Built with Laravel (PHP) and .NET 8 backend, Vue.js and React.js frontend, Flutter mobile app, ESC/POS printer integration, Barcode SDKs, AWS and DigitalOcean cloud infrastructure.",
+    "results": ["99.9% availability for critical retail operations", "Zero discrepancies in daily cash register reports", "30-40% reduction in manual data entry errors", "Landed Cost Calculations and Profit/Loss Analytics automated"],
+    "images": ["/images/information.jpg", "/images/information.jpg", "/images/information.jpg"]
+  },
+  {
+    "id": 8,
+    "title": "Real-time GPS Tracking System",
+    "duration": "May 2024",
+    "investment": "Fleet Management Solution",
+    "target": "3-5 Meter Location Accuracy",
+    "overview": "A high-performance IoT-based tracking solution designed for real-time monitoring of vehicles, assets, and personnel. The system integrates hardware GPS trackers with a robust cloud-based dashboard to provide live location updates, route history, and engine diagnostics.",
+    "challenges": "Connectivity Dead Zones: Implementing Data Buffering where the device stores coordinates in internal memory when offline and syncs them automatically. Battery Optimization: Balancing the frequency of data pings (e.g., every 10 seconds) with the power consumption of the GPS hardware. Geofencing Logic: Creating high-speed spatial queries to detect instantly when a vehicle enters or exits a predefined virtual boundary.",
+    "approach": "Node.js and Python (FastAPI) backend, React.js frontend with Leaflet and Mapbox integration, TimescaleDB for time-series data, MongoDB for document storage, MQTT protocol, AWS and Azure cloud services.",
+    "results": ["Location accuracy within 3-5 meters under clear sky conditions", "Sub-second data transmission from vehicle to mobile app", "100% reliability in push notifications", "20-25% fuel consumption reduction through route optimization"],
+    "images": ["/images/transport.jpg", "/images/transport.jpg", "/images/transport.jpg"]
+  },
+  {
+    "id": 9,
+    "title": "Smart Factory Automation",
+    "duration": "March 2024",
+    "investment": "Manufacturing Solution",
+    "target": "45% Increase in Production Speed",
+    "overview": "Our Smart Factory Automation project revolutionizes traditional manufacturing by integrating industry 4.0 standards. We implemented IoT sensors and automated arms that communicate in real-time to prevent errors before they happen.",
+    "challenges": "Integrating legacy machinery with modern IoT sensors. Ensuring zero-latency communication between robotic arms. Training staff to operate the new automated dashboard.",
+    "approach": "Python backend, AWS IoT platform for device management, TensorFlow for predictive maintenance, Node.js for real-time communication, automated monitoring and alert systems.",
+    "results": ["Increased production speed by 45%", "Reduced human error by 90%", "Reduced production downtime significantly", "Enhanced worker safety by automating dangerous manufacturing tasks"],
+    "images": ["/images/menufactaring and production.jpg", "/images/menufactaring and production.jpg", "/images/menufactaring and production.jpg"]
+  },
+  {
+    "id": 10,
+    "title": "City Logistics Network",
+    "duration": "March 2024",
+    "investment": "Urban Logistics Solution",
+    "target": "15 Minute Reduction in Delivery Time",
+    "overview": "Smart route planning and fleet management software designed to reduce delivery times and fuel consumption within urban areas using real-time traffic data.",
+    "challenges": "Real-time GPS tracking and traffic prediction. Balancing load distribution across the delivery fleet. Reducing carbon footprint of last-mile delivery.",
+    "approach": "Go backend for high performance, Google Maps API integration, RabbitMQ for message queuing, React Native for mobile fleet apps, machine learning for route optimization.",
+    "results": ["Reduced fuel costs by 20%", "Delivery time reduced by 15 minutes per order", "Optimized routes save operational costs", "Real-time visibility enables proactive issue resolution"],
+    "images": ["/images/transport log 2.png", "/images/transport log 2.png", "/images/transport log 2.png"]
+  },
+  {
+    "id": 11,
+    "title": "Tourist Booking Portal",
+    "duration": "April 2024",
+    "investment": "Travel Tech Solution",
+    "target": "40% Increase in Online Bookings",
+    "overview": "A feature-rich booking engine offering personalized travel itineraries, hotel bookings, and guided tour reservations with an integrated payment gateway.",
+    "challenges": "Handling real-time inventory for tour operators. Secure payment processing in multiple currencies. Mobile-first responsive design for travelers.",
+    "approach": "Next.js frontend with Tailwind CSS, Sanity CMS for content management, PayPal and Stripe API integration, Node.js backend, automated email confirmations and itinerary generation.",
+    "results": ["Increased online bookings by 40% in first two months", "Simplified booking process increases conversion rates", "Multi-language support expands global reach", "Automated itineraries reduce manual planning workload"],
+    "images": ["/images/tourisam.jpg", "/images/tourisam.jpg", "/images/tourisam.jpg"]
+  },
+  {
+    "id": 12,
+    "title": "Company IT Infrastructure",
+    "duration": "December 2023",
+    "investment": "Enterprise Infrastructure Solution",
+    "target": "Zero Security Breaches",
+    "overview": "A complete overhaul of corporate networking, server management, and cybersecurity protocols. We moved the entire operation to a hybrid cloud model for maximum security and scalability.",
+    "challenges": "Migrating 10TB of data without downtime. Setting up hardware firewalls across 3 branch offices. Implementing Zero-Trust security architecture.",
+    "approach": "Cisco Networking for enterprise routing, Azure Cloud hybrid infrastructure, Docker and Kubernetes for containerization, automated backup systems, role-based access control, continuous monitoring.",
+    "results": ["Achieved 99.99% uptime", "Zero security breaches during operation", "Enterprise-grade security protecting sensitive data", "Seamless cloud migration improving scalability"],
+    "images": ["/images/information 2.png", "/images/information 2.png", "/images/information 2.png"]
   }
 ]

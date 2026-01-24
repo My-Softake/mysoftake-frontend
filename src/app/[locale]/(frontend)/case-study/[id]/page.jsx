@@ -3,19 +3,23 @@
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import React from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const CaseStudyDetailsPage = () => {
   const { id } = useParams();
   const t = useTranslations("CaseStudy");
+  const locale = useLocale();
 
-  // Validate that the ID exists (1-6)
-  const validIds = ["1", "2", "3", "4", "5", "6"];
-  const isValidId = validIds.includes(String(id));
-
-  if (!isValidId) {
-    return <div className="p-20 text-center text-red-500">{t("notFound")}</div>;
-  }
+  // Helper to safely get arrays from translations
+  const getArray = (key) => {
+    try {
+      const raw = t.raw(key);
+      return Array.isArray(raw) ? raw : [];
+    } catch (error) {
+      console.warn(`Could not resolve ${key} in messages for locale ${locale}. Error: ${error.message}`);
+      return [];
+    }
+  };
 
   // Get case study data from translations
   const caseStudy = {
@@ -26,14 +30,29 @@ const CaseStudyDetailsPage = () => {
     overview: t(`items.${id}.overview`),
     challenges: t(`items.${id}.challenges`),
     approach: t(`items.${id}.approach`),
-    results: t.raw(`items.${id}.results`),
-    images: t.raw(`items.${id}.images`)
+    results: getArray(`items.${id}.results`),
+    images: getArray(`items.${id}.images`)
   };
+
+  // Check if case study exists by trying to get its title
+  let caseStudyExists = true;
+  try {
+    t(`items.${id}.title`);
+  } catch {
+    caseStudyExists = false;
+  }
+
+  if (!caseStudyExists || !caseStudy.title) {
+    return (
+      <div className="h-screen flex flex-col items-center justify-center gap-4">
+        <h1 className="text-2xl font-bold">{t("notFound")}</h1>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-white min-h-screen">
       {/* Banner Section */}
-
       <div
         className="py-10 mt-10 md:py-20"
         style={{
@@ -85,8 +104,9 @@ const CaseStudyDetailsPage = () => {
             <p className="text-gray-700">{caseStudy.target}</p>
           </div>
         </div>
+
         {/* Overview */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center mb-16">
           <div>
             <h3 className="text-3xl font-bold text-[#001b3d] mb-4">{t("overview")}</h3>
             <p className="text-gray-600 leading-relaxed text-lg">
@@ -94,18 +114,20 @@ const CaseStudyDetailsPage = () => {
             </p>
           </div>
 
-          <div className="relative w-full h-[260px] lg:h-[300px] overflow-hidden">
-            <Image
-              src={caseStudy.images[0]}
-              alt={t("overview")}
-              fill
-              className="object-cover"
-            />
-          </div>
+          {caseStudy.images && caseStudy.images.length > 0 && (
+            <div className="relative w-full h-[260px] lg:h-[300px] overflow-hidden rounded-lg">
+              <Image
+                src={caseStudy.images[0]}
+                alt={t("overview")}
+                fill
+                className="object-cover"
+              />
+            </div>
+          )}
         </div>
 
         {/* Challenges */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center max-sm:mt-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center mb-16 max-sm:mt-5">
           <div>
             <h3 className="text-3xl font-bold text-[#001b3d] mb-4">
               {t("challenges")}
@@ -115,18 +137,20 @@ const CaseStudyDetailsPage = () => {
             </p>
           </div>
 
-          <div className="relative w-full h-[260px] lg:h-[300px] overflow-hidden mt-6">
-            <Image
-              src={caseStudy.images[1]}
-              alt={t("challenges")}
-              fill
-              className="object-cover"
-            />
-          </div>
+          {caseStudy.images && caseStudy.images.length > 1 && (
+            <div className="relative w-full h-[260px] lg:h-[300px] overflow-hidden rounded-lg mt-6">
+              <Image
+                src={caseStudy.images[1]}
+                alt={t("challenges")}
+                fill
+                className="object-cover"
+              />
+            </div>
+          )}
         </div>
 
         {/* Approach */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center max-sm:mt-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center mb-16 max-sm:mt-5">
           <div>
             <h3 className="text-3xl font-bold text-[#001b3d] mb-4">{t("approach")}</h3>
             <p className="text-gray-600 leading-relaxed text-lg">
@@ -134,22 +158,24 @@ const CaseStudyDetailsPage = () => {
             </p>
           </div>
 
-          <div className="relative w-full h-[260px] lg:h-[300px] overflow-hidden mt-6">
-            <Image
-              src={caseStudy.images[2]}
-              alt={t("approach")}
-              fill
-              className="object-cover"
-            />
-          </div>
+          {caseStudy.images && caseStudy.images.length > 2 && (
+            <div className="relative w-full h-[260px] lg:h-[300px] overflow-hidden rounded-lg mt-6">
+              <Image
+                src={caseStudy.images[2]}
+                alt={t("approach")}
+                fill
+                className="object-cover"
+              />
+            </div>
+          )}
         </div>
 
         {/* Result */}
-        <div className="grid grid-cols-1 lg:grid-cols-2  md:gap-16 items-center max-sm:mt-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16 items-center max-sm:mt-5">
           <div>
             <h3 className="text-3xl font-bold text-[#001b3d] mb-6">{t("result")}</h3>
             <ul className="space-y-4">
-              {caseStudy.results.map((res, idx) => (
+              {caseStudy.results && caseStudy.results.map((res, idx) => (
                 <li key={idx} className="flex items-start gap-3">
                   <span className="mt-1 font-bold text-[#001b3d]">✓</span>
                   <p className="text-gray-700 text-lg">{res}</p>

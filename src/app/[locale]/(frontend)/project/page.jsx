@@ -8,11 +8,11 @@ const ProjectPage = () => {
   const t = useTranslations("ProjectData");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  // Get project IDs (1-10)
-  const projectIds = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+  // Get project IDs (1-12)
+  const projectIds = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
 
-  // Get category IDs (1-6)
-  const categoryIds = ["1", "2", "3", "4", "5", "6"];
+  // Get category IDs (1-3)
+  const categoryIds = ["1", "2", "3"];
 
   // Filtered projects based on selected category
   const filteredProjectIds =

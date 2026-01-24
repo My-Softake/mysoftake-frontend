@@ -10,9 +10,9 @@ const OurLetestProject = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(3);
 
-  // Project IDs (1-10) and category IDs (1-6)
-  const projectIds = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
-  const categoryIds = ["1", "2", "3", "4", "5", "6"];
+  // Project IDs (1-12) and category IDs (1-3)
+  const projectIds = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+  const categoryIds = ["1", "2", "3"];
 
   useEffect(() => {
     const handleResize = () => {

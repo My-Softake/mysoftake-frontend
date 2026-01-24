@@ -55,6 +55,16 @@ const ServiceDetails = ({ params }) => {
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">
             {t(`items.${serviceId}.headline`)}
           </h2>
+          
+          {/* Show BrainAlgo for IT Service */}
+          {serviceId === "1" && (
+            <div className="mb-4 p-3 bg-blue-50 border-l-4 border-blue-600 rounded">
+              <p className="text-gray-700">
+                Our dedicated IT team, <span className="font-bold text-blue-600 text-lg">BrainAlgo</span>, specializes in cutting-edge technology solutions and digital transformation.
+              </p>
+            </div>
+          )}
+          
           <p className="text-gray-600 text-lg">{t(`items.${serviceId}.desc`)}</p>
         </div>
         <div className="md:w-1/2 relative h-[330px] md:h-[400px] w-full">

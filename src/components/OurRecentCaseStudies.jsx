@@ -13,20 +13,29 @@ import { useTranslations, useLocale } from "next-intl";
 
 const OurRecentCaseStudies = () => {
   const t = useTranslations("OurRecentCaseStudies");
-  const caseStudyT = useTranslations("CaseStudy");
-  
-  // Case study IDs (1-6) - using translation messages instead of JSON
+  const tCaseStudy = useTranslations("CaseStudy");
+  const locale = useLocale();
+
+  // Get case study IDs (1-6 for homepage)
   const caseStudyIds = ["1", "2", "3", "4", "5", "6"];
 
-  // Create case study items from translations
-  // Images from OurRecentCaseStudies (can be different), data from CaseStudy (same)
-  const caseStudies = caseStudyIds.map((id) => ({
-    id,
-    title: caseStudyT(`items.${id}.title`), // Same data
-    duration: caseStudyT(`items.${id}.duration`), // Same data
-    images: t.raw(`items.${id}.images`) || caseStudyT.raw(`items.${id}.images`), // Different images if available
-    results: caseStudyT.raw(`items.${id}.results`), // Same data
-  }));
+  // Get case studies data from translations
+  const getCaseStudies = () => {
+    return caseStudyIds.map((id) => {
+      try {
+        const raw = tCaseStudy.raw(`items.${id}`);
+        return {
+          id: parseInt(id),
+          ...raw,
+        };
+      } catch (error) {
+        console.warn(`Could not load case study ${id}:`, error.message);
+        return null;
+      }
+    }).filter(Boolean);
+  };
+
+  const caseStudies = getCaseStudies();
 
   return (
     <div className="py-16 bg-black">
@@ -42,17 +51,20 @@ const OurRecentCaseStudies = () => {
             <CaseStudyCard
               item={caseStudies[0]}
               aspect="aspect-[16/9] lg:h-[400px]"
+              locale={locale}
             />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
               <CaseStudyCard
                 item={caseStudies[1]}
                 aspect="aspect-[4/3] lg:h-[250px]"
+                locale={locale}
               />
 
               <CaseStudyCard
                 item={caseStudies[2]}
                 aspect="aspect-[4/3] lg:h-[250px]"
+                locale={locale}
               />
             </div>
           </div>
@@ -60,7 +72,8 @@ const OurRecentCaseStudies = () => {
 
             <CaseStudyCard
               item={caseStudies[3]}
-              aspect="aspect-[3/4] lg:h-full min-h-[400px]"
+              aspect="aspect-[3/4] lg:h- min-h-[400px]"
+              locale={locale}
             />
           </div>
         </div>
@@ -72,6 +85,7 @@ const OurRecentCaseStudies = () => {
             <CaseStudyCard
               item={caseStudies[4]}
               aspect="aspect-[21/9] lg:h-[300px]"
+              locale={locale}
             />
           </div>
           <div className="lg:col-span-4">
@@ -79,6 +93,7 @@ const OurRecentCaseStudies = () => {
             <CaseStudyCard
               item={caseStudies[5]}
               aspect="aspect-[4/3] lg:h-[300px]"
+              locale={locale}
             />
           </div>
         </div>
@@ -88,11 +103,9 @@ const OurRecentCaseStudies = () => {
 };
 
 // Reusable Card Component
-const CaseStudyCard = ({ item, aspect }) => {
+const CaseStudyCard = ({ item, aspect, locale }) => {
   const t = useTranslations("OurRecentCaseStudies");
-  const locale = useLocale();
   const [isActive, setIsActive] = useState(false);
-
 
   if (!item) return null;
 
@@ -104,7 +117,7 @@ const CaseStudyCard = ({ item, aspect }) => {
       className={`relative group w-full ${aspect} overflow-hidden rounded-2xl cursor-pointer bg-slate-900 transition-all duration-500`}
     >
       <Image
-        src={item.images?.[0] || "/images/placeholder.png"}
+        src={Array.isArray(item.images) ? item.images[0] : item.images || "/images/placeholder.png"}
         alt={item.title}
         fill
         className={`object-cover transition-transform duration-700 ${isActive ? "scale-110" : "scale-100"
@@ -113,44 +126,22 @@ const CaseStudyCard = ({ item, aspect }) => {
 
       {/* Blur & Content Layer */}
       <div
-        className={`
-          absolute inset-0 
-          bg-black/40 backdrop-blur-md
-          shadow-[inset_0_0_120px_rgba(0,0,0,0.8)] 
-          transition-all duration-500 ease-out
-          flex flex-col items-center justify-center
-          z-20
-          ${isActive ? "opacity-100" : "opacity-0"}
-        `}
+        className={`absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent transition-all duration-500 ${isActive ? "opacity-100" : "opacity-70"
+          }`}
+      />
+      {/* Text & Button */}
+      <div
+        className={`absolute inset-0 flex flex-col items-center justify-center text-center px-4 transition-all duration-500 delay-300 ${isActive ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
-        {/* Animated Arrows */}
-        <FaArrowRight
-          className={`absolute top-6 left-6 text-white text-2xl md:text-4xl rotate-[45deg] transition-all duration-700 delay-100 ${isActive ? "translate-x-0 translate-y-0 opacity-100" : "-translate-x-10 -translate-y-10 opacity-0"}`}
-        />
-        <FaArrowDown
-          className={`absolute top-6 right-6 text-white text-2xl md:text-4xl rotate-[45deg] transition-all duration-700 delay-150 ${isActive ? "translate-x-0 translate-y-0 opacity-100" : "translate-x-10 -translate-y-10 opacity-0"}`}
-        />
-        <FaArrowLeft
-          className={`absolute bottom-6 right-6 text-white text-2xl md:text-4xl rotate-[45deg] transition-all duration-700 delay-200 ${isActive ? "translate-x-0 translate-y-0 opacity-100" : "translate-x-10 translate-y-10 opacity-0"}`}
-        />
-        <FaArrowUp
-          className={`absolute bottom-6 left-6 text-white text-2xl md:text-4xl rotate-[45deg] transition-all duration-700 delay-250 ${isActive ? "translate-x-0 translate-y-0 opacity-100" : "-translate-x-10 translate-y-10 opacity-0"}`}
-        />
-
-        {/* Text & Button */}
-        <div
-          className={`text-center px-4 transition-all duration-500 delay-300 ${isActive ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            }`}
-        >
-          <h4 className="text-xl md:text-3xl font-bold text-white mb-4 drop-shadow-lg">
-            {item.title}
-          </h4>
-          <Link href={`/${locale}/case-study/${item.id || ""}`}>
-            <button className="bg-white text-black px-6 py-2 md:px-8 md:py-3 rounded-full font-black cursor-pointer hover:bg-[#0EA5E9] hover:text-white transition-all duration-300 shadow-xl uppercase text-xs md:text-sm tracking-widest">
-              {t("viewDetail")}
-            </button>
-          </Link>
-        </div>
+        <h4 className="text-xl md:text-3xl font-bold text-white mb-4 drop-shadow-lg">
+          {item.title}
+        </h4>
+        <Link href={`/${locale}/case-study/${item.id || ""}`}>
+          <button className="bg-white text-black px-6 py-2 md:px-8 md:py-3 rounded-full font-black cursor-pointer hover:bg-[#0EA5E9] hover:text-white transition-all duration-300 shadow-xl uppercase text-xs md:text-sm tracking-widest">
+            {t("viewDetail")}
+          </button>
+        </Link>
       </div>
     </div>
   );
