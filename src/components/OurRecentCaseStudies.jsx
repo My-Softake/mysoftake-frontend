@@ -72,7 +72,7 @@ const OurRecentCaseStudies = () => {
 
             <CaseStudyCard
               item={caseStudies[3]}
-              aspect="aspect-[3/4] lg:h- min-h-[400px]"
+              aspect="aspect-[3/4]  min-h-[400px]"
               locale={locale}
             />
           </div>

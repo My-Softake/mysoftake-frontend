@@ -83,10 +83,11 @@
         }
     },
     "CounterSection": {
-        "projectsDelivered": "Projects Delivered",
-        "teamMembers": "Team Members (3 nationalities)",
-        "cloudSavings": "saved by cloud customers",
-        "awsReviews": "5 star AWS customer reviews"
+        "projectComplete": "Project Complete",
+        "happyClients": "Happy Clients",
+        "yearsExperiance": "Years of Experiance",
+        "servicesProvide": "Service We Provide",
+        "countries": "Countries"
     },
     "AreaWeServe": {
         "title": "AREA WE SERVE",

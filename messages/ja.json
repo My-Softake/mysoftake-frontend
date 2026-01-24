@@ -107,10 +107,11 @@
     }
   },
   "CounterSection": {
-    "projectsDelivered": "完了したプロジェクト",
-    "teamMembers": "チームメンバー（3か国籍）",
-    "cloudSavings": "クラウド導入によるコスト削減",
-    "awsReviews": "AWSカスタマーレビュー ★5"
+    "projectComplete": "完了したプロジェクト",
+    "happyClients": "満足したクライアント",
+    "yearsExperiance": "経験年数",
+    "servicesProvide": "提供するサービス",
+    "countries": "国"
   },
   "AreaWeServe": {
     "title": "対応エリア",
