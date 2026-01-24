@@ -94,13 +94,7 @@ const ContactPage = () => {
           <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-4 drop-shadow-lg">
             {t("hero.title")}
           </h1>
-          <div className="flex justify-center items-center gap-3 text-lg font-medium drop-shadow-md">
-            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors">
-              {t("hero.home")}
-            </Link>
-            <span className="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
-            <span className="text-gray-200">{t("hero.breadcrumb")}</span>
-          </div>
+          
         </div>
       </section>
 

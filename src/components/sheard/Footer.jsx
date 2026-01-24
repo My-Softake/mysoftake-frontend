@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import {
   FaFacebookF,
   FaInstagram,
@@ -13,15 +13,17 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsBriefcase } from "react-icons/bs";
 
 const Footer = () => {
+  const locale = useLocale(); 
   const t = useTranslations("Footer");
-  const tNav = useTranslations("Navbar"); // Re-use Navbar translations for links
+  const tNav = useTranslations("Navbar");  
+    const year = new Date().getFullYear();
   return (
     <footer className="bg-[#1a2533] text-gray-300 py-12 px-6 font-sans border-t border-gray-800">
       <div className="max-w-7xl mx-auto">
         {/* Main Grid Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* 1. Logo & Social Column */}
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col space-y-2">
             <div className="relative w-40 h-20">
               <Image
                 src="/images/footer logo.png"
@@ -30,11 +32,13 @@ const Footer = () => {
                 className="object-contain"
               />
             </div>
-            <div className=""></div>
+            <div className="">
+              <p className="w-80">A global technology powerhouse driving innovation, transformation, and digital dominance.</p>
+            </div>
             {/* Social Icons - Direct Div & Link */}
             <div className="flex space-x-3">
               <Link
-                href="https://facebook.com"
+                href="https://www.facebook.com/mysoftake"
                 target="_blank"
                 className="w-9 h-9 bg-white text-[#1a2533] rounded-full flex items-center justify-center hover:bg-[#27A0DB] duration-300 hover:text-white transition-colors"
               >
@@ -73,29 +77,32 @@ const Footer = () => {
               <Link href="/" className="hover:text-[#27A0DB] duration-300">
                 {tNav("home")}
               </Link>
-              <Link href="/about" className="hover:text-[#27A0DB] duration-300">
+              <Link   href={`/${locale}/about`} className="hover:text-[#27A0DB] duration-300">
                 {tNav("aboutUs")}
               </Link>
               <Link
-                href="/service"
+            
+                href={`/${locale}/service`}
                 className="hover:text-[#27A0DB] duration-300"
               >
                 {tNav("service")}
               </Link>
               <Link
-                href="/project"
+                href={`/${locale}/project`}
+              
                 className="hover:text-[#27A0DB] duration-300"
               >
                 {tNav("project")}
               </Link>
               <Link
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="hover:text-[#27A0DB] duration-300"
               >
                 {tNav("contactUs")}
               </Link>
               <Link
-                href="/career"
+              
+                href={`/${locale}/career`}
                 className="hover:text-[#27A0DB] duration-300"
               >
                 {tNav("career")}
@@ -178,15 +185,18 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center text-[13px] text-gray-400">
-          <p>{t("rightsReserved")}</p>
+          <p>  © {year} MY SOFTAKE PLC.{t("rightsReserved")}</p> 
+
+          
           <div className="flex gap-8 mt-4 md:mt-0">
             <Link
-              href="/terms-and-service"
+            
+              href={`/${locale}/terms-and-service`}
               className="hover:text-[#27A0DB] duration-300"
             >
               {t("termsOfService")}
             </Link>
-            <Link href="/privacy" className="hover:text-[#27A0DB] duration-300">
+            <Link href={`/${locale}/privacy`} className="hover:text-[#27A0DB] duration-300">
               {t("privacyPolicy")}
             </Link>
           </div>

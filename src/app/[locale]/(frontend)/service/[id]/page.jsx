@@ -19,13 +19,35 @@ const ServiceDetails = ({ params }) => {
   const processList = getArray(`items.${serviceId}.process`);
   const benefitsList = getArray(`items.${serviceId}.benefits`);
 
-  // Simple existence check (optional, but good for robust code)
-  // If title returns the key itself, it might mean missing translation, but here strictly it's "ServiceData.items..."
-  // We'll proceed with rendering.
+ 
 
   return (
    <div className="bg-white">
-     <div className="container mx-auto px-10 pb-10 pt-26">
+     <div
+        className="py-10 mt-10 md:py-20"
+        style={{
+          background: "linear-gradient(135deg, #17386f 0%, #2b59cf 100%)",
+        }}
+      >
+        <div className="container mx-auto px-4 md:px-10">
+          {/* Heading */}
+          <h1 className="font-semibold text-white text-3xl sm:text-4xl md:text-5xl pt-6 md:pt-10 text-center md:text-left">
+            {t("servicedetailspage")}
+          </h1>
+
+          {/* Divider & Text */}
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-10 mt-8">
+            {/* Line */}
+            <div className="h-1 w-32 sm:w-48 md:w-[450px] bg-white hidden md:block"></div>
+
+            {/* Description */}
+            <p className="font-normal text-sm sm:text-base text-white max-w-xl text-center md:text-left">
+              {t("servicedetailspageparagraph")}
+            </p>
+          </div>
+        </div>
+      </div>
+     <div className="container mx-auto px-10 pb-10 pt-10">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
         <div className="md:w-1/2">
