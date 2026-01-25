@@ -344,7 +344,7 @@
         "category": "信息技术",
         "description": "多校区数据驱动教育ERP，弥合管理部门、教师和学生之间的差距。",
         "longDescription": "Pi 360是一个多校区、数据驱动的教育ERP，旨在弥合管理部门、教师和学生之间的差距。为管理人员提供集中的'控制塔'视图，同时为个人提供个性化仪表板以进行学术跟踪。",
-        "image": "/images/information.jpg",
+        "image": "/images/pi360.jpeg",
         "client": "MY SOFTAKE PVT LTD",
         "date": "2026年1月",
         "status": "处理中",
@@ -359,7 +359,7 @@
         "category": "信息技术",
         "description": "零售电子产品业务的全面数字转型，具有强大的高流量电子商务引擎。",
         "longDescription": "零售电子产品业务的全面数字转型。该项目涉及构建强大的高流量电子商务引擎（Ecom2），配有复杂的管理面板来管理多供应商库存、实时订单跟踪和自动化客户通知。平台设计用于轻松处理数千个SKU和高容量季节性流量。",
-        "image": "/images/information.jpg",
+        "image": "/images/gagetadda.jpeg",
         "client": "GadgetAdda零售商",
         "date": "2024年1月",
         "status": "已完成",
@@ -374,7 +374,7 @@
         "category": "信息技术",
         "description": "设计用于托管数千个独立卖家的复杂'多供应商'市场。",
         "longDescription": "Shobpi是一个复杂的'多供应商'市场（类似于亚马逊或Daraz），设计用于托管数千个独立卖家。平台为每个供应商提供私人仪表板来管理自己的产品、订单和收入，同时'超级管理员'保持对佣金、站点范围促销和供应商支付的全球控制。",
-        "image": "/images/information.jpg",
+        "image": "/images/shobpi.jpeg",
         "client": "Shobpi市场集团",
         "date": "2025年1月",
         "status": "已完成",
@@ -389,7 +389,7 @@
         "category": "信息技术",
         "description": "旨在弥合学术学习和行业标准后端开发之间差距的综合教育计划。",
         "longDescription": "一项综合教育计划，旨在弥合学术学习和行业标准后端开发之间的差距。该项目以结构化的4个月课程为特色，引导学生学习网络基础知识、Django核心架构和REST API开发。它集成了现场会议、录制资源和密集的一对一指导的混合学习模型。",
-        "image": "/images/information.jpg",
+        "image": "/images/shoshikkha.jpeg",
         "client": "ShoShikha教育学院",
         "date": "进行中",
         "status": "进行中",
@@ -434,7 +434,7 @@
         "category": "信息技术",
         "description": "高性能、SaaS就绪的销售点(POS)和企业资源规划解决方案，转变零售运营。",
         "longDescription": "高性能、SaaS就绪的销售点(POS)和企业资源规划(ERP)解决方案。该项目通过将销售、库存、会计和人力资源整合到单一基于云的仪表板中，将传统零售柜台转变为数字枢纽。为可扩展性而设计，支持多仓库管理以及网络面板和移动POS终端之间的实时同步。",
-        "image": "/images/information.jpg",
+        "image": "/images/pos.jpeg",
         "client": "零售与企业业务",
         "date": "进行中",
         "status": "处理中",
@@ -449,7 +449,7 @@
         "category": "运输与物流",
         "description": "用于车辆、资产和人员全球实时监控的高性能物联网追踪解决方案。",
         "longDescription": "用于车辆、资产和人员实时监控的高性能物联网追踪解决方案。该系统集成了硬件GPS追踪器和强大的基于云的仪表板，以提供实时位置更新、路线历史和引擎诊断。它经工程设计以帮助企业减少运营成本、防止盗窃并通过数据驱动洞察优化路线效率。",
-        "image": "/images/transport.jpg",
+        "image": "/images/realtime gps traker.jpeg",
         "client": "物流公司/私人安保公司",
         "date": "2024年5月",
         "status": "已完成",
@@ -494,7 +494,7 @@
         "category": "旅游与观光",
         "description": "轻松预订旅游套餐的在线门户。",
         "longDescription": "功能丰富的预订引擎提供个性化旅行行程、酒店预订和导游预订，配备集成支付网关。",
-        "image": "/images/tourisam.jpg",
+        "image": "/images/travl.jpg",
         "client": "Wonderlust旅游",
         "date": "2024年4月",
         "status": "已完成",
@@ -606,11 +606,7 @@
           "资产可靠性和利用率提高",
           "为未来投资制定清晰的生命周期路线图"
         ],
-        "images": [
-          "/images/Case-1.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+         "images": ["/images/pi360.jpeg", "/images/pi 360 two.jpeg", "/images/Case-3.jpg"]
       },
       "2": {
         "title": "智能工厂自动化升级",
@@ -625,11 +621,7 @@
           "能源成本降低20%",
           "所有单元的实时数据可视化"
         ],
-        "images": [
-          "/images/Case-2.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+         "images": ["/images/gagetadda.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       },
       "3": {
         "title": "供应链数字化转型",
@@ -640,11 +632,7 @@
         "challenges": "库存预测不准确和路线规划效率低下导致交付延迟和客户不满。",
         "approach": "集成AI预测工具并使用机器学习算法优化物流路线，提高准确性。",
         "results": ["仓库开销降低15%", "准时交付率99%", "库存周转率改善"],
-        "images": [
-          "/images/Case-3.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+         "images": ["/images/shobpi.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       },
       "4": {
         "title": "可再生能源电网整合",
@@ -659,11 +647,7 @@
           "每年减少4万吨碳足迹",
           "电网稳定性和储能容量增强"
         ],
-        "images": [
-          "/images/Case-4.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+         "images": ["/images/shoshikkha.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       },
       "5": {
         "title": "医疗数据互操作性项目",
@@ -678,11 +662,7 @@
           "患者处理时间缩短25%",
           "临床决策支持改善"
         ],
-        "images": [
-          "/images/Case 5.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+        "images": ["/images/export import.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       },
       "6": {
         "title": "智慧城市基础设施建设",
@@ -697,11 +677,7 @@
           "夜间犯罪率下降15%",
           "市政能源账单节省35%"
         ],
-        "images": [
-          "/images/Case-6.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+         "images": ["/images/tourisam.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       }
     }
   },

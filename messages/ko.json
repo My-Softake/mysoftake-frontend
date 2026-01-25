@@ -341,7 +341,7 @@
         "category": "제조 및 생산",
         "description": "효율성을 높이고 다운타임을 줄이는 자동화 생산 라인.",
         "longDescription": "스마트 팩토리 자동화 프로젝트는 인더스트리 4.0 표준을 통합하여 전통적인 제조업을 혁신합니다. IoT 센서와 자동화된 로봇 팔을 구현하여 오류가 발생하기 전에 실시간으로 통신하여 방지합니다. 이 시스템을 통해 관리자는 중앙 대시보드에서 생산의 모든 측면을 모니터링할 수 있습니다.",
-        "image": "/images/menufactaring and production.jpg",
+        "image": "/images/pi360.jpeg",
         "client": "IndustriX Corp",
         "date": "2024년 3월",
         "status": "완료",
@@ -359,7 +359,7 @@
         "category": "제조 및 생산",
         "description": "실시간 모니터링 및 예측 유지보수를 위한 IoT 지원 기계.",
         "longDescription": "이 프로젝트는 공장 현장 전체에 수천 개의 센서를 배치하여 기계 상태, 온도 및 성능에 대한 데이터를 수집합니다. 시스템은 잠재적인 고장을 발생하기 전에 예측하여 수백만 달러의 수리 비용을 절감합니다.",
-        "image": "/images/manufactiring.jpg",
+        "image": "/images/gagetadda.jpeg",
         "client": "TechGear Ltd",
         "date": "2024년 1월",
         "status": "진행 중",
@@ -377,7 +377,7 @@
         "category": "수출 및 수입",
         "description": "국제 수출입 업무를 원활하게 관리하는 플랫폼.",
         "longDescription": "단일 디지털 환경에서 화물을 추적하고, 문서를 관리하며, 통관을 처리하도록 설계된 중앙 집중식 허브입니다. 수출업체, 수입업체 및 물류 제공업체를 실시간으로 연결합니다.",
-        "image": "/images/export import 2.png",
+        "image": "/images/shobpi.jpeg",
         "client": "Global Trade Co.",
         "date": "2024년 2월",
         "status": "완료",
@@ -395,7 +395,7 @@
         "category": "수출 및 수입",
         "description": "국제 무역 규정 준수를 보장하는 디지털 솔루션.",
         "longDescription": "이 시스템은 국제 무역에 필요한 법적 검사를 자동화하여 모든 화물이 목적지 국가의 특정 법률을 준수하고 과중한 벌금을 피할 수 있도록 합니다.",
-        "image": "/images/export import.jpg",
+        "image": "/images/shoshikkha.jpeg",
         "client": "TradeWatch Group",
         "date": "2023년 11월",
         "status": "완료",
@@ -454,7 +454,7 @@
         "category": "운송 및 물류",
         "description": "창고와 매장을 효율적으로 연결하는 최적화된 물류 네트워크.",
         "longDescription": "실시간 교통 데이터를 사용하여 도시 지역에서 배송 시간과 연료 소비를 줄이도록 설계된 스마트 경로 계획 및 차량 관리 소프트웨어.",
-        "image": "/images/transport log 2.png",
+        "image": "/images/pos.jpeg",
         "client": "Urban Delivery Inc.",
         "date": "2024년 3월",
         "status": "완료",
@@ -472,7 +472,7 @@
         "category": "운송 및 물류",
         "description": "승객 및 화물을 위한 공항 운송 서비스의 엔드투엔드 관리.",
         "longDescription": "주요 국제 공항의 지상 핸들링 팀을 위해 공항 셔틀, 화물 로더 및 항공편 동기화를 관리하는 통합 소프트웨어.",
-        "image": "/images/transport.jpg",
+        "image": "/images/realtime gps traker.jpeg",
         "client": "Skyport Authority",
         "date": "2024년 2월",
         "status": "진행 중",
@@ -526,7 +526,7 @@
         "category": "여행 및 관광",
         "description": "여행 및 관광 패키지 예약을 쉽게 하는 온라인 포털.",
         "longDescription": "개인화된 여행 일정, 호텔 예약 및 가이드 투어 예약과 통합된 결제 게이트웨이를 제공하는 기능이 풍부한 예약 엔진.",
-        "image": "/images/tourisam.jpg",
+        "image": "/images/travl.jpg",
         "client": "Wonderlust Travels",
         "date": "2024년 4월",
         "status": "완료",
@@ -644,11 +644,7 @@
           "자산 신뢰성 및 활용도 향상",
           "미래 투자를 위한 명확한 수명 주기 로드맵"
         ],
-        "images": [
-          "/images/Case-1.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+         "images": ["/images/pi360.jpeg", "/images/pi 360 two.jpeg", "/images/Case-3.jpg"]
       },
       "2": {
         "title": "스마트 팩토리 자동화 업그레이드",
@@ -663,11 +659,7 @@
           "에너지 비용 20% 절감",
           "모든 단위에 걸친 실시간 데이터 가시성"
         ],
-        "images": [
-          "/images/Case-2.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+       "images": ["/images/gagetadda.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       },
       "3": {
         "title": "공급망 디지털 트랜스포메이션",
@@ -682,11 +674,7 @@
           "정시 배송률 99%",
           "재고 회전율 개선"
         ],
-        "images": [
-          "/images/Case-3.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+         "images": ["/images/shobpi.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       },
       "4": {
         "title": "재생 에너지 그리드 통합",
@@ -701,11 +689,7 @@
           "연간 4만 톤 탄소 발자국 감소",
           "그리드 안정성 및 저장 용량 향상"
         ],
-        "images": [
-          "/images/Case-4.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+        "images": ["/images/shoshikkha.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       },
       "5": {
         "title": "헬스케어 데이터 상호운용성 프로젝트",
@@ -720,11 +704,7 @@
           "환자 처리 시간 25% 단축",
           "임상 의사결정 지원 개선"
         ],
-        "images": [
-          "/images/Case 5.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+        "images": ["/images/export import.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       },
       "6": {
         "title": "스마트 시티 인프라 개발",
@@ -739,11 +719,7 @@
           "야간 범죄율 15% 감소",
           "시 에너지 비용 35% 절감"
         ],
-        "images": [
-          "/images/Case-6.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+       "images": ["/images/tourisam.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       }
     }
   },

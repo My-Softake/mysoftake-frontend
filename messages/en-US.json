@@ -317,7 +317,7 @@
                 "category": "Information Technology",
                 "description": "Multi-campus, data-driven educational ERP designed to bridge the gap between administration, teachers, and students.",
                 "longDescription": "Pi 360 is a multi-campus, data-driven educational ERP designed to bridge the gap between administration, teachers, and students. It provides a centralized 'control tower' view for management while offering personalized dashboards for individual academic tracking.",
-                "image": "/images/information.jpg",
+                "image": "/images/pi360.jpeg",
                 "client": "MY SOFTAKE PVT LTD",
                 "date": "January 2026",
                 "status": "Processing",
@@ -332,7 +332,7 @@
                 "category": "Information Technology",
                 "description": "Comprehensive digital transformation of a retail electronics business with robust, high-traffic e-commerce engine.",
                 "longDescription": "A comprehensive digital transformation of a retail electronics business. This project involved building a robust, high-traffic e-commerce engine (Ecom2) with a sophisticated admin panel to manage multi-vendor inventory, real-time order tracking, and automated customer notifications. The platform is designed to handle thousands of SKUs and high-volume seasonal traffic with ease.",
-                "image": "/images/information.jpg",
+                "image": "/images/gagetadda.jpeg",
                 "client": "GadgetAdda Retailers",
                 "date": "January 2024",
                 "status": "Completed",
@@ -347,7 +347,7 @@
                 "category": "Information Technology",
                 "description": "Sophisticated 'Multi-Vendor' marketplace designed to host thousands of independent sellers like Amazon or Daraz.",
                 "longDescription": "Shobpi is a sophisticated 'Multi-Vendor' marketplace (similar to Amazon or Daraz) designed to host thousands of independent sellers. The platform provides each vendor with a private dashboard to manage their own products, orders, and earnings, while the 'Super Admin' maintains global control over commissions, site-wide promotions, and vendor payouts.",
-                "image": "/images/information.jpg",
+                "image": "/images/shobpi.jpeg",
                 "client": "Shobpi Marketplace Group",
                 "date": "January 2025",
                 "status": "Completed",
@@ -362,7 +362,7 @@
                 "category": "Information Technology",
                 "description": "Comprehensive educational program designed to bridge gap between academic learning and industry-standard backend development.",
                 "longDescription": "A comprehensive educational initiative designed to bridge the gap between academic learning and industry-standard backend development. The project features a structured, 4-month curriculum that guides students through web fundamentals, Django core architecture, and REST API development. It integrates a hybrid learning model with live sessions, recorded resources, and intensive one-to-one mentorship.",
-                "image": "/images/information.jpg",
+                "image": "/images/shoshikkha.jpeg",
                 "client": "ShoShikha Educational Institute",
                 "date": "Ongoing",
                 "status": "Ongoing",
@@ -407,7 +407,7 @@
                 "category": "Information Technology",
                 "description": "High-performance, SaaS-ready Point of Sale (POS) and Enterprise Resource Planning solution transforming retail operations.",
                 "longDescription": "A high-performance, SaaS-ready Point of Sale (POS) and Enterprise Resource Planning (ERP) solution. This project transforms traditional retail counters into digital hubs by integrating sales, inventory, accounting, and HRM into a single cloud-based dashboard. Designed for scalability, it supports multi-warehouse management and real-time synchronization between web panels and mobile POS terminals.",
-                "image": "/images/information.jpg",
+                "image": "/images/pos.jpeg",
                 "client": "Retail & Enterprise Businesses",
                 "date": "In Progress",
                 "status": "Processing",
@@ -422,7 +422,7 @@
                 "category": "Transport & Logistics",
                 "description": "High-performance IoT-based tracking solution for real-time monitoring of vehicles, assets, and personnel across the globe.",
                 "longDescription": "A high-performance IoT-based tracking solution designed for real-time monitoring of vehicles, assets, and personnel. The system integrates hardware GPS trackers with a robust cloud-based dashboard to provide live location updates, route history, and engine diagnostics. It is engineered to help businesses reduce operational costs, prevent theft, and optimize route efficiency through data-driven insights.",
-                "image": "/images/transport.jpg",
+                "image": "/images/realtime gps traker.jpeg",
                 "client": "Logistics Companies / Private Security Firms",
                 "date": "May 2024",
                 "status": "Completed",
@@ -467,7 +467,7 @@
                 "category": "Travel & Tourism",
                 "description": "An online portal for booking travel and tourism packages easily.",
                 "longDescription": "A feature-rich booking engine offering personalized travel itineraries, hotel bookings, and guided tour reservations with an integrated payment gateway.",
-                "image": "/images/tourisam.jpg",
+                "image": "/images/travl.jpg",
                 "client": "Wonderlust Travels",
                 "date": "April 2024",
                 "status": "Completed",
@@ -1058,7 +1058,7 @@
                 "challenges": "Cross-Campus Synchronization: Maintaining real-time data consistency across different physical campus locations.",
                 "approach": "Implemented with React.js, Next.js, Tailwind CSS, D3.js, ApexCharts, Node.js, Python (Django), AWS, Azure, PostgreSQL, Redis.",
                 "results": ["99.99% Uptime maintained", "Successfully migrated 10TB of legacy institutional data with zero downtime", "Predictive analytics help management forecast revenue and student growth trends"],
-                "images": ["/images/information.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+                "images": ["/images/pi360.jpeg", "/images/pi 360 two.jpeg", "/images/Case-3.jpg"]
             },
             "2": {
                 "title": "GadgetAdda E-commerce Platform",
@@ -1069,7 +1069,7 @@
                 "challenges": "Dynamic Stock Syncing: Coordinating real-time inventory updates across the online store and physical warehouse.",
                 "approach": "Built with Next.js, React, Node.js, Express, Laravel, MySQL, MongoDB, AWS, DigitalOcean.",
                 "results": ["Achieved 40% growth in monthly sales within first quarter", "Maintained 99.9% system uptime during peak holiday sales", "Seamless customer experience with real-time order tracking"],
-                "images": ["/images/information.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+                "images": ["/images/gagetadda.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
             },
             "3": {
                 "title": "Shobpi Multi-Vendor Marketplace",
@@ -1080,7 +1080,7 @@
                 "challenges": "Vendor Quality Control: Implementing automated verification systems to ensure only legitimate sellers are onboarded.",
                 "approach": "Developed with PHP (Laravel Multi-tenant), Python (Django), WebSockets (Socket.io), AWS S3, Cloudfront CDN, Microservices.",
                 "results": ["Rapid Catalog Expansion without physical inventory", "Scalable Revenue Model based on commissions and vendor subscription fees", "Hundreds of vendors successfully onboarded"],
-                "images": ["/images/information.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+                "images": ["/images/shobpi.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
             },
             "4": {
                 "title": "ShoShikha Educational Initiative",
@@ -1091,7 +1091,7 @@
                 "challenges": "Curriculum Pacing: Designing a flow that moves students from zero experience to advanced concepts in 4 months.",
                 "approach": "Integrated with Django (MVT), Django REST Framework (DRF), Git, GitHub, Docker, Postman, Insomnia, Redis, Render.com.",
                 "results": ["Students complete a full-scale REST API project deployed with industry standards", "Established permanent learning Discord community", "100% student satisfaction with hands-on projects"],
-                "images": ["/images/information.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+                "images": ["/images/shoshikkha.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
             },
             "5": {
                 "title": "Import-Export Management System",
@@ -1124,7 +1124,7 @@
                 "challenges": "Offline Synchronization: Ensuring sales can be processed during internet outages and synced back when connection is restored.",
                 "approach": "Developed with Laravel (PHP), .NET 8, Vue.js, React.js, Flutter, MySQL, ESC/POS, Barcode SDKs, AWS, DigitalOcean.",
                 "results": ["Maintained 99.9% availability for critical retail operations", "Achieved zero discrepancies in daily cash register closing", "30-40% reduction in manual data entry errors"],
-                "images": ["/images/information.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+                "images": ["/images/pos.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
             },
             "8": {
                 "title": "Real-time GPS Tracking System",
@@ -1135,7 +1135,7 @@
                 "challenges": "Connectivity Dead Zones: Implementing data buffering where devices store coordinates and sync automatically.",
                 "approach": "Built with Node.js, Python (FastAPI), React.js, Leaflet, Mapbox, TimescaleDB, MongoDB, MQTT, TCP/UDP, AWS, Azure.",
                 "results": ["Achieved location accuracy within 3-5 meters under clear conditions", "Sub-second data transmission from vehicle to mobile app", "100% reliability in push notifications"],
-                "images": ["/images/transport.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
+                "images": ["/images/realtime gps traker.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
             },
             "9": {
                 "title": "Smart Factory Automation",

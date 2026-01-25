@@ -106,7 +106,7 @@ const CaseStudyDetailsPage = () => {
         </div>
 
         {/* Overview */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center mb-6">
           <div>
             <h3 className="text-3xl font-bold text-[#001b3d] mb-4">{t("overview")}</h3>
             <p className="text-gray-600 leading-relaxed text-lg">
@@ -127,7 +127,7 @@ const CaseStudyDetailsPage = () => {
         </div>
 
         {/* Challenges */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center mb-16 max-sm:mt-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center mb-6 max-sm:mt-5">
           <div>
             <h3 className="text-3xl font-bold text-[#001b3d] mb-4">
               {t("challenges")}
@@ -150,7 +150,7 @@ const CaseStudyDetailsPage = () => {
         </div>
 
         {/* Approach */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 items-center mb-16 max-sm:mt-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 items-center mb-10 max-sm:mt-5">
           <div>
             <h3 className="text-3xl font-bold text-[#001b3d] mb-4">{t("approach")}</h3>
             <p className="text-gray-600 leading-relaxed text-lg">
