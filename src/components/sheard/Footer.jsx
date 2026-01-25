@@ -164,8 +164,8 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <HiOutlineLocationMarker className="text-lg mt-0.5 flex-shrink-0" />
                 <p>
-                  1102,Building A, zILIUJIN BusinessCenter Shushan District,
-                  Hefei City, Anhui Province China
+                  1102,Building A, Ziliujin Business Center Shushan District,
+                  Hefei City, Anhui Province, China
                 </p>
               </div>
               <div className="flex items-center gap-3">
