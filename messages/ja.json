@@ -341,7 +341,7 @@
         "category": "製造・生産",
         "description": "効率を高め、ダウンタイムを削減する自動化生産ライン。",
         "longDescription": "当社のスマートファクトリー自動化プロジェクトは、インダストリー4.0標準を統合することで従来の製造業に革命をもたらしています。IoTセンサーと自動化されたロボットアームを実装し、エラーが発生する前にリアルタイムで通信して防止します。このシステムにより、管理者は中央ダッシュボードから生産のあらゆる側面を監視できます。",
-        "image": "/images/menufactaring and production.jpg",
+        "image": "/images/pi360.jpeg",
         "client": "IndustriX Corp",
         "date": "2024年3月",
         "status": "完了",
@@ -359,7 +359,7 @@
         "category": "製造・生産",
         "description": "リアルタイム監視と予知保全のためのIoT対応機械。",
         "longDescription": "このプロジェクトでは、工場フロア全体に数千のセンサーを配置し、機械の状態、温度、性能に関するデータを収集します。システムは潜在的な故障を発生前に予測し、数百万ドルの修理コストを節約します。",
-        "image": "/images/manufactiring.jpg",
+        "image": "/images/gagetadda.jpeg",
         "client": "TechGear Ltd",
         "date": "2024年1月",
         "status": "進行中",
@@ -377,7 +377,7 @@
         "category": "輸出入",
         "description": "国際輸出入業務をシームレスに管理するプラットフォーム。",
         "longDescription": "単一のデジタル環境で貨物の追跡、文書管理、通関手続きを行うために設計された集中型ハブ。輸出業者、輸入業者、物流プロバイダーをリアルタイムで接続します。",
-        "image": "/images/export import 2.png",
+        "image": "/images/shobpi.jpeg",
         "client": "Global Trade Co.",
         "date": "2024年2月",
         "status": "完了",
@@ -395,7 +395,7 @@
         "category": "輸出入",
         "description": "国際貿易規制への準拠を確保するデジタルソリューション。",
         "longDescription": "このシステムは国際貿易に必要な法的チェックを自動化し、すべての貨物が目的地国の特定の法律を満たし、重い罰則を回避することを保証します。",
-        "image": "/images/export import.jpg",
+        "image": "/images/shoshikkha.jpeg",
         "client": "TradeWatch Group",
         "date": "2023年11月",
         "status": "完了",
@@ -454,7 +454,7 @@
         "category": "輸送・物流",
         "description": "倉庫と店舗を効率的に接続する最適化された物流ネットワーク。",
         "longDescription": "リアルタイムの交通データを使用して、都市部での配達時間と燃料消費を削減するために設計されたスマートルート計画とフリート管理ソフトウェア。",
-        "image": "/images/transport log 2.png",
+        "image": "/images/pos.jpeg",
         "client": "Urban Delivery Inc.",
         "date": "2024年3月",
         "status": "完了",
@@ -472,7 +472,7 @@
         "category": "輸送・物流",
         "description": "乗客と貨物のための空港輸送サービスのエンドツーエンド管理。",
         "longDescription": "主要な国際空港の地上ハンドリングチーム向けに、空港シャトル、貨物ローダー、フライト同期を管理する統合ソフトウェア。",
-        "image": "/images/transport.jpg",
+        "image": "/images/realtime gps traker.jpeg",
         "client": "Skyport Authority",
         "date": "2024年2月",
         "status": "進行中",
@@ -526,7 +526,7 @@
         "category": "旅行・観光",
         "description": "旅行・観光パッケージを簡単に予約できるオンラインポータル。",
         "longDescription": "統合された決済ゲートウェイを備え、パーソナライズされた旅行行程、ホテル予約、ガイドツアー予約を提供する機能豊富な予約エンジン。",
-        "image": "/images/tourisam.jpg",
+        "image": "/images/travl.jpg",
         "client": "Wonderlust Travels",
         "date": "2024年4月",
         "status": "完了",
@@ -644,11 +644,7 @@
           "資産信頼性と稼働率の向上",
           "将来の投資に向けた明確なライフサイクルロードマップ"
         ],
-        "images": [
-          "/images/Case-1.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+        "images": ["/images/pi360.jpeg", "/images/pi 360 two.jpeg", "/images/Case-3.jpg"]
       },
       "2": {
         "title": "スマートファクトリー自動化アップグレード",
@@ -663,11 +659,7 @@
           "エネルギーコスト20%削減",
           "すべてのユニットにわたるリアルタイムデータの可視化"
         ],
-        "images": [
-          "/images/Case-2.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+         "images": ["/images/gagetadda.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       },
       "3": {
         "title": "サプライチェーンデジタルトランスフォーメーション",
@@ -682,11 +674,7 @@
           "オンタイム配送率99%",
           "在庫回転率の改善"
         ],
-        "images": [
-          "/images/Case-3.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+         "images": ["/images/shobpi.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       },
       "4": {
         "title": "再生可能エネルギーグリッド統合",
@@ -701,11 +689,7 @@
           "年間4万トンの炭素フットプリント削減",
           "グリッドの安定性と貯蔵容量の向上"
         ],
-        "images": [
-          "/images/Case-4.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+         "images": ["/images/shoshikkha.jpeg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       },
       "5": {
         "title": "ヘルスケアデータ相互運用性プロジェクト",
@@ -720,11 +704,7 @@
           "患者処理時間25%短縮",
           "臨床意思決定支援の改善"
         ],
-        "images": [
-          "/images/Case 5.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+        "images": ["/images/export import.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       },
       "6": {
         "title": "スマートシティインフラストラクチャ開発",
@@ -739,11 +719,7 @@
           "夜間犯罪率15%低下",
           "市のエネルギー請求35%節約"
         ],
-        "images": [
-          "/images/Case-6.jpg",
-          "/images/Case-2.jpg",
-          "/images/Case-3.jpg"
-        ]
+         "images": ["/images/tourisam.jpg", "/images/Case-2.jpg", "/images/Case-3.jpg"]
       }
     }
   },
