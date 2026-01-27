@@ -164,13 +164,13 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <HiOutlineLocationMarker className="text-lg mt-0.5 flex-shrink-0" />
                 <p>
-                  1102,Building A, Ziliujin Business Center Shushan District,
+                  1102,Building A, Zhidihuijin Business Center Shushan District,
                   Hefei City, Anhui Province, China
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <FaPhoneAlt className="flex-shrink-0" />
-                <p>+861 330-565-1265</p>
+                <p>+861-365-555-1302</p>
               </div>
 
               <div className="flex items-center gap-3">
